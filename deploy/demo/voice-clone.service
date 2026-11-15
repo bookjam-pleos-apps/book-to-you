@@ -1,0 +1,19 @@
+# 시연 서버가 쓰는 voice-clone 서비스(녹음 확인·렌더). Spark 공용 계정의 systemd 사용자 서비스로 돈다.
+# 설치와 갱신은 deploy/demo/gpu-service.sh가 한다. 값은 ~/.config/voice-storybook/voice-clone.env(600)에 있다.
+# 죽으면 다시 띄운다. 렌더 중에 죽으면 API 렌더 워커가 같은 작업을 한 번 더 낸다.
+[Unit]
+Description=voice-storybook voice-clone (model-compose) for the demo server
+
+[Service]
+WorkingDirectory=%h/voice-storybook-api/voice-clone
+EnvironmentFile=%h/.config/voice-storybook/voice-clone.env
+ExecStart=%h/.local/bin/uv run --locked model-compose up
+Restart=on-failure
+RestartSec=15
+TimeoutStopSec=60
+# 공용 장비(통합 메모리)에서 다른 작업을 지킨다. 배치 렌더 피크는 37GB(실측)라 여유를 둔다.
+MemoryHigh=48G
+MemoryMax=56G
+
+[Install]
+WantedBy=default.target

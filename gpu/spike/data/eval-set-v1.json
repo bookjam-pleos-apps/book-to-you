@@ -1,0 +1,2062 @@
+{
+ "version": 1,
+ "note": "청취 지목(flagged)과 같은 렌더의 짝 정상(normal) 단위. id는 렌더#단위. 오디오는 경로만 가리키고 복사하지 않는다. 생성: spike.experiments.measure.run_build_eval_set",
+ "items": [
+  {
+   "id": "demo_s4/fisherman_calm#33",
+   "label": "flagged",
+   "render": "demo_s4/fisherman_calm",
+   "unit": 33,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "다음 날, 해가 떠오르는 것을 본 어부의 아내가 소리쳤어요. “바로 저거야! 여보, 어서 그 멍청한 생선한테 가서 전해! 해와 달을 뜨고 지게 하는 하느님이 되고 싶다고 말이야!”",
+   "style": "calm",
+   "durationSec": 15.04,
+   "audio": "outputs/demo_s4/fisherman_calm/units/0033.wav",
+   "observations": [
+    {
+     "listening": "d6_calm",
+     "mark": "6:12",
+     "offsetSec": 6.2,
+     "atBoundary": false,
+     "kind": "tone_jump",
+     "quote": "톤이 갑자기 좀 달라지는 거지 목소리 자체가 달라지진 않아요",
+     "sure": false,
+     "file": "demo_s4/fisherman_calm/story.wav"
+    }
+   ]
+  },
+  {
+   "id": "demo_s4/fisherman_calm#36",
+   "label": "flagged",
+   "render": "demo_s4/fisherman_calm",
+   "unit": 36,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "어부는 이번에도 쫓겨나듯이 밖으로 나갔어요. 걸음을 옮기기 힘들 정도로 거센 바람이 불었지요. 먹구름이 잔뜩 낀 하늘에서 천둥과 번개가 몰아쳤어요. 성당의 뾰족한 탑보다도 높은 파도가 바닷가로 밀려오고 있었어요. 어부는 폭풍 속에서 있는 힘껏 큰 소리로 외쳤어요. “왕자야! 마법에 걸린 왕자야! 내가 바다에 빠져 죽기 전에 얼른 나와보렴! 글쎄, 내 아내가 참 염치 없는 부탁을 하는구나.”",
+   "style": "calm",
+   "durationSec": 33.44,
+   "audio": "outputs/demo_s4/fisherman_calm/units/0036.wav",
+   "observations": [
+    {
+     "listening": "d6_calm",
+     "mark": "6:54",
+     "offsetSec": 26.5,
+     "atBoundary": false,
+     "kind": "tone_jump",
+     "quote": "톤이 갑자기 좀 달라지는 거지 목소리 자체가 달라지진 않아요",
+     "sure": false,
+     "file": "demo_s4/fisherman_calm/story.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c2#2",
+   "label": "flagged",
+   "render": "exp_guyeon/c2",
+   "unit": 2,
+   "kind": "tone_jump",
+   "sure": true,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "어느 날이었어요. 어부가 낚싯대를 드리우고 있는데 낚싯줄이 팽팽히 당겨졌어요.",
+   "style": "calm",
+   "durationSec": 6.88,
+   "audio": "outputs/exp_guyeon/c2/units/0002.wav",
+   "observations": [
+    {
+     "listening": "g1_X",
+     "mark": "0:11",
+     "offsetSec": -0.2,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": true,
+     "file": "exp_guyeon/listen/story_X.wav"
+    },
+    {
+     "listening": "g2_Q",
+     "mark": "0:12",
+     "offsetSec": 0.8,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": true,
+     "file": "exp_guyeon/listen_c3/story_Q.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c2#15",
+   "label": "flagged",
+   "render": "exp_guyeon/c2",
+   "unit": 15,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“지금 살고 있는 오두막집 대신 깔끔한 집이 있었으면 좋겠다는구나!”",
+   "style": "calm",
+   "durationSec": 5.12,
+   "audio": "outputs/exp_guyeon/c2/units/0015.wav",
+   "observations": [
+    {
+     "listening": "g1_X",
+     "mark": "1:51",
+     "offsetSec": -0.1,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen/story_X.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c2#18",
+   "label": "flagged",
+   "render": "exp_guyeon/c2",
+   "unit": 18,
+   "kind": "tone_jump",
+   "sure": true,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "“이제 행복하게 살 수 있겠어.”",
+   "style": "excited",
+   "durationSec": 1.92,
+   "audio": "outputs/exp_guyeon/c2/units/0018.wav",
+   "observations": [
+    {
+     "listening": "g1_X",
+     "mark": "2:25",
+     "offsetSec": 1.5,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": true,
+     "file": "exp_guyeon/listen/story_X.wav"
+    },
+    {
+     "listening": "g2_Q",
+     "mark": "2:26",
+     "offsetSec": 2.5,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": true,
+     "file": "exp_guyeon/listen_c3/story_Q.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c2#29",
+   "label": "flagged",
+   "render": "exp_guyeon/c2",
+   "unit": 29,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“나는 이제 왕이다! 하지만 이걸로는 충분하지 않아. 당장 그 못생긴 물고기한테 가서 황제가 되고 싶다고 말해.”",
+   "style": "excited",
+   "durationSec": 9.6,
+   "audio": "outputs/exp_guyeon/c2/units/0029.wav",
+   "observations": [
+    {
+     "listening": "g1_X",
+     "mark": "3:51",
+     "offsetSec": 9.2,
+     "atBoundary": false,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen/story_X.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c2#31",
+   "label": "flagged",
+   "render": "exp_guyeon/c2",
+   "unit": 31,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“왕자야! 마법에 걸린 왕자야! 이리 나와서 내 말 좀 들어줘! 내 아내가 참 염치없는 부탁을 하는구나.”",
+   "style": "excited",
+   "durationSec": 8.8,
+   "audio": "outputs/exp_guyeon/c2/units/0031.wav",
+   "observations": [
+    {
+     "listening": "g1_X",
+     "mark": "4:04",
+     "offsetSec": -0.9,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen/story_X.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c2#40",
+   "label": "flagged",
+   "render": "exp_guyeon/c2",
+   "unit": 40,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“또 아주머니가 원하는 게 뭐죠?”",
+   "style": "calm",
+   "durationSec": 2.24,
+   "audio": "outputs/exp_guyeon/c2/units/0040.wav",
+   "observations": [
+    {
+     "listening": "g1_X",
+     "mark": "5:33",
+     "offsetSec": 2.6,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen/story_X.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c2#47",
+   "label": "flagged",
+   "render": "exp_guyeon/c2",
+   "unit": 47,
+   "kind": "tone_jump",
+   "sure": true,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "“뭐, 뭐라고 했어 방금?”",
+   "style": "calm",
+   "durationSec": 2.0,
+   "audio": "outputs/exp_guyeon/c2/units/0047.wav",
+   "observations": [
+    {
+     "listening": "g1_X",
+     "mark": "6:24",
+     "offsetSec": 1.8,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": true,
+     "file": "exp_guyeon/listen/story_X.wav"
+    },
+    {
+     "listening": "g2_Q",
+     "mark": "6:23",
+     "offsetSec": 0.8,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": true,
+     "file": "exp_guyeon/listen_c3/story_Q.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c2#54",
+   "label": "flagged",
+   "render": "exp_guyeon/c2",
+   "unit": 54,
+   "kind": "tone_jump",
+   "sure": true,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "물고기는 바다 밑으로 사라졌지요.",
+   "style": "calm",
+   "durationSec": 2.8,
+   "audio": "outputs/exp_guyeon/c2/units/0054.wav",
+   "observations": [
+    {
+     "listening": "g1_X",
+     "mark": "7:15",
+     "offsetSec": 0.6,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": true,
+     "file": "exp_guyeon/listen/story_X.wav"
+    },
+    {
+     "listening": "g2_Q",
+     "mark": "7:16",
+     "offsetSec": 1.6,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": true,
+     "file": "exp_guyeon/listen_c3/story_Q.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c1#16",
+   "label": "flagged",
+   "render": "exp_guyeon/c1",
+   "unit": 16,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“이제 행복하게 살 수 있겠어.”",
+   "style": "excited",
+   "durationSec": 1.92,
+   "audio": "outputs/exp_guyeon/c1/units/0016.wav",
+   "observations": [
+    {
+     "listening": "g1_Y",
+     "mark": "2:25",
+     "offsetSec": 0.8,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen/story_Y.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c1#32",
+   "label": "flagged",
+   "render": "exp_guyeon/c1",
+   "unit": 32,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“암! 황제가 되었어!” 어부의 아내가 거드름을 피우며 대답했어요.",
+   "style": "excited",
+   "durationSec": 5.84,
+   "audio": "outputs/exp_guyeon/c1/units/0032.wav",
+   "observations": [
+    {
+     "listening": "g1_Y",
+     "mark": "4:52",
+     "offsetSec": 2.5,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen/story_Y.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c1#38",
+   "label": "flagged",
+   "render": "exp_guyeon/c1",
+   "unit": 38,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "“이제는 교황이 되고 싶다지 뭐니?”",
+   "style": "soft",
+   "durationSec": 3.04,
+   "audio": "outputs/exp_guyeon/c1/units/0038.wav",
+   "observations": [
+    {
+     "listening": "g1_Y",
+     "mark": "5:34",
+     "offsetSec": 0.6,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen/story_Y.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c1#44",
+   "label": "flagged",
+   "render": "exp_guyeon/c1",
+   "unit": 44,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“뭐, 뭐라고 했어 방금?”",
+   "style": "calm",
+   "durationSec": 2.0,
+   "audio": "outputs/exp_guyeon/c1/units/0044.wav",
+   "observations": [
+    {
+     "listening": "g1_Y",
+     "mark": "6:24",
+     "offsetSec": 1.9,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen/story_Y.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c1#46",
+   "label": "flagged",
+   "render": "exp_guyeon/c1",
+   "unit": 46,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "어부는 이번에도 쫓겨나듯이 밖으로 나갔어요. 걸음을 옮기기 힘들 정도로 거센 바람이 불었지요. 먹구름이 잔뜩 낀 하늘에서 천둥과 번개가 몰아쳤어요. 성당의 뾰족한 탑보다도 높은 파도가 바닷가로 밀려오고 있었어요. 어부는 폭풍 속에서 있는 힘껏 큰 소리로 외쳤어요. “왕자야! 마법에 걸린 왕자야! 내가 바다에 빠져 죽기 전에 얼른 나와보렴! 글쎄, 내 아내가 참 염치 없는 부탁을 하는구나.”",
+   "style": "calm",
+   "durationSec": 32.0,
+   "audio": "outputs/exp_guyeon/c1/units/0046.wav",
+   "observations": [
+    {
+     "listening": "g1_Y",
+     "mark": "6:52",
+     "offsetSec": 23.6,
+     "atBoundary": false,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen/story_Y.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c1#49",
+   "label": "flagged",
+   "render": "exp_guyeon/c1",
+   "unit": 49,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“어서 가보세요. 낡은 오두막집에 아주머니가 있을 거예요.”",
+   "style": "calm",
+   "durationSec": 4.56,
+   "audio": "outputs/exp_guyeon/c1/units/0049.wav",
+   "observations": [
+    {
+     "listening": "g1_Y",
+     "mark": "7:12",
+     "offsetSec": 3.3,
+     "atBoundary": false,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen/story_Y.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c3#2",
+   "label": "flagged",
+   "render": "exp_guyeon/c3",
+   "unit": 2,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "어느 날이었어요. 어부가 낚싯대를 드리우고 있는데 낚싯줄이 팽팽히 당겨졌어요.",
+   "style": "calm",
+   "durationSec": 6.88,
+   "audio": "outputs/exp_guyeon/c3/units/0002.wav",
+   "observations": [
+    {
+     "listening": "g2_P",
+     "mark": "0:11",
+     "offsetSec": -0.2,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_P.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c3#3",
+   "label": "flagged",
+   "render": "exp_guyeon/c3",
+   "unit": 3,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“걸려들었다!”",
+   "style": "excited",
+   "durationSec": 1.04,
+   "audio": "outputs/exp_guyeon/c3/units/0003.wav",
+   "observations": [
+    {
+     "listening": "g2_P",
+     "mark": "0:18",
+     "offsetSec": -0.5,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_P.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c3#5",
+   "label": "flagged",
+   "render": "exp_guyeon/c3",
+   "unit": 5,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“어부 아저씨, 저는 마법에 걸린 왕자랍니다. 은혜를 꼭 갚을 테니 제발 저를 살려주세요.”",
+   "style": "soft",
+   "durationSec": 9.28,
+   "audio": "outputs/exp_guyeon/c3/units/0005.wav",
+   "observations": [
+    {
+     "listening": "g2_P",
+     "mark": "0:30",
+     "offsetSec": 0.4,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_P.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c3#6",
+   "label": "flagged",
+   "render": "exp_guyeon/c3",
+   "unit": 6,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "마음씨 착한 어부는 물고기를 놓아주었어요.",
+   "style": "calm",
+   "durationSec": 3.36,
+   "audio": "outputs/exp_guyeon/c3/units/0006.wav",
+   "observations": [
+    {
+     "listening": "g2_P",
+     "mark": "0:40",
+     "offsetSec": 0.2,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_P.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c3#8",
+   "label": "flagged",
+   "render": "exp_guyeon/c3",
+   "unit": 8,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“뭐야? 빈손이잖아?” 어부의 아내가 물었어요. “사실은 커다란 물고기를 잡았는데 마법에 걸린 왕자라길래 그냥 놓아주었지. 살려주면 은혜를 갚는다잖아.”",
+   "style": "calm",
+   "durationSec": 14.56,
+   "audio": "outputs/exp_guyeon/c3/units/0008.wav",
+   "observations": [
+    {
+     "listening": "g2_P",
+     "mark": "0:56",
+     "offsetSec": 0.1,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_P.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c3#14",
+   "label": "flagged",
+   "render": "exp_guyeon/c3",
+   "unit": 14,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“이제 행복하게 살 수 있겠어.”",
+   "style": "excited",
+   "durationSec": 1.92,
+   "audio": "outputs/exp_guyeon/c3/units/0014.wav",
+   "observations": [
+    {
+     "listening": "g2_P",
+     "mark": "2:19",
+     "offsetSec": 0.2,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_P.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c3#18",
+   "label": "flagged",
+   "render": "exp_guyeon/c3",
+   "unit": 18,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“글쎄, 이제는 큰 성에서 살고 싶대.”",
+   "style": "soft",
+   "durationSec": 3.84,
+   "audio": "outputs/exp_guyeon/c3/units/0018.wav",
+   "observations": [
+    {
+     "listening": "g2_P",
+     "mark": "3:07",
+     "offsetSec": 0.3,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_P.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c3#22",
+   "label": "flagged",
+   "render": "exp_guyeon/c3",
+   "unit": 22,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“나는 이제 왕이다! 하지만 이걸로는 충분하지 않아. 당장 그 못생긴 물고기한테 가서 황제가 되고 싶다고 말해.”",
+   "style": "excited",
+   "durationSec": 9.6,
+   "audio": "outputs/exp_guyeon/c3/units/0022.wav",
+   "observations": [
+    {
+     "listening": "g2_P",
+     "mark": "3:38",
+     "offsetSec": 0.2,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_P.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c3#33",
+   "label": "flagged",
+   "render": "exp_guyeon/c3",
+   "unit": 33,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“이제는 교황이 되고 싶다지 뭐니?”",
+   "style": "soft",
+   "durationSec": 3.04,
+   "audio": "outputs/exp_guyeon/c3/units/0033.wav",
+   "observations": [
+    {
+     "listening": "g2_P",
+     "mark": "5:27",
+     "offsetSec": 0.5,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_P.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c3#36",
+   "label": "flagged",
+   "render": "exp_guyeon/c3",
+   "unit": 36,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“뭐, 뭐라고 했어 방금?”",
+   "style": "calm",
+   "durationSec": 2.0,
+   "audio": "outputs/exp_guyeon/c3/units/0036.wav",
+   "observations": [
+    {
+     "listening": "g2_P",
+     "mark": "6:17",
+     "offsetSec": 0.4,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_P.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c2#20",
+   "label": "flagged",
+   "render": "exp_guyeon/c2",
+   "unit": 20,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "며칠이 지나자 어부의 아내가 말했어요. “여보, 아무래도 이 집은 너무 좁아. 물고기 왕자한테 가서 큰 성을 달라고 전해.”",
+   "style": "calm",
+   "durationSec": 9.76,
+   "audio": "outputs/exp_guyeon/c2/units/0020.wav",
+   "observations": [
+    {
+     "listening": "g2_Q",
+     "mark": "2:37",
+     "offsetSec": 0.7,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_Q.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c2#34",
+   "label": "flagged",
+   "render": "exp_guyeon/c2",
+   "unit": 34,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“궁전으로 가보세요. 아주머니는 이제 황제예요.”",
+   "style": "calm",
+   "durationSec": 4.24,
+   "audio": "outputs/exp_guyeon/c2/units/0034.wav",
+   "observations": [
+    {
+     "listening": "g2_Q",
+     "mark": "4:27",
+     "offsetSec": 0.8,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_Q.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c2#36",
+   "label": "flagged",
+   "render": "exp_guyeon/c2",
+   "unit": 36,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“암! 황제가 되었어!” 어부의 아내가 거드름을 피우며 대답했어요. “하지만 난 이제 교황이 되고 싶어. 그 생선한테 가서 그렇게 전해!”",
+   "style": "excited",
+   "durationSec": 11.52,
+   "audio": "outputs/exp_guyeon/c2/units/0036.wav",
+   "observations": [
+    {
+     "listening": "g2_Q",
+     "mark": "4:50",
+     "offsetSec": 0.6,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_Q.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c2#41",
+   "label": "flagged",
+   "render": "exp_guyeon/c2",
+   "unit": 41,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“이제는 교황이 되고 싶다지 뭐니?”",
+   "style": "soft",
+   "durationSec": 3.04,
+   "audio": "outputs/exp_guyeon/c2/units/0041.wav",
+   "observations": [
+    {
+     "listening": "g2_Q",
+     "mark": "5:34",
+     "offsetSec": 0.5,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_Q.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c2#44",
+   "label": "flagged",
+   "render": "exp_guyeon/c2",
+   "unit": 44,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“글쎄, 생각 좀 해보고.” 어부의 아내는 아직도 만족할 줄 몰랐어요.",
+   "style": "calm",
+   "durationSec": 5.52,
+   "audio": "outputs/exp_guyeon/c2/units/0044.wav",
+   "observations": [
+    {
+     "listening": "g2_Q",
+     "mark": "6:00",
+     "offsetSec": -0.1,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_Q.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c2#50",
+   "label": "flagged",
+   "render": "exp_guyeon/c2",
+   "unit": 50,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“왕자야! 마법에 걸린 왕자야! 내가 바다에 빠져 죽기 전에 얼른 나와보렴! 글쎄, 내 아내가 참 염치 없는 부탁을 하는구나.”",
+   "style": "excited",
+   "durationSec": 9.52,
+   "audio": "outputs/exp_guyeon/c2/units/0050.wav",
+   "observations": [
+    {
+     "listening": "g2_Q",
+     "mark": "6:52",
+     "offsetSec": 0.9,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_Q.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_guyeon/c2#53",
+   "label": "flagged",
+   "render": "exp_guyeon/c2",
+   "unit": 53,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "“어서 가보세요. 낡은 오두막집에 아주머니가 있을 거예요.”",
+   "style": "calm",
+   "durationSec": 4.56,
+   "audio": "outputs/exp_guyeon/c2/units/0053.wav",
+   "observations": [
+    {
+     "listening": "g2_Q",
+     "mark": "7:10",
+     "offsetSec": 1.1,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "톤이 튀는 곳",
+     "sure": false,
+     "file": "exp_guyeon/listen_c3/story_Q.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_character/r1b#20",
+   "label": "flagged",
+   "render": "exp_character/r1b",
+   "unit": 20,
+   "kind": "not_my_voice",
+   "sure": true,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "“나는 이제 왕이다! 하지만 이걸로는 충분하지 않아. 당장 그 못생긴 물고기한테 가서 황제가 되고 싶다고 말해.”",
+   "style": "excited",
+   "durationSec": 7.92,
+   "audio": "outputs/exp_character/r1b/units/0020.wav",
+   "observations": [
+    {
+     "listening": "sp_X",
+     "mark": "3:37",
+     "offsetSec": 0.9,
+     "atBoundary": true,
+     "kind": "not_my_voice",
+     "quote": "다른 목소리가 되어요",
+     "sure": true,
+     "file": "exp_split/listen/story_X.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_split/b2#31",
+   "label": "flagged",
+   "render": "exp_split/b2",
+   "unit": 31,
+   "kind": "not_my_voice",
+   "sure": true,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "“아저씨, 집으로 가보세요. 아주머니가 성문 앞에 서 있을 거예요.”",
+   "style": "calm",
+   "durationSec": 4.72,
+   "audio": "outputs/exp_split/b2/units/0031.wav",
+   "observations": [
+    {
+     "listening": "sp_Y",
+     "mark": "3:21",
+     "offsetSec": 1.2,
+     "atBoundary": true,
+     "kind": "not_my_voice",
+     "quote": "X보다 더 심하게 다른 목소리",
+     "sure": true,
+     "file": "exp_split/listen/story_Y.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_split/b1#6",
+   "label": "flagged",
+   "render": "exp_split/b1",
+   "unit": 6,
+   "kind": "not_my_voice",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "마음씨 착한 어부는 물고기를 놓아주었어요.",
+   "style": "calm",
+   "durationSec": 4.16,
+   "audio": "outputs/exp_split/b1/units/0006.wav",
+   "observations": [
+    {
+     "listening": "sp_Z",
+     "mark": "0:42",
+     "offsetSec": 4.1,
+     "atBoundary": false,
+     "kind": "not_my_voice",
+     "quote": "완전 다른 목소리요",
+     "sure": false,
+     "file": "exp_split/listen/story_Z.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_split/b1#7",
+   "label": "flagged",
+   "render": "exp_split/b1",
+   "unit": 7,
+   "kind": "narration_dragged",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "“고마워요. 이 은혜를 꼭 갚을게요.” 물고기는 인사를 하며 유유히 헤엄쳐갔어요.",
+   "style": "calm",
+   "durationSec": 6.56,
+   "audio": "outputs/exp_split/b1/units/0007.wav",
+   "observations": [
+    {
+     "listening": "sp_Z",
+     "mark": "0:47",
+     "offsetSec": 4.0,
+     "atBoundary": false,
+     "kind": "narration_dragged",
+     "quote": "서술이 인물 말투에 끌려감",
+     "sure": false,
+     "file": "exp_split/listen/story_Z.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_split/b1#9",
+   "label": "flagged",
+   "render": "exp_split/b1",
+   "unit": 9,
+   "kind": "narration_dragged",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "“뭐야? 빈손이잖아?” 어부의 아내가 물었어요.",
+   "style": "excited",
+   "durationSec": 4.08,
+   "audio": "outputs/exp_split/b1/units/0009.wav",
+   "observations": [
+    {
+     "listening": "sp_Z",
+     "mark": "0:56",
+     "offsetSec": 1.6,
+     "atBoundary": true,
+     "kind": "narration_dragged",
+     "quote": "서술이 인물 말투에 끌려감",
+     "sure": false,
+     "file": "exp_split/listen/story_Z.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_shared/s2#22",
+   "label": "flagged",
+   "render": "exp_shared/s2",
+   "unit": 22,
+   "kind": "voice_or_tone",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "“아주머니가 또 원하는 게 뭐죠?”",
+   "style": "calm",
+   "durationSec": 2.24,
+   "audio": "outputs/exp_shared/s2/units/0022.wav",
+   "observations": [
+    {
+     "listening": "sh_K",
+     "mark": "4:10",
+     "offsetSec": 1.0,
+     "atBoundary": true,
+     "kind": "voice_or_tone",
+     "quote": "내 목소리 아닌 구간이자 튀는 곳(같은 시각)",
+     "sure": false,
+     "file": "exp_shared/listen/story_K.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_shared/s2#25",
+   "label": "flagged",
+   "render": "exp_shared/s2",
+   "unit": 25,
+   "kind": "voice_or_tone",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "“암! 황제가 되었어!” 어부의 아내가 거드름을 피우며 대답했어요. “하지만 난 이제 교황이 되고 싶어. 그 생선한테 가서 그렇게 전해!”",
+   "style": "excited",
+   "durationSec": 11.36,
+   "audio": "outputs/exp_shared/s2/units/0025.wav",
+   "observations": [
+    {
+     "listening": "sh_K",
+     "mark": "4:45",
+     "offsetSec": 1.8,
+     "atBoundary": true,
+     "kind": "voice_or_tone",
+     "quote": "내 목소리 아닌 구간이자 튀는 곳(같은 시각)",
+     "sure": false,
+     "file": "exp_shared/listen/story_K.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_character/r1b#6",
+   "label": "flagged",
+   "render": "exp_character/r1b",
+   "unit": 6,
+   "kind": "not_my_voice",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "“뭐야? 빈손이잖아?” 어부의 아내가 물었어요.",
+   "style": "excited",
+   "durationSec": 4.08,
+   "audio": "outputs/exp_character/r1b/units/0006.wav",
+   "observations": [
+    {
+     "listening": "sh_L",
+     "mark": "0:56",
+     "offsetSec": 0.5,
+     "atBoundary": true,
+     "kind": "not_my_voice",
+     "quote": "내 목소리 아닌 구간",
+     "sure": false,
+     "file": "exp_shared/listen/story_L.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_shared/s1#8",
+   "label": "flagged",
+   "render": "exp_shared/s1",
+   "unit": 8,
+   "kind": "voice_or_tone",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "그러자 어부의 아내가 소리쳤죠.",
+   "style": "calm",
+   "durationSec": 2.16,
+   "audio": "outputs/exp_shared/s1/units/0008.wav",
+   "observations": [
+    {
+     "listening": "sh_M",
+     "mark": "1:11",
+     "offsetSec": 0.8,
+     "atBoundary": true,
+     "kind": "voice_or_tone",
+     "quote": "내 목소리 아닌 구간이자 튀는 곳(같은 시각)",
+     "sure": false,
+     "file": "exp_shared/listen/story_M.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_shared/s1#13",
+   "label": "flagged",
+   "render": "exp_shared/s1",
+   "unit": 13,
+   "kind": "voice_or_tone",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "“흥! 이것만으론 행복할 수 없어. 어디 생각 좀 해봅시다.”",
+   "style": "excited",
+   "durationSec": 4.96,
+   "audio": "outputs/exp_shared/s1/units/0013.wav",
+   "observations": [
+    {
+     "listening": "sh_M",
+     "mark": "2:29",
+     "offsetSec": 0.6,
+     "atBoundary": true,
+     "kind": "voice_or_tone",
+     "quote": "내 목소리 아닌 구간이자 튀는 곳(같은 시각)",
+     "sure": false,
+     "file": "exp_shared/listen/story_M.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_shared/s1#33",
+   "label": "flagged",
+   "render": "exp_shared/s1",
+   "unit": 33,
+   "kind": "voice_or_tone",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "“바로 저거야! 여보, 어서 그 멍청한 생선한테 가서 전해! 해와 달을 뜨고 지게 하는 하느님이 되고 싶다고 말이야!”",
+   "style": "excited",
+   "durationSec": 9.04,
+   "audio": "outputs/exp_shared/s1/units/0033.wav",
+   "observations": [
+    {
+     "listening": "sh_M",
+     "mark": "6:06",
+     "offsetSec": 0.6,
+     "atBoundary": true,
+     "kind": "voice_or_tone",
+     "quote": "내 목소리 아닌 구간이자 튀는 곳(같은 시각)",
+     "sure": false,
+     "file": "exp_shared/listen/story_M.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_shared/s1#34",
+   "label": "flagged",
+   "render": "exp_shared/s1",
+   "unit": 34,
+   "kind": "voice_or_tone",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "core",
+   "text": "“뭐, 뭐라고 했어 방금?”",
+   "style": "calm",
+   "durationSec": 2.0,
+   "audio": "outputs/exp_shared/s1/units/0034.wav",
+   "observations": [
+    {
+     "listening": "sh_M",
+     "mark": "6:16",
+     "offsetSec": 0.7,
+     "atBoundary": true,
+     "kind": "voice_or_tone",
+     "quote": "내 목소리 아닌 구간이자 튀는 곳(같은 시각)",
+     "sure": false,
+     "file": "exp_shared/listen/story_M.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_v3/picked/fisherman#27",
+   "label": "flagged",
+   "render": "exp_v3/picked/fisherman",
+   "unit": 27,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“아주머니가 또 원하는 게 뭐죠?”",
+   "style": "calm",
+   "durationSec": 2.0,
+   "audio": "outputs/exp_v3/fisherman_2/units/0027.wav",
+   "observations": [
+    {
+     "listening": "v3_fisherman_A",
+     "mark": "4:16",
+     "offsetSec": 0.8,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "A의 튀는 구간 4:16",
+     "sure": false,
+     "file": "exp_v3/listen/fisherman_A.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_v3/picked/fisherman#29",
+   "label": "flagged",
+   "render": "exp_v3/picked/fisherman",
+   "unit": 29,
+   "kind": "assembly_volume",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“궁전으로 가보세요. 아주머니는 이제 황제예요.”",
+   "style": "calm",
+   "durationSec": 4.08,
+   "audio": "outputs/exp_v3/fisherman_2/units/0029.wav",
+   "observations": [
+    {
+     "listening": "v3_fisherman_A",
+     "mark": "4:29",
+     "offsetSec": 3.5,
+     "atBoundary": false,
+     "kind": "assembly_volume",
+     "quote": "갑자기 소리 작아짐",
+     "sure": false,
+     "file": "exp_v3/listen/fisherman_A.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_v3/picked/fisherman#36",
+   "label": "flagged",
+   "render": "exp_v3/picked/fisherman",
+   "unit": 36,
+   "kind": "assembly_volume",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“이제는 교황이 되고 싶다지 뭐니?”",
+   "style": "calm",
+   "durationSec": 2.4,
+   "audio": "outputs/exp_v3/fisherman_1/units/0036.wav",
+   "observations": [
+    {
+     "listening": "v3_fisherman_A",
+     "mark": "5:30",
+     "offsetSec": 1.2,
+     "atBoundary": true,
+     "kind": "assembly_volume",
+     "quote": "소리작아짐",
+     "sure": false,
+     "file": "exp_v3/listen/fisherman_A.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_v3/fisherman_1#15",
+   "label": "flagged",
+   "render": "exp_v3/fisherman_1",
+   "unit": 15,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "어부가 집에 돌아와 보니 작고 허름한 오두막집은 온데간데 없고 깨끗한 새집이 한 채 서 있었어요. 어부와 아내는 집 안으로 들어갔어요. 거실과 침실, 부엌까지 잘 꾸며져 있었죠. 어부가 감탄하며 말했어요. “이제 행복하게 살 수 있겠어.”",
+   "style": "calm",
+   "durationSec": 21.36,
+   "audio": "outputs/exp_v3/fisherman_1/units/0015.wav",
+   "observations": [
+    {
+     "listening": "v3_fisherman_B",
+     "mark": "2:16",
+     "offsetSec": 12.0,
+     "atBoundary": false,
+     "kind": "tone_jump",
+     "quote": "B의 튀는 구간 2:16",
+     "sure": false,
+     "file": "exp_v3/listen/fisherman_B.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_v3/picked/masteraway#4",
+   "label": "flagged",
+   "render": "exp_v3/picked/masteraway",
+   "unit": 4,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“이 덩치만 큰 녀석아, 네가 날 잡아먹을 수 있을 거 같아?”",
+   "style": "excited",
+   "durationSec": 4.08,
+   "audio": "outputs/exp_v3/masteraway_2/units/0004.wav",
+   "observations": [
+    {
+     "listening": "v3_masteraway_B",
+     "mark": "0:27",
+     "offsetSec": -0.1,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "B의 튀는 구간 0:27",
+     "sure": false,
+     "file": "exp_v3/listen/masteraway_B.wav"
+    }
+   ]
+  },
+  {
+   "id": "exp_v3/picked/redhood#13",
+   "label": "flagged",
+   "render": "exp_v3/picked/redhood",
+   "unit": 13,
+   "kind": "tone_jump",
+   "sure": false,
+   "pairedWith": null,
+   "tier": "reserve",
+   "text": "“할머니, 빨간 모자예요. 할머니께 드리려고 케이크랑 포도주를 가져왔어요.” 늑대가 빨간 모자의 목소리를 흉내내어 대답했어요.",
+   "style": "calm",
+   "durationSec": 10.56,
+   "audio": "outputs/exp_v3/redhood_2/units/0013.wav",
+   "observations": [
+    {
+     "listening": "v3_redhood_A",
+     "mark": "2:05",
+     "offsetSec": 1.7,
+     "atBoundary": true,
+     "kind": "tone_jump",
+     "quote": "A의 튀는 구간 2:05",
+     "sure": false,
+     "file": "exp_v3/listen/redhood_A.wav"
+    }
+   ]
+  },
+  {
+   "id": "demo_s4/fisherman_calm#25",
+   "label": "normal",
+   "render": "demo_s4/fisherman_calm",
+   "unit": 25,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "demo_s4/fisherman_calm#33",
+   "tier": "reserve",
+   "text": "돌아와 보니 궁전은 황금으로 뒤덮여 있었어요. 군인들은 넓은 정원에서 행진을 하고 귀족들은 궁전 안을 느긋하게 걸어 다녔지요. 어부는 다급히 아내에게 달려갔어요. “여보! 정말 황제가 된 거요?”",
+   "style": "calm",
+   "durationSec": 16.88,
+   "audio": "outputs/demo_s4/fisherman_calm/units/0025.wav",
+   "observations": []
+  },
+  {
+   "id": "demo_s4/fisherman_calm#27",
+   "label": "normal",
+   "render": "demo_s4/fisherman_calm",
+   "unit": 27,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "demo_s4/fisherman_calm#36",
+   "tier": "reserve",
+   "text": "어부는 무거운 마음으로 다시 바다로 갔어요. 바다는 칠흑 같은 어둠에 휩싸여 있었어요. 금방이라도 폭풍이 몰아닥칠 것 같았지요. 어부는 두려움에 떨며 물고기를 불렀어요. “왕자야! 마법에 걸린 왕자야! 무서우니까! 무서우니까 빨리 나와 내 얘기를 들어줘! 내 아내가 참 염치 없는 부탁을 하는구나.”",
+   "style": "calm",
+   "durationSec": 24.32,
+   "audio": "outputs/demo_s4/fisherman_calm/units/0027.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c2#38",
+   "label": "normal",
+   "render": "exp_guyeon/c2",
+   "unit": 38,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_guyeon/c2#2",
+   "tier": "core",
+   "text": "바다는 칠흑 같은 어둠에 휩싸여 있었어요. 금방이라도 폭풍이 몰아닥칠 것 같았지요.",
+   "style": "calm",
+   "durationSec": 7.12,
+   "audio": "outputs/exp_guyeon/c2/units/0038.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c2#42",
+   "label": "normal",
+   "render": "exp_guyeon/c2",
+   "unit": 42,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_guyeon/c2#15",
+   "tier": "reserve",
+   "text": "“궁전으로 가보세요. 아주머니는 이제 교황이 되었어요.”",
+   "style": "calm",
+   "durationSec": 5.12,
+   "audio": "outputs/exp_guyeon/c2/units/0042.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c2#48",
+   "label": "normal",
+   "render": "exp_guyeon/c2",
+   "unit": 48,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_guyeon/c2#18",
+   "tier": "core",
+   "text": "“내가 하느님이 되고 싶다니까!”",
+   "style": "excited",
+   "durationSec": 2.32,
+   "audio": "outputs/exp_guyeon/c2/units/0048.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c2#46",
+   "label": "normal",
+   "render": "exp_guyeon/c2",
+   "unit": 46,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_guyeon/c2#29",
+   "tier": "reserve",
+   "text": "“바로 저거야! 여보, 어서 그 멍청한 생선한테 가서 전해! 해와 달을 뜨고 지게 하는 하느님이 되고 싶다고 말이야!”",
+   "style": "excited",
+   "durationSec": 9.44,
+   "audio": "outputs/exp_guyeon/c2/units/0046.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c2#13",
+   "label": "normal",
+   "render": "exp_guyeon/c2",
+   "unit": 13,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_guyeon/c2#31",
+   "tier": "reserve",
+   "text": "“왕자야! 마법에 걸린 왕자야! 이리 나와서 내 말 좀 들어줘! 내 아내가 참 염치없는 부탁을 하는구나!”",
+   "style": "excited",
+   "durationSec": 8.8,
+   "audio": "outputs/exp_guyeon/c2/units/0013.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c2#32",
+   "label": "normal",
+   "render": "exp_guyeon/c2",
+   "unit": 32,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_guyeon/c2#40",
+   "tier": "reserve",
+   "text": "“아주머니가 또 원하는 게 뭐죠?”",
+   "style": "calm",
+   "durationSec": 2.16,
+   "audio": "outputs/exp_guyeon/c2/units/0032.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c2#51",
+   "label": "normal",
+   "render": "exp_guyeon/c2",
+   "unit": 51,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_guyeon/c2#47",
+   "tier": "core",
+   "text": "“아주머니가 원하는 게 대체 뭐죠?”",
+   "style": "calm",
+   "durationSec": 2.72,
+   "audio": "outputs/exp_guyeon/c2/units/0051.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c2#10",
+   "label": "normal",
+   "render": "exp_guyeon/c2",
+   "unit": 10,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_guyeon/c2#54",
+   "tier": "core",
+   "text": "그러자 어부의 아내가 소리쳤죠.",
+   "style": "calm",
+   "durationSec": 2.8,
+   "audio": "outputs/exp_guyeon/c2/units/0010.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c2#12",
+   "label": "normal",
+   "render": "exp_guyeon/c2",
+   "unit": 12,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_guyeon/c2#20",
+   "tier": "reserve",
+   "text": "어부는 바닷가로 갔어요. 어부가 바닷가로 가보니 바닷물이 초록빛으로 변해 있었어요. 어부는 바다를 향해 외쳤어요.",
+   "style": "calm",
+   "durationSec": 10.08,
+   "audio": "outputs/exp_guyeon/c2/units/0012.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c2#8",
+   "label": "normal",
+   "render": "exp_guyeon/c2",
+   "unit": 8,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_guyeon/c2#34",
+   "tier": "reserve",
+   "text": "“뭐야? 빈손이잖아?” 어부의 아내가 물었어요.",
+   "style": "calm",
+   "durationSec": 4.08,
+   "audio": "outputs/exp_guyeon/c2/units/0008.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c2#11",
+   "label": "normal",
+   "render": "exp_guyeon/c2",
+   "unit": 11,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_guyeon/c2#36",
+   "tier": "reserve",
+   "text": "“그럼 당장 바닷가로 가서 그 왕자한테 전해. 쓰러져가는 이 집 대신 좋은 집을 달라고 말이야.”",
+   "style": "excited",
+   "durationSec": 6.4,
+   "audio": "outputs/exp_guyeon/c2/units/0011.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c2#24",
+   "label": "normal",
+   "render": "exp_guyeon/c2",
+   "unit": 24,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_guyeon/c2#41",
+   "tier": "reserve",
+   "text": "“글쎄, 이제는 큰 성에서 살고 싶대.”",
+   "style": "soft",
+   "durationSec": 3.84,
+   "audio": "outputs/exp_guyeon/c2/units/0024.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c2#25",
+   "label": "normal",
+   "render": "exp_guyeon/c2",
+   "unit": 25,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_guyeon/c2#44",
+   "tier": "reserve",
+   "text": "“아저씨, 집으로 가보세요. 아주머니가 성문 앞에 서 있을 거예요.”",
+   "style": "calm",
+   "durationSec": 5.28,
+   "audio": "outputs/exp_guyeon/c2/units/0025.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c2#3",
+   "label": "normal",
+   "render": "exp_guyeon/c2",
+   "unit": 3,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_guyeon/c2#50",
+   "tier": "reserve",
+   "text": "“걸려들었다!”",
+   "style": "excited",
+   "durationSec": 1.04,
+   "audio": "outputs/exp_guyeon/c2/units/0003.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c2#52",
+   "label": "normal",
+   "render": "exp_guyeon/c2",
+   "unit": 52,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_guyeon/c2#53",
+   "tier": "core",
+   "text": "“세상에, 하느님이 되고 싶다는구나!”",
+   "style": "calm",
+   "durationSec": 2.88,
+   "audio": "outputs/exp_guyeon/c2/units/0052.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c1#3",
+   "label": "normal",
+   "render": "exp_guyeon/c1",
+   "unit": 3,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_guyeon/c1#16",
+   "tier": "reserve",
+   "text": "“걸려들었다!”",
+   "style": "excited",
+   "durationSec": 1.04,
+   "audio": "outputs/exp_guyeon/c1/units/0003.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c1#43",
+   "label": "normal",
+   "render": "exp_guyeon/c1",
+   "unit": 43,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_guyeon/c1#32",
+   "tier": "reserve",
+   "text": "“바로 저거야! 여보, 어서 그 멍청한 생선한테 가서 전해! 해와 달을 뜨고 지게 하는 하느님이 되고 싶다고 말이야!”",
+   "style": "excited",
+   "durationSec": 9.44,
+   "audio": "outputs/exp_guyeon/c1/units/0043.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c1#22",
+   "label": "normal",
+   "render": "exp_guyeon/c1",
+   "unit": 22,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_guyeon/c1#38",
+   "tier": "core",
+   "text": "“글쎄, 이제는 큰 성에서 살고 싶대.”",
+   "style": "soft",
+   "durationSec": 3.84,
+   "audio": "outputs/exp_guyeon/c1/units/0022.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c1#28",
+   "label": "normal",
+   "render": "exp_guyeon/c1",
+   "unit": 28,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_guyeon/c1#44",
+   "tier": "reserve",
+   "text": "“아주머니가 또 원하는 게 뭐죠?”",
+   "style": "calm",
+   "durationSec": 2.16,
+   "audio": "outputs/exp_guyeon/c1/units/0028.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c1#26",
+   "label": "normal",
+   "render": "exp_guyeon/c1",
+   "unit": 26,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_guyeon/c1#46",
+   "tier": "reserve",
+   "text": "어부가 돌아와 보니 성은 궁전으로 변해 있었어요. 문 앞에는 보초병들이 줄지어 서 있었지요. 아내는 대리석으로 만든 의자에 앉아 소리쳤어요. “나는 이제 왕이다! 하지만 이걸로는 충분하지 않아. 당장 그 못생긴 물고기한테 가서 황제가 되고 싶다고 말해.”",
+   "style": "calm",
+   "durationSec": 21.68,
+   "audio": "outputs/exp_guyeon/c1/units/0026.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c1#30",
+   "label": "normal",
+   "render": "exp_guyeon/c1",
+   "unit": 30,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_guyeon/c1#49",
+   "tier": "reserve",
+   "text": "“궁전으로 가보세요. 아주머니는 이제 황제예요.”",
+   "style": "calm",
+   "durationSec": 4.24,
+   "audio": "outputs/exp_guyeon/c1/units/0030.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c3#30",
+   "label": "normal",
+   "render": "exp_guyeon/c3",
+   "unit": 30,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_guyeon/c3#2",
+   "tier": "reserve",
+   "text": "바다는 칠흑 같은 어둠에 휩싸여 있었어요. 금방이라도 폭풍이 몰아닥칠 것 같았지요.",
+   "style": "calm",
+   "durationSec": 7.12,
+   "audio": "outputs/exp_guyeon/c3/units/0030.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c3#37",
+   "label": "normal",
+   "render": "exp_guyeon/c3",
+   "unit": 37,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_guyeon/c3#3",
+   "tier": "reserve",
+   "text": "“내가 하느님이 되고 싶다니까!”",
+   "style": "excited",
+   "durationSec": 2.32,
+   "audio": "outputs/exp_guyeon/c3/units/0037.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c3#9",
+   "label": "normal",
+   "render": "exp_guyeon/c3",
+   "unit": 9,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_guyeon/c3#6",
+   "tier": "reserve",
+   "text": "그러자 어부의 아내가 소리쳤죠.",
+   "style": "calm",
+   "durationSec": 2.8,
+   "audio": "outputs/exp_guyeon/c3/units/0009.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c3#40",
+   "label": "normal",
+   "render": "exp_guyeon/c3",
+   "unit": 40,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_guyeon/c3#8",
+   "tier": "reserve",
+   "text": "“아주머니가 원하는 게 대체 뭐죠?” “세상에, 하느님이 되고 싶다는구나!” “어서 가보세요. 낡은 오두막집에 아주머니가 있을 거예요.” 물고기는 바다 밑으로 사라졌지요.",
+   "style": "calm",
+   "durationSec": 14.88,
+   "audio": "outputs/exp_guyeon/c3/units/0040.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c3#10",
+   "label": "normal",
+   "render": "exp_guyeon/c3",
+   "unit": 10,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_guyeon/c3#14",
+   "tier": "reserve",
+   "text": "“그럼 당장 바닷가로 가서 그 왕자한테 전해. 쓰러져가는 이 집 대신 좋은 집을 달라고 말이야.”",
+   "style": "excited",
+   "durationSec": 6.4,
+   "audio": "outputs/exp_guyeon/c3/units/0010.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c3#39",
+   "label": "normal",
+   "render": "exp_guyeon/c3",
+   "unit": 39,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_guyeon/c3#22",
+   "tier": "reserve",
+   "text": "“왕자야! 마법에 걸린 왕자야! 내가 바다에 빠져 죽기 전에 얼른 나와보렴! 글쎄, 내 아내가 참 염치 없는 부탁을 하는구나.”",
+   "style": "excited",
+   "durationSec": 9.52,
+   "audio": "outputs/exp_guyeon/c3/units/0039.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_guyeon/c3#25",
+   "label": "normal",
+   "render": "exp_guyeon/c3",
+   "unit": 25,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_guyeon/c3#36",
+   "tier": "reserve",
+   "text": "“아주머니가 또 원하는 게 뭐죠?”",
+   "style": "calm",
+   "durationSec": 2.16,
+   "audio": "outputs/exp_guyeon/c3/units/0025.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_character/r1b#9",
+   "label": "normal",
+   "render": "exp_character/r1b",
+   "unit": 9,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_character/r1b#20",
+   "tier": "core",
+   "text": "“그럼 당장 바닷가로 가서 그 왕자한테 전해. 쓰러져가는 이 집 대신 좋은 집을 달라고 말이야.”",
+   "style": "excited",
+   "durationSec": 7.44,
+   "audio": "outputs/exp_character/r1b/units/0009.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_character/r1b#13",
+   "label": "normal",
+   "render": "exp_character/r1b",
+   "unit": 13,
+   "kind": null,
+   "sure": true,
+   "pairedWith": "exp_character/r1b#6",
+   "tier": "core",
+   "text": "“흥! 이것만으론 행복할 수 없어. 어디 생각 좀 해봅시다.”",
+   "style": "excited",
+   "durationSec": 5.04,
+   "audio": "outputs/exp_character/r1b/units/0013.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_split/b2#63",
+   "label": "normal",
+   "render": "exp_split/b2",
+   "unit": 63,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_split/b2#31",
+   "tier": "core",
+   "text": "“어서 가보세요. 낡은 오두막집에 아주머니가 있을 거예요.”",
+   "style": "calm",
+   "durationSec": 4.64,
+   "audio": "outputs/exp_split/b2/units/0063.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_split/b1#15",
+   "label": "normal",
+   "render": "exp_split/b1",
+   "unit": 15,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_split/b1#6",
+   "tier": "core",
+   "text": "잠시 후 물고기가 바다 위로 고개를 내밀었어요.",
+   "style": "calm",
+   "durationSec": 4.16,
+   "audio": "outputs/exp_split/b1/units/0015.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_split/b1#28",
+   "label": "normal",
+   "render": "exp_split/b1",
+   "unit": 28,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_split/b1#7",
+   "tier": "core",
+   "text": "“왕자야! 마법에 걸린 왕자야! 내 아내가 참 염치없는 부탁을 하는구나.”",
+   "style": "calm",
+   "durationSec": 6.32,
+   "audio": "outputs/exp_split/b1/units/0028.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_split/b1#23",
+   "label": "normal",
+   "render": "exp_split/b1",
+   "unit": 23,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_split/b1#9",
+   "tier": "core",
+   "text": "“흥! 이것만으론 행복할 수 없어. 어디 생각 좀 해봅시다.”",
+   "style": "excited",
+   "durationSec": 5.04,
+   "audio": "outputs/exp_split/b1/units/0023.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_shared/s2#34",
+   "label": "normal",
+   "render": "exp_shared/s2",
+   "unit": 34,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_shared/s2#22",
+   "tier": "core",
+   "text": "“뭐, 뭐라고 했어 방금?”",
+   "style": "calm",
+   "durationSec": 2.0,
+   "audio": "outputs/exp_shared/s2/units/0034.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_shared/s2#20",
+   "label": "normal",
+   "render": "exp_shared/s2",
+   "unit": 20,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_shared/s2#25",
+   "tier": "core",
+   "text": "“나는 이제 왕이다! 하지만 이걸로는 충분하지 않아. 당장 그 못생긴 물고기한테 가서 황제가 되고 싶다고 말해.”",
+   "style": "excited",
+   "durationSec": 9.36,
+   "audio": "outputs/exp_shared/s2/units/0020.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_shared/s1#14",
+   "label": "normal",
+   "render": "exp_shared/s1",
+   "unit": 14,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_shared/s1#8",
+   "tier": "core",
+   "text": "며칠이 지나자 어부의 아내가 말했어요.",
+   "style": "calm",
+   "durationSec": 3.2,
+   "audio": "outputs/exp_shared/s1/units/0014.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_shared/s1#6",
+   "label": "normal",
+   "render": "exp_shared/s1",
+   "unit": 6,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_shared/s1#13",
+   "tier": "core",
+   "text": "“뭐야? 빈손이잖아?” 어부의 아내가 물었어요.",
+   "style": "excited",
+   "durationSec": 4.16,
+   "audio": "outputs/exp_shared/s1/units/0006.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_shared/s1#20",
+   "label": "normal",
+   "render": "exp_shared/s1",
+   "unit": 20,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_shared/s1#33",
+   "tier": "core",
+   "text": "“나는 이제 왕이다! 하지만 이걸로는 충분하지 않아. 당장 그 못생긴 물고기한테 가서 황제가 되고 싶다고 말해.”",
+   "style": "excited",
+   "durationSec": 8.96,
+   "audio": "outputs/exp_shared/s1/units/0020.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_shared/s1#22",
+   "label": "normal",
+   "render": "exp_shared/s1",
+   "unit": 22,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_shared/s1#34",
+   "tier": "core",
+   "text": "“아주머니가 또 원하는 게 뭐죠?”",
+   "style": "calm",
+   "durationSec": 2.4,
+   "audio": "outputs/exp_shared/s1/units/0022.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_v3/picked/fisherman#43",
+   "label": "normal",
+   "render": "exp_v3/picked/fisherman",
+   "unit": 43,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_v3/picked/fisherman#27",
+   "tier": "reserve",
+   "text": "“뭐, 뭐라고 했어 방금?”",
+   "style": "calm",
+   "durationSec": 1.92,
+   "audio": "outputs/exp_v3/fisherman_2/units/0043.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_v3/fisherman_1#26",
+   "label": "normal",
+   "render": "exp_v3/fisherman_1",
+   "unit": 26,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_v3/fisherman_1#15",
+   "tier": "reserve",
+   "text": "어부는 할 수 없이 또 바다로 갔어요. 시커먼 바닷물은 부글부글 끓어오르고 그 위로 먹구름이 새까맣게 부풀어오르고 세찬 바람까지 불었지요. “왕자야! 마법에 걸린 왕자야! 이리 나와서 내 말 좀 들어줘! 내 아내가 참 염치없는 부탁을 하는구나.”",
+   "style": "calm",
+   "durationSec": 22.24,
+   "audio": "outputs/exp_v3/fisherman_1/units/0026.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_v3/picked/masteraway#13",
+   "label": "normal",
+   "render": "exp_v3/picked/masteraway",
+   "unit": 13,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_v3/picked/masteraway#4",
+   "tier": "reserve",
+   "text": "“멍멍아, 너는 내 친구들 중에서 가장 커.”",
+   "style": "excited",
+   "durationSec": 3.76,
+   "audio": "outputs/exp_v3/masteraway_2/units/0013.wav",
+   "observations": []
+  },
+  {
+   "id": "exp_v3/picked/redhood#25",
+   "label": "normal",
+   "render": "exp_v3/picked/redhood",
+   "unit": 25,
+   "kind": null,
+   "sure": false,
+   "pairedWith": "exp_v3/picked/redhood#13",
+   "tier": "reserve",
+   "text": "“얘야, 내 목소리를 잘 들을 수 있지.” 늑대가 낮은 목소리로 웅얼거렸어요. “그래야 너를 잘 볼 수 있지.”",
+   "style": "calm",
+   "durationSec": 8.64,
+   "audio": "outputs/exp_v3/redhood_2/units/0025.wav",
+   "observations": []
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+{
+  "version": 2,
+  "speakers": [
+    {
+      "id": "p_sohee",
+      "source": "preset",
+      "preset": "Sohee",
+      "description": null,
+      "note": "여, 한국어 모국어 프리셋 — 감정이 바뀌어도 동일인이 유지되는 기준 화자"
+    },
+    {
+      "id": "d_mom30",
+      "source": "design",
+      "preset": null,
+      "description": "A Korean woman in her early 30s, a young mother. Warm, gentle, mid-pitched voice with clear standard Seoul pronunciation.",
+      "note": "여, 30대 엄마"
+    },
+    {
+      "id": "d_dad30",
+      "source": "design",
+      "preset": null,
+      "description": "A Korean man in his mid 30s, a young father. Friendly, slightly low baritone voice with clear standard Seoul pronunciation.",
+      "note": "남, 30대 아빠"
+    },
+    {
+      "id": "d_grandma60",
+      "source": "design",
+      "preset": null,
+      "description": "A Korean grandmother in her late 60s. Kind, soft, slightly husky voice, speaking a little slowly with standard Korean pronunciation.",
+      "note": "여, 60대 할머니 — 조부모 시나리오"
+    },
+    {
+      "id": "s1",
+      "source": "recorded",
+      "preset": null,
+      "description": null,
+      "note": "실제 화자 — 맥북 내장 마이크 조건 A"
+    },
+    {
+      "id": "s1b",
+      "source": "recorded",
+      "preset": null,
+      "description": null,
+      "note": "s1과 같은 화자 — 신남 참조만 30cm 거리에서 재녹음"
+    },
+    {
+      "id": "s2_phone",
+      "source": "recorded",
+      "preset": null,
+      "description": null,
+      "note": "s1과 같은 화자 — 폰 음성메모, 조건 B, 약 30cm"
+    },
+    {
+      "id": "s3_phone",
+      "source": "recorded",
+      "preset": null,
+      "description": null,
+      "note": "s1과 같은 화자 — 폰 음성메모, 조건 B, 약 30cm. calm, excited, soft를 같은 자리에서 녹음. 에어컨 히터가 켜져 저역 잡음이 있다",
+      "scripts": {
+        "soft": "어두운 숲에 혼자 남은 아기 토끼는 그만 눈물이 났어요. 아무리 불러도 대답이 없고 바람 소리만 들려왔어요. 토끼는 무서워서 작은 목소리로 엄마를 불렀답니다."
+      }
+    },
+    {
+      "id": "s4_phone",
+      "source": "recorded",
+      "preset": null,
+      "description": null,
+      "note": "s3_phone과 같은 자리와 대본, 에어컨 히터를 끄고 다시 녹음",
+      "scripts": {
+        "soft": "어두운 숲에 혼자 남은 아기 토끼는 그만 눈물이 났어요. 아무리 불러도 대답이 없고 바람 소리만 들려왔어요. 토끼는 무서워서 작은 목소리로 엄마를 불렀답니다."
+      }
+    },
+    {
+      "id": "s5_phone",
+      "source": "recorded",
+      "preset": null,
+      "description": null,
+      "note": "s4_phone과 같은 대본을 울리지 않는 방에서 폰 10cm로 다시 녹음하고 deep을 더함. child는 제품 대본(반말) 그대로 녹음(B_child), 존댓말 재녹음(B_child_yo)은 먹먹해서 쓰지 않음",
+      "scripts": {
+        "soft": "어두운 숲에 혼자 남은 아기 토끼는 그만 눈물이 났어요. 아무리 불러도 대답이 없고 바람 소리만 들려왔어요. 토끼는 무서워서 작은 목소리로 엄마를 불렀답니다.",
+        "deep": "허허, 오늘도 바다가 참 잔잔하구나. 나는 이 바닷가에서 평생 그물을 던지며 살았단다. 얘야, 무서워하지 말고 이리 가까이 오너라. 내가 재미있는 이야기를 하나 들려주마."
+      }
+    }
+  ]
+}

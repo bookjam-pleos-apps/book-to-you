@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "source": "청취 기록. 시각은 사용자가 적은 값(±1~2초). 경로는 gpu/spike/outputs 기준. 화자 s4_phone, 이야기 fisherman 외에는 story에 적는다.",
+  "kinds": {
+    "tone_jump": "\"톤이나 목소리가 튀는 곳\" 질문에 적은 시각",
+    "not_my_voice": "\"내 목소리 아닌 구간\" 또는 \"다른 목소리\"로 적은 시각",
+    "voice_or_tone": "\"내 목소리 아닌 구간\"과 \"튀는 곳\"에 같은 시각을 적어 둘 중 무엇인지 모름",
+    "narration_dragged": "\"서술이 인물 말투에 끌려감\"",
+    "assembly_volume": "조립 실수(음량 미맞춤)로 소리가 작아진 곳. 모델 실패가 아니라 보정에서 뺀다"
+  },
+  "listenings": [
+    {
+      "id": "d6_calm", "date": "11-06", "story": "fisherman", "file": "demo_s4/fisherman_calm/story.wav", "render": "demo_s4/fisherman_calm",
+      "verdict": "전체적으로 제 목소리인데, 구간별로 톤이 높아지거나 낮아지는 경우가 있어요",
+      "marks": [
+        {"at": "6:12", "kind": "tone_jump", "quote": "톤이 갑자기 좀 달라지는 거지 목소리 자체가 달라지진 않아요"},
+        {"at": "6:54", "kind": "tone_jump", "quote": "톤이 갑자기 좀 달라지는 거지 목소리 자체가 달라지진 않아요"}
+      ]
+    },
+    {
+      "id": "g1_X", "date": "11-07", "story": "fisherman", "file": "exp_guyeon/listen/story_X.wav", "render": "exp_guyeon/c2",
+      "verdict": "재미는 X. 아이에게는 아니요 — 인물·구연 목소리가 유지되지 않고 톤이 자주 바뀜",
+      "marks": [
+        {"at": "0:11", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "1:51", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "2:25", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "3:51", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "4:04", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "5:33", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "6:24", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "7:15", "kind": "tone_jump", "quote": "톤이 튀는 곳"}
+      ]
+    },
+    {
+      "id": "g1_Y", "date": "11-07", "story": "fisherman", "file": "exp_guyeon/listen/story_Y.wav", "render": "exp_guyeon/c1",
+      "verdict": "Y는 가끔 내 목소리가 안 나오기도 해요",
+      "marks": [
+        {"at": "2:25", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "4:52", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "5:34", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "6:24", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "6:52", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "7:12", "kind": "tone_jump", "quote": "톤이 튀는 곳"}
+      ]
+    },
+    {
+      "id": "g2_P", "date": "11-07", "story": "fisherman", "file": "exp_guyeon/listen_c3/story_P.wav", "render": "exp_guyeon/c3",
+      "verdict": "재미는 P. 내 목소리인데 가끔 내 목소리가 아닐 때가 있어요. 문단별로 목소리가 울릴 때도 있고 아닐 때도 있어요(시각 없음)",
+      "marks": [
+        {"at": "0:11", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "0:18", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "0:30", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "0:40", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "0:56", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "2:19", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "3:07", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "3:38", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "5:27", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "6:17", "kind": "tone_jump", "quote": "톤이 튀는 곳"}
+      ]
+    },
+    {
+      "id": "g2_Q", "date": "11-07", "story": "fisherman", "file": "exp_guyeon/listen_c3/story_Q.wav", "render": "exp_guyeon/c2",
+      "verdict": "g1_X와 같은 파일을 다시 들음",
+      "marks": [
+        {"at": "0:12", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "2:26", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "2:37", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "4:27", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "4:50", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "5:34", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "6:00", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "6:23", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "6:52", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "7:10", "kind": "tone_jump", "quote": "톤이 튀는 곳"},
+        {"at": "7:16", "kind": "tone_jump", "quote": "톤이 튀는 곳"}
+      ]
+    },
+    {
+      "id": "sp_X", "date": "11-08", "story": "fisherman", "file": "exp_split/listen/story_X.wav", "render": "exp_character/r1b",
+      "verdict": "재미는 그나마 X. 내 목소리가 아닌 구간이 있어요",
+      "marks": [{"at": "3:37", "kind": "not_my_voice", "quote": "다른 목소리가 되어요", "strong": true}]
+    },
+    {
+      "id": "sp_Y", "date": "11-08", "story": "fisherman", "file": "exp_split/listen/story_Y.wav", "render": "exp_split/b2",
+      "verdict": "문단별로 구간별로 뚝 끊기는 부분이 있어요",
+      "marks": [{"at": "3:21", "kind": "not_my_voice", "quote": "X보다 더 심하게 다른 목소리", "strong": true}]
+    },
+    {
+      "id": "sp_Z", "date": "11-08", "story": "fisherman", "file": "exp_split/listen/story_Z.wav", "render": "exp_split/b1",
+      "verdict": "분할 기각",
+      "marks": [
+        {"at": "0:42", "kind": "not_my_voice", "quote": "완전 다른 목소리요", "strong": true},
+        {"at": "0:47", "kind": "narration_dragged", "quote": "서술이 인물 말투에 끌려감"},
+        {"at": "0:56", "kind": "narration_dragged", "quote": "서술이 인물 말투에 끌려감"}
+      ]
+    },
+    {
+      "id": "sh_K", "date": "11-08", "story": "fisherman", "file": "exp_shared/listen/story_K.wav", "render": "exp_shared/s2",
+      "verdict": "같은 목소리 같긴 한데, 모든 인물의 목소리가 비슷해요",
+      "marks": [
+        {"at": "4:10", "kind": "voice_or_tone", "quote": "내 목소리 아닌 구간이자 튀는 곳(같은 시각)"},
+        {"at": "4:45", "kind": "voice_or_tone", "quote": "내 목소리 아닌 구간이자 튀는 곳(같은 시각)"}
+      ]
+    },
+    {
+      "id": "sh_L", "date": "11-08", "story": "fisherman", "file": "exp_shared/listen/story_L.wav", "render": "exp_character/r1b",
+      "verdict": "같은 목소리예요. 튀는 곳 x. 감정 살아있어요",
+      "marks": [{"at": "0:56", "kind": "not_my_voice", "quote": "내 목소리 아닌 구간"}]
+    },
+    {
+      "id": "sh_M", "date": "11-08", "story": "fisherman", "file": "exp_shared/listen/story_M.wav", "render": "exp_shared/s1",
+      "verdict": "감정 살아있어요, 셋 중 가장 재밌음. 평균 화자 벡터는 기각",
+      "marks": [
+        {"at": "1:11", "kind": "voice_or_tone", "quote": "내 목소리 아닌 구간이자 튀는 곳(같은 시각)"},
+        {"at": "2:29", "kind": "voice_or_tone", "quote": "내 목소리 아닌 구간이자 튀는 곳(같은 시각)"},
+        {"at": "6:06", "kind": "voice_or_tone", "quote": "내 목소리 아닌 구간이자 튀는 곳(같은 시각)"},
+        {"at": "6:16", "kind": "voice_or_tone", "quote": "내 목소리 아닌 구간이자 튀는 곳(같은 시각)"}
+      ]
+    },
+    {
+      "id": "v3_fisherman_A", "date": "11-08", "story": "fisherman", "file": "exp_v3/listen/fisherman_A.wav", "render": "exp_v3/picked/fisherman", "picks": "exp_v3/picked/fisherman.json",
+      "verdict": "B(원본)가 낫다. 마이크 소리가 먹는 소리가 났다 아니었다 이래요. 판정 당시 파일은 per_unit으로 다시 이어 덮어써짐",
+      "marks": [
+        {"at": "4:16", "kind": "tone_jump", "quote": "A의 튀는 구간 4:16"},
+        {"at": "4:29", "kind": "assembly_volume", "quote": "갑자기 소리 작아짐"},
+        {"at": "5:30", "kind": "assembly_volume", "quote": "소리작아짐"}
+      ]
+    },
+    {
+      "id": "v3_fisherman_B", "date": "11-08", "story": "fisherman", "file": "exp_v3/listen/fisherman_B.wav", "render": "exp_v3/fisherman_1",
+      "verdict": "B(원본)가 낫다",
+      "marks": [{"at": "2:16", "kind": "tone_jump", "quote": "B의 튀는 구간 2:16"}]
+    },
+    {
+      "id": "v3_masteraway_B", "date": "11-08", "story": "masteraway", "file": "exp_v3/listen/masteraway_B.wav", "render": "exp_v3/picked/masteraway", "picks": "exp_v3/picked/masteraway.json",
+      "verdict": "B(골라 씀)가 낫다. 인물과 서술이 구분되진 않아요. 대사의 끊는 부분이 어색",
+      "marks": [{"at": "0:27", "kind": "tone_jump", "quote": "B의 튀는 구간 0:27"}]
+    },
+    {
+      "id": "v3_redhood_A", "date": "11-08", "story": "redhood", "file": "exp_v3/listen/redhood_A.wav", "render": "exp_v3/picked/redhood", "picks": "exp_v3/picked/redhood.json",
+      "verdict": "같은데 그나마 A(골라 씀). 구간마다 마이크 울리는 소리가 날 때가 있고 아닐 때도 있어요",
+      "marks": [{"at": "2:05", "kind": "tone_jump", "quote": "A의 튀는 구간 2:05"}]
+    }
+  ],
+ "clipChecks": [
+  {
+   "id": "cf_1109", "date": "11-09",
+   "file": "outputs/eval_set/confirm",
+   "note": "core의 애매 항목 23개와 대조군 4개를 섞은 클립 확인 청취. mark는 클립 안 시각(x는 없음), unitStartInClip은 클립 안에서 단위가 시작하는 초(음수면 지목 시각 중심으로 자른 한가운데 클립). 정답 키는 confirm/key.json",
+   "clips": [
+    {"clip": 1, "render": "exp_character/r1b", "unit": 6, "unitStartInClip": 2.0, "mark": "0:02", "myVoice": "예", "reverbChange": "아니오"},
+    {"clip": 2, "render": "exp_shared/s1", "unit": 6, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "아니오"},
+    {"clip": 3, "render": "exp_split/b1", "unit": 6, "unitStartInClip": -1.1, "mark": "0:04", "myVoice": "아니오", "reverbChange": "아니오"},
+    {"clip": 4, "render": "exp_shared/s2", "unit": 25, "unitStartInClip": 2.0, "mark": "0:05", "myVoice": "예", "reverbChange": "아니오"},
+    {"clip": 5, "render": "exp_shared/s1", "unit": 14, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "아니오"},
+    {"clip": 6, "render": "exp_split/b1", "unit": 7, "unitStartInClip": -1.0, "mark": "0:06", "myVoice": "아니오", "reverbChange": "아니오"},
+    {"clip": 7, "render": "exp_shared/s1", "unit": 22, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "아니오"},
+    {"clip": 8, "render": "exp_shared/s1", "unit": 8, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "예"},
+    {"clip": 9, "render": "exp_guyeon/c2", "unit": 48, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "예"},
+    {"clip": 10, "render": "exp_shared/s2", "unit": 22, "unitStartInClip": 2.0, "mark": "0:02", "myVoice": "아니오", "reverbChange": "아니오"},
+    {"clip": 11, "render": "exp_guyeon/c1", "unit": 22, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "예"},
+    {"clip": 12, "render": "exp_shared/s2", "unit": 34, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "예"},
+    {"clip": 13, "render": "exp_guyeon/c2", "unit": 47, "unitStartInClip": 2.0, "mark": "0:02", "myVoice": "아니오", "reverbChange": "예"},
+    {"clip": 14, "render": "exp_guyeon/c2", "unit": 53, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "아니오"},
+    {"clip": 15, "render": "exp_shared/s1", "unit": 34, "unitStartInClip": 2.0, "mark": "0:02", "myVoice": "아니오", "reverbChange": "예"},
+    {"clip": 16, "render": "exp_shared/s1", "unit": 13, "unitStartInClip": 2.0, "mark": "0:02", "myVoice": "아니오", "reverbChange": "아니오"},
+    {"clip": 17, "render": "exp_split/b1", "unit": 9, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "아니오"},
+    {"clip": 18, "render": "exp_shared/s2", "unit": 20, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "아니오"},
+    {"clip": 19, "render": "exp_split/b1", "unit": 15, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "아니오"},
+    {"clip": 20, "render": "exp_guyeon/c2", "unit": 18, "unitStartInClip": 2.0, "mark": "0:02", "myVoice": "아니오", "reverbChange": "아니오"},
+    {"clip": 21, "render": "exp_split/b2", "unit": 63, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "아니오"},
+    {"clip": 22, "render": "exp_split/b1", "unit": 28, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "아니오"},
+    {"clip": 23, "render": "exp_shared/s1", "unit": 20, "unitStartInClip": 2.0, "mark": "0:03", "myVoice": "아니오", "reverbChange": "아니오"},
+    {"clip": 24, "render": "exp_split/b1", "unit": 23, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "아니오"},
+    {"clip": 25, "render": "exp_guyeon/c2", "unit": 51, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "예"},
+    {"clip": 26, "render": "exp_guyeon/c1", "unit": 38, "unitStartInClip": 2.0, "mark": "0:02", "myVoice": "아니오", "reverbChange": "아니오"},
+    {"clip": 27, "render": "exp_shared/s1", "unit": 33, "unitStartInClip": 2.0, "mark": "x", "myVoice": "예", "reverbChange": "아니오"}
+   ]
+  },
+  {
+   "id": "tics_1113", "date": "11-13",
+   "file": "outputs/exp_tics/listen",
+   "note": "masteraway 대사 끝 울음 말버릇 실험(exp_tics). 단위 11~17 렌더에서 4단위(렌더 0·2·5·6 = 문장 18·21·25·26)를 원고 2판(base·tics) × seed 2개로 꺼내 섞은 16클립, 앞뒤 0.4초 무음. 질문은 내 목소리·이상한 곳 시각·말끝 잘림(tailCut)·울음 어색함(tickAwkward, tics만)이었고 울림 바뀜은 묻지 않아 지목이 없으므로 reverbChange는 아니오로 적었다. 렌더는 voice-storybook-masteraway-sounds 워크트리의 outputs에만 있다. 정답 키는 exp_tics/listen_key.json",
+   "clips": [
+    {"clip": 1, "render": "exp_tics/tics_5678", "unit": 0, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오", "tickAwkward": "아니오"},
+    {"clip": 2, "render": "exp_tics/base_1234", "unit": 6, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오"},
+    {"clip": 3, "render": "exp_tics/base_5678", "unit": 6, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오"},
+    {"clip": 4, "render": "exp_tics/tics_1234", "unit": 5, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오", "tickAwkward": "아니오"},
+    {"clip": 5, "render": "exp_tics/base_5678", "unit": 2, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오"},
+    {"clip": 6, "render": "exp_tics/base_5678", "unit": 0, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오"},
+    {"clip": 7, "render": "exp_tics/tics_1234", "unit": 0, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오", "tickAwkward": "아니오"},
+    {"clip": 8, "render": "exp_tics/base_1234", "unit": 2, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오"},
+    {"clip": 9, "render": "exp_tics/tics_1234", "unit": 6, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오", "tickAwkward": "아니오"},
+    {"clip": 10, "render": "exp_tics/tics_5678", "unit": 5, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오", "tickAwkward": "아니오"},
+    {"clip": 11, "render": "exp_tics/base_5678", "unit": 5, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오"},
+    {"clip": 12, "render": "exp_tics/tics_5678", "unit": 6, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오", "tickAwkward": "아니오"},
+    {"clip": 13, "render": "exp_tics/base_1234", "unit": 5, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오"},
+    {"clip": 14, "render": "exp_tics/tics_5678", "unit": 2, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오", "tickAwkward": "아니오"},
+    {"clip": 15, "render": "exp_tics/base_1234", "unit": 0, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오"},
+    {"clip": 16, "render": "exp_tics/tics_1234", "unit": 2, "unitStartInClip": 0.4, "mark": "x", "myVoice": "예", "reverbChange": "아니오", "tailCut": "아니오", "tickAwkward": "아니오"}
+   ]
+  }
+ ]
+}

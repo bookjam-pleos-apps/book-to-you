@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 05 팝업(Pleos System Popup Medium): 아이콘 타일 + 제목·설명, 아래에 [확인(Secondary)] [취소(Primary)]. 연결 끊기에서 쓴다.
+     창 크기 안에서만 그림자가 그려지므로 바깥 FrameLayout이 그림자 자리(dialogShadowRoom)를 둔다. 폭은 ConfirmDialog가 정한다. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dialogShadowRoom">
+
+    <LinearLayout
+        style="@style/Elevated.Level3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog"
+        android:orientation="vertical"
+        android:padding="@dimen/dialogPadding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/iconTile"
+                android:layout_height="@dimen/iconTile"
+                android:background="@drawable/bg_icon_tile"
+                android:importantForAccessibility="no"
+                android:padding="@dimen/iconTilePadding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_arrow_exit"
+                app:tint="@color/text" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spaceL"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dialogTitle"
+                    style="@style/Text.TitleM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/dialogMessage"
+                    style="@style/Text.Message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spaceXs" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialogGap"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dialogConfirm"
+                style="@style/Button.Secondary.Large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/dialogCancel"
+                style="@style/Button.Primary.Large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spaceL"
+                android:layout_weight="1"
+                android:text="@string/dialog_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

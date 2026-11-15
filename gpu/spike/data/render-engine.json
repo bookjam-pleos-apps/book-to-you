@@ -1,0 +1,5 @@
+{
+  "note": "시연 서버의 render-story가 쓰는 엔진과 배치 크기. qwen3-base-batch는 같은 style 단위를 batchSize개씩 한 번에 생성하고 child 목소리 보정(data/voice-reroll.json)까지 한다. 서비스에 SPIKE_VOICE_PYTHON이 있어야 한다.",
+  "engine": "qwen3-base-batch",
+  "batchSize": 8
+}

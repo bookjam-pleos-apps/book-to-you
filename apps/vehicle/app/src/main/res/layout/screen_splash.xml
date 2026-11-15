@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 앱을 켤 때 잠깐 보이는 화면(Figma 스플래쉬 49:859). 누르는 곳이 없다.
+     주황 위 글자는 대비 때문에 시안의 흰색이 아니라 text(#131417, 7.80:1)로 쓴다(colors.xml buttonBrand 설명).
+     설명 글자는 시안 20이 키트 최소 단계보다 작아 Label/Medium(24)으로 올렸다. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brand"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/spaceScreenSide">
+
+    <ImageView
+        android:layout_width="@dimen/splashMascotWidth"
+        android:layout_height="@dimen/splashMascotHeight"
+        android:importantForAccessibility="no"
+        android:src="@drawable/brand_mascot" />
+
+    <ImageView
+        android:layout_width="@dimen/splashWordmarkWidth"
+        android:layout_height="@dimen/splashWordmarkHeight"
+        android:layout_marginTop="@dimen/splashWordmarkTop"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/brand_wordmark" />
+
+    <TextView
+        style="@style/Text.TitleMStrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/splashSloganTop"
+        android:gravity="center"
+        android:text="@string/splash_slogan" />
+
+    <TextView
+        style="@style/Text.LabelM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/splashDescriptionTop"
+        android:gravity="center"
+        android:text="@string/splash_description" />
+</LinearLayout>

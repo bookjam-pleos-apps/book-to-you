@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 재생 화면 오른쪽 열: 목소리 태그, 이야기 제목, 장 줄(제n장. 제목 + n / m 태그), 진행 막대, 조작 버튼. 폭은 진행 막대 폭이다. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/playerVoice"
+        style="@style/Tag.Voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/playerTitle"
+        style="@style/Text.Display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spaceXl" />
+
+    <!-- 장 줄(showChapterLine). 제목 없는 한 장짜리 이야기에서는 줄이 통째로 숨어 여백도 함께 빠진다. -->
+    <LinearLayout
+        android:id="@+id/playerChapterRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spaceXl"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/playerChapter"
+            style="@style/Text.HeadlineS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/textSecondary" />
+
+        <TextView
+            android:id="@+id/playerCount"
+            style="@style/Tag.CountLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.voicestorybook.vehicle.ui.player.ChapterProgressView
+        android:id="@+id/playerProgress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/progressHeight"
+        android:layout_marginTop="@dimen/spaceXxl"
+        android:importantForAccessibility="no" />
+
+    <include
+        layout="@layout/view_player_controls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/spaceXl" />
+</LinearLayout>

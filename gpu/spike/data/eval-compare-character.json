@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "source": "outputs/eval_set/seed_noise.py의 SEED_PAIRS·JUDGED에서 인물 실험(exp_character, exp_split, exp_shared) 묶음. 모두 s4 참조, fisherman. 청취 판정은 r1a·split·shared가 r1b보다 나빴다.",
+  "conditions": {
+    "r0": {
+      "renders": [
+        "exp_character/r0",
+        "exp_character/r0b"
+      ],
+      "reference": "s4"
+    },
+    "r1a": {
+      "renders": [
+        "exp_character/r1a"
+      ],
+      "reference": "s4"
+    },
+    "r1b": {
+      "renders": [
+        "exp_character/r1b"
+      ],
+      "reference": "s4"
+    },
+    "split": {
+      "renders": [
+        "exp_split/b1",
+        "exp_split/b2"
+      ],
+      "reference": "s4"
+    },
+    "shared": {
+      "renders": [
+        "exp_shared/s1",
+        "exp_shared/s2"
+      ],
+      "reference": "s4"
+    }
+  }
+}

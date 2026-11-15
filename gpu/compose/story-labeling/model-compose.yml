@@ -1,0 +1,42 @@
+# 서버에 인증이 없다. 검증과 태깅을 할 때만 띄우고 끝나면 내린다. 렌더 경로에서는 호출하지 않는다.
+controller:
+  max_concurrent_count: 1
+  adapter:
+    type: http-server
+    host: 127.0.0.1
+    port: 18092
+    base_path: /api
+
+workflows:
+  - id: style-tagging
+    title: Suggest a reading style for one sentence
+    job:
+      component: nimble-style
+      input: ${input}
+      # 예제의 `${result as json}`은 잡에 없는 이름이라 오류 없이 null을 돌려준다.
+      output: ${output as json}
+
+components:
+  - id: nimble-style
+    type: model
+    task: typed-decision
+    driver: custom
+    family: nimble
+    model:
+      provider: huggingface
+      repository: bespokelabs/Bespoke-Nimble-9B
+      revision: bd792f44ec8e265be861bfcdf4e05967ffe0e858
+    base_model:
+      provider: huggingface
+      repository: Qwen/Qwen3.5-9B
+      revision: c202236235762e1c871ad0ccb60c8ee5ba337b9a
+    precision: bfloat16
+    # 예제 주석의 2048이 아니라 스키마 기본값을 명시한다. 넘으면 잘리지 않고 호출이 실패한다.
+    max_seq_length: 4096
+    max_concurrent_count: 1
+    # runtime을 두지 않는다. 예제의 virtualenv는 uv.lock을 우회해 드라이버가 패키지를 따로 설치한다.
+    action:
+      text: ${input.text as text}
+      schema: ${input.schema as json}
+      return_probabilities: true
+      return_logits: false

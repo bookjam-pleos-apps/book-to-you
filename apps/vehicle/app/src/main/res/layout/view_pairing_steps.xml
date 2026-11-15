@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 연결 안내: 부제, 노란 번호 원 두 단계, 코드 상자(QR이 안 될 때). 주행 중에는 pairingCodeArea째 숨는다. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Text.BodyLStrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space2xs"
+        android:text="@string/pairing_sub"
+        android:textColor="@color/textTertiary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spaceL"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/StepBadge"
+            android:text="@string/pairing_step_scan_number" />
+
+        <TextView
+            style="@style/Text.TitleL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spaceXs"
+            android:layout_weight="1"
+            android:text="@string/pairing_step_scan" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space2xs"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/StepBadge"
+            android:text="@string/pairing_step_confirm_number" />
+
+        <TextView
+            style="@style/Text.TitleL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spaceXs"
+            android:layout_weight="1"
+            android:text="@string/pairing_step_confirm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spaceL"
+        android:background="@drawable/bg_code_box"
+        android:gravity="center"
+        android:minHeight="@dimen/codeBoxHeight"
+        android:orientation="vertical"
+        android:padding="@dimen/spaceL">
+
+        <TextView
+            style="@style/Text.BodyL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/pairing_code_label"
+            android:textColor="@color/textSecondary" />
+
+        <TextView
+            android:id="@+id/pairingCode"
+            style="@style/Text.Code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spaceXs" />
+    </LinearLayout>
+</LinearLayout>

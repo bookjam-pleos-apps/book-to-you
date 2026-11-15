@@ -1,0 +1,236 @@
+{
+  "version": 1,
+  "note": "문장 분할 골든. 합치면 공백을 뺀 글자가 본문과 같아야 한다. 대사와 뒤따르는 서술은 한 문장이다.",
+  "cases": [
+    {
+      "id": "inner-terminator",
+      "body": "“엄마, 엄마! 나 도시락에 당근 넣어 줘!” 토토가 소리쳤어요.",
+      "sentences": [
+        "“엄마, 엄마! 나 도시락에 당근 넣어 줘!” 토토가 소리쳤어요."
+      ]
+    },
+    {
+      "id": "dialogue-tail",
+      "body": "“안녕!” 토끼가 말했어요.",
+      "sentences": [
+        "“안녕!” 토끼가 말했어요."
+      ]
+    },
+    {
+      "id": "tail-then-narration",
+      "body": "“정말?” 하고 물었어요! 토끼가 웃었어요.",
+      "sentences": [
+        "“정말?” 하고 물었어요!",
+        "토끼가 웃었어요."
+      ]
+    },
+    {
+      "id": "consecutive-quotes",
+      "body": "“안녕!” “반가워!”",
+      "sentences": [
+        "“안녕!”",
+        "“반가워!”"
+      ]
+    },
+    {
+      "id": "narration-then-quote",
+      "body": "토토가 대답했어요. “최고였어요.”",
+      "sentences": [
+        "토토가 대답했어요.",
+        "“최고였어요.”"
+      ]
+    },
+    {
+      "id": "single-quotes",
+      "body": "‘이상하다. 왜 그럴까?’ 토토는 생각했어요.",
+      "sentences": [
+        "‘이상하다. 왜 그럴까?’ 토토는 생각했어요."
+      ]
+    },
+    {
+      "id": "nested-quotes",
+      "body": "“엄마가 ‘안녕!’ 했어요.” 토토가 말했어요.",
+      "sentences": [
+        "“엄마가 ‘안녕!’ 했어요.” 토토가 말했어요."
+      ]
+    },
+    {
+      "id": "straight-quotes",
+      "body": "\"엄마! 나 왔어!\" 토토가 말했어요. 엄마가 웃었어요.",
+      "sentences": [
+        "\"엄마! 나 왔어!\" 토토가 말했어요.",
+        "엄마가 웃었어요."
+      ]
+    },
+    {
+      "id": "ellipsis",
+      "body": "그런데… 토끼가 왔어요.",
+      "sentences": [
+        "그런데…",
+        "토끼가 왔어요."
+      ]
+    },
+    {
+      "id": "repeated-marks",
+      "body": "정말?! 믿을 수 없어요...",
+      "sentences": [
+        "정말?!",
+        "믿을 수 없어요..."
+      ]
+    },
+    {
+      "id": "decimal",
+      "body": "토토는 3.5킬로나 걸었어요. 다리가 아팠어요.",
+      "sentences": [
+        "토토는 3.5킬로나 걸었어요.",
+        "다리가 아팠어요."
+      ]
+    },
+    {
+      "id": "comma-joins-narration",
+      "body": "숲은 고요했고,\n\n토토는 잠들었어요.",
+      "sentences": [
+        "숲은 고요했고, 토토는 잠들었어요."
+      ]
+    },
+    {
+      "id": "comma-stops-before-quote",
+      "body": "그러니까,\n\n“안녕!”",
+      "sentences": [
+        "그러니까,",
+        "“안녕!”"
+      ]
+    },
+    {
+      "id": "tail-across-paragraph",
+      "body": "“와!”\n\n하고 소리쳤어요.",
+      "sentences": [
+        "“와!” 하고 소리쳤어요."
+      ]
+    },
+    {
+      "id": "tail-word-with-comma",
+      "body": "“왜 그러니?”\n\n하고, 토끼가 물었어요.",
+      "sentences": [
+        "“왜 그러니?” 하고, 토끼가 물었어요."
+      ]
+    },
+    {
+      "id": "not-a-tail",
+      "body": "“안 돼!”\n\n하는 수 없이 토토는 돌아갔어요.",
+      "sentences": [
+        "“안 돼!”",
+        "하는 수 없이 토토는 돌아갔어요."
+      ]
+    },
+    {
+      "id": "tail-word-without-quote",
+      "body": "토토가 왔어요.\n\n하고 싶은 말이 많았어요.",
+      "sentences": [
+        "토토가 왔어요.",
+        "하고 싶은 말이 많았어요."
+      ]
+    },
+    {
+      "id": "two-speakers-stay-apart",
+      "body": "“가!”\n\n하고, 토끼는,\n\n“나!”\n\n합니다.",
+      "sentences": [
+        "“가!” 하고, 토끼는,",
+        "“나!” 합니다."
+      ]
+    },
+    {
+      "id": "wrapped-line",
+      "body": "토토는\n잠들었어요.",
+      "sentences": [
+        "토토는 잠들었어요."
+      ]
+    },
+    {
+      "id": "windows-paragraphs",
+      "body": "하나.\r\n\r\n둘.",
+      "sentences": [
+        "하나.",
+        "둘."
+      ]
+    },
+    {
+      "id": "marked-break-after-quote",
+      "body": "“좋아!”\n둘은 조용히 집으로 돌아갔어요.",
+      "sentences": [
+        "“좋아!”",
+        "둘은 조용히 집으로 돌아갔어요."
+      ]
+    },
+    {
+      "id": "marked-break-before-quote",
+      "body": "문밖에서 소리가 나며,\n“문 열어 주세요!”",
+      "sentences": [
+        "문밖에서 소리가 나며,",
+        "“문 열어 주세요!”"
+      ]
+    },
+    {
+      "id": "marked-break-keeps-speech-tail",
+      "body": "“안녕!”\n합니다.",
+      "sentences": [
+        "“안녕!” 합니다."
+      ]
+    },
+    {
+      "id": "apostrophe-in-word",
+      "body": "토토는 rock’n’roll을 좋아했어요. ‘엄마’s 집’이라고 적었어요.",
+      "sentences": [
+        "토토는 rock’n’roll을 좋아했어요.",
+        "‘엄마’s 집’이라고 적었어요."
+      ]
+    },
+    {
+      "id": "tail-hagoneun",
+      "body": "“신난다!”\n하고는 춤을 췄어요.",
+      "sentences": [
+        "“신난다!” 하고는 춤을 췄어요."
+      ]
+    },
+    {
+      "id": "tail-hasyeotseumnida",
+      "body": "“고맙구나.”\n하셨습니다.",
+      "sentences": [
+        "“고맙구나.” 하셨습니다."
+      ]
+    },
+    {
+      "id": "apostrophe-inside-single-quote",
+      "body": "‘rock’n’roll이야’ 하고 생각했어요.",
+      "sentences": [
+        "‘rock’n’roll이야’ 하고 생각했어요."
+      ]
+    },
+    {
+      "id": "single-quote-before-particle",
+      "body": "‘엄마’가 웃었어요. ‘아빠’를 불렀어요.",
+      "sentences": [
+        "‘엄마’가 웃었어요.",
+        "‘아빠’를 불렀어요."
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "id": "unclosed",
+      "body": "“안녕!"
+    },
+    {
+      "id": "unopened",
+      "body": "안녕!”"
+    },
+    {
+      "id": "mismatched",
+      "body": "“안녕!’"
+    },
+    {
+      "id": "quote-across-paragraph",
+      "body": "“첫째 문단.\n\n둘째 문단.”"
+    }
+  ]
+}

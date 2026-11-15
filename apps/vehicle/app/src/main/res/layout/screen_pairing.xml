@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 01 연결(개선안 revised/pairing.html). 넓은 창은 왼쪽 안내·오른쪽 QR을 가운데 모아 두고, 좁은 창은 위아래(pairingOrientation).
+     좁은 창에서 데모 코드 입력칸까지 보이면 높이가 빠듯해 스크롤을 둔다(자동 스크롤은 없음). -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="@integer/pairingOrientation"
+        android:paddingHorizontal="@dimen/spaceScreenSide"
+        android:paddingVertical="@dimen/spaceScreen">
+
+        <LinearLayout
+            android:layout_width="@dimen/codeBoxWidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 시연 계정 홈에서 연 때만 보인다(PairingMode.SwitchAccount). Back 키와 같다. -->
+            <Button
+                android:id="@+id/pairingBack"
+                style="@style/Button.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spaceL"
+                android:drawableStart="@drawable/ic_arrow_back"
+                android:text="@string/pairing_back"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/Text.HeadlineL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pairing_title" />
+
+            <!-- 주행 중 QR 로그인은 Pleos 규제 표에서 모든 지역 금지다. 코드 대신 이 문구만 보인다. -->
+            <TextView
+                android:id="@+id/pairingParkedOnly"
+                style="@style/Text.HeadlineS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spaceL"
+                android:text="@string/pairing_parked_only"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/pairingCodeArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/view_pairing_steps" />
+
+                <TextView
+                    android:id="@+id/pairingStorageNotice"
+                    style="@style/Text.LabelM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spaceM"
+                    android:text="@string/pairing_storage_notice"
+                    android:textColor="@color/textSecondary" />
+
+                <TextView
+                    android:id="@+id/pairingStatus"
+                    style="@style/Text.BodyL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spaceS"
+                    android:textColor="@color/textSecondary" />
+
+                <Button
+                    android:id="@+id/pairingRetry"
+                    style="@style/Button.Primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spaceL"
+                    android:text="@string/pairing_retry"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/demoCodeEntry"
+                    layout="@layout/view_demo_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spaceXl"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- QR 카드. 주행 중에는 카드째 숨긴다(PairingScreen.setParked). -->
+        <ImageView
+            android:id="@+id/pairingQr"
+            style="@style/Elevated.Level2"
+            android:layout_width="@dimen/qrCard"
+            android:layout_height="@dimen/qrCard"
+            android:layout_marginStart="@dimen/pairingColumnGap"
+            android:layout_marginTop="@dimen/pairingStackGap"
+            android:background="@drawable/bg_qr_card"
+            android:contentDescription="@string/pairing_instruction"
+            android:padding="@dimen/qrCardPadding" />
+    </LinearLayout>
+</ScrollView>

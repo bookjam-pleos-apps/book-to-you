@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- v2 책을 고른 뒤 화면(Figma 서브_디테일 73:1771). 정차 중에만 뜬다. 3·2·1을 센 뒤 재생하고, 그동안 목소리를 바꿀 수 있다.
+     뒤에는 고른 목소리의 재생 화면을 데이터로만 그려 깔고(PlayerPreview), 그 위를 검정 85% 덮개로 덮는다.
+     덮개는 터치를 모두 받아 뒤 화면 버튼이 눌리지 않게 한다. 버튼은 v2-decisions.md: [취소] [빠르게 시작하기], 사이 24. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/countdownBehind"
+        layout="@layout/screen_player" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scrim"
+        android:clickable="true"
+        android:fillViewport="true"
+        android:focusable="false">
+
+        <!-- 내용 묶음을 창 세로 가운데에 둔다(창이 낮으면 위에서부터 넘겨 본다). -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/spaceScreen"
+            android:paddingVertical="@dimen/countdownPadV">
+
+            <TextView
+                style="@style/Text.CountdownHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/countdown_headline" />
+
+            <!-- Figma: 500 / 굵기 300(asta_sans_light_digits, 숫자 0~9만). 위아래 글꼴 여백은 겹쳐 줄인다. -->
+            <TextView
+                android:id="@+id/countdownNumber"
+                style="@style/Text.CountdownNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/countdownNumberTop"
+                android:layout_marginBottom="@dimen/countdownNumberBottom"
+                android:accessibilityLiveRegion="polite" />
+
+            <!-- 목소리가 하나뿐인 이야기는 안내와 고르기를 숨긴다(v2 결정 3). 안내는 고르기 왼쪽 끝에 맞춘다. -->
+            <LinearLayout
+                android:id="@+id/countdownVoicePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Text.CountdownHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/countdown_voice_hint" />
+
+                <LinearLayout
+                    android:id="@+id/countdownVoices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spaceS"
+                    android:background="@drawable/bg_segment"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/segmentPad" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/countdownButtonsTop"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/countdownCancel"
+                    style="@style/Button.OnScrim.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dialog_cancel" />
+
+                <Button
+                    android:id="@+id/countdownStartNow"
+                    style="@style/Button.Brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spaceL"
+                    android:drawableStart="@drawable/ic_play"
+                    android:text="@string/countdown_start_now" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

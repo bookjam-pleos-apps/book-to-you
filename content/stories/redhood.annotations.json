@@ -1,0 +1,475 @@
+{
+ "id": "redhood",
+ "draftHash": "9df9a77edf79ecbd",
+ "cast": [
+  {
+   "name": "빨간 모자",
+   "voiceType": "아기",
+   "trait": "착하고 상냥함",
+   "style": "child"
+  },
+  {
+   "name": "엄마",
+   "voiceType": "엄마",
+   "trait": "다정하게 당부함",
+   "style": "calm"
+  },
+  {
+   "name": "늑대",
+   "voiceType": "아빠",
+   "trait": "음흉하고 꾀가 많음",
+   "style": "deep"
+  },
+  {
+   "name": "할머니",
+   "voiceType": "할머니",
+   "trait": "기운 없지만 다정함",
+   "style": "soft"
+  },
+  {
+   "name": "사냥꾼",
+   "voiceType": "아빠",
+   "trait": "듬직함",
+   "style": "calm"
+  }
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "to": 3,
+   "summary": "제목과 빨간 모자 소개"
+  },
+  {
+   "from": 4,
+   "to": 8,
+   "summary": "엄마의 심부름과 출발"
+  },
+  {
+   "from": 9,
+   "to": 23,
+   "summary": "숲에서 늑대가 꽃으로 꾐"
+  },
+  {
+   "from": 24,
+   "to": 34,
+   "summary": "늑대가 할머니를 삼키고 기다림"
+  },
+  {
+   "from": 35,
+   "to": 53,
+   "summary": "침대 앞 문답과 잡아먹힘"
+  },
+  {
+   "from": 54,
+   "to": 68,
+   "summary": "사냥꾼의 구출과 돌멩이"
+  },
+  {
+   "from": 69,
+   "to": 76,
+   "summary": "늑대의 벌"
+  },
+  {
+   "from": 77,
+   "to": 78,
+   "summary": "빨간 모자의 다짐"
+  }
+ ],
+ "sentences": [
+  {
+   "index": 0,
+   "text": "빨간 모자",
+   "role": "narration"
+  },
+  {
+   "index": 1,
+   "text": "옛날 어느 마을에 귀여운 여자아이가 살았어요.",
+   "role": "narration"
+  },
+  {
+   "index": 2,
+   "text": "아이는 할머니가 만들어주신 빨간 모자를 무척 좋아해서 늘 쓰고 다녔지요.",
+   "role": "narration"
+  },
+  {
+   "index": 3,
+   "text": "그래서 사람들은 그 아이를 빨간 모자라고 불렀어요.",
+   "role": "narration"
+  },
+  {
+   "index": 4,
+   "text": "어느 날 엄마가 빨간 모자에게 말했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 5,
+   "text": "“빨간 모자야 할머니가 편찮으시단다. 이 케이크와 포도주를 할머니께 갖다 드리렴. 한 눈 팔지 말고 곧장 할머니 댁으로 가야해. 알았지?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 6,
+   "text": "“네 엄마, 걱정하지 마세요.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 7,
+   "text": "빨간 모자는 엄마와 단단히 약속하고 집을 나섰어요.",
+   "role": "narration"
+  },
+  {
+   "index": 8,
+   "text": "할머니 집은 마을에서 떨어진 숲속에 있었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 9,
+   "text": "빨간 모자가 숲으로 난 오솔길로 들어섰어요.",
+   "role": "narration"
+  },
+  {
+   "index": 10,
+   "text": "그때 어디선가 늑대가 어슬렁어슬렁 나타나 말을 걸었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 11,
+   "text": "“안녕, 빨간 모자야. 이렇게 일찍 어디 가니?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 12,
+   "text": "“응. 할머니에게 가는 길이야. 할머니가 편찮으시거든.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 13,
+   "text": "“할머니 댁이 어딘데?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 14,
+   "text": "“이 오솔길을 쭉 따라가면 나와.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 15,
+   "text": "빨간 모자는 늑대가 나쁜 짐승인 줄도 모르고 상냥하게 대답했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 16,
+   "text": "늑대는 속으로 생각했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 17,
+   "text": "‘옳지, 먼저 가서 할머니를 잡아먹고 그 다음에 빨간 모자가 오면 꿀꺽 먹어야지.’",
+   "role": "dialogue"
+  },
+  {
+   "index": 18,
+   "text": "그러고는 빨간 모자를 살살 꾀었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 19,
+   "text": "“꽃이 참 예쁘지. 저 꽃들을 꺾어다 드리면 할머니가 무척 좋아하실 텐데.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 20,
+   "text": "늑대 말을 듣고 보니 정말 그럴 것 같았어요.",
+   "role": "narration"
+  },
+  {
+   "index": 21,
+   "text": "빨간 모자는 엄마와 한 약속도 잊고 꽃을 꺾기 시작했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 22,
+   "text": "한 송이, 또 한 송이.",
+   "role": "narration"
+  },
+  {
+   "index": 23,
+   "text": "그러다 보니 자꾸만 더 깊은 숲속으로 들어가게 되었지요.",
+   "role": "narration"
+  },
+  {
+   "index": 24,
+   "text": "빨간 모자가 꽃을 꺾고 있는 동안 늑대는 할머니 집으로 달려갔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 25,
+   "text": "늑대가 문을 똑똑똑 두드렸어요.",
+   "role": "narration"
+  },
+  {
+   "index": 26,
+   "text": "할머니가 기운 없는 목소리로 물었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 27,
+   "text": "“누구요?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 28,
+   "text": "늑대가 빨간 모자의 목소리를 흉내내어 대답했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 29,
+   "text": "“할머니, 빨간 모자예요. 할머니께 드리려고 케이크랑 포도주를 가져왔어요.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 30,
+   "text": "할머니가 반갑게 말했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 31,
+   "text": "“빨간 모자라고? 어서 들어오너라.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 32,
+   "text": "늑대는 문을 열고 안으로 들어가 할머니를 한 입에 꿀꺽 삼켜버렸지요.",
+   "role": "narration"
+  },
+  {
+   "index": 33,
+   "text": "늑대는 할머니의 잠옷을 입고 침대 속으로 들어갔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 34,
+   "text": "그러고는 이불을 턱까지 끌어당기고 빨간 모자를 기다렸어요.",
+   "role": "narration"
+  },
+  {
+   "index": 35,
+   "text": "잠시 후 빨간 모자가 꽃을 한아름 안고 왔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 36,
+   "text": "“할머니, 저 왔어요.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 37,
+   "text": "“얘야, 문이 열려 있단다. 어서 들어오렴.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 38,
+   "text": "빨간 모자는 집 안으로 들어가며 인사를 했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 39,
+   "text": "“할머니, 몸은 좀 어떠세요? 제가 케이크랑 포도주를 가져왔어요.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 40,
+   "text": "“그래, 고맙구나.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 41,
+   "text": "“어? 그런데 할머니 목소리가 이상해요.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 42,
+   "text": "늑대는 얼른 쿨룩쿨룩 기침하며 말했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 43,
+   "text": "“목감기가 심해서 그렇단다.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 44,
+   "text": "빨간 모자는 할머니가 걱정되어 침대 곁으로 다가갔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 45,
+   "text": "그런데 할머니의 모습이 어딘가 이상했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 46,
+   "text": "“할머니, 귀는 왜 이렇게 커졌어요?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 47,
+   "text": "늑대가 낮은 목소리로 웅얼거렸어요.",
+   "role": "narration"
+  },
+  {
+   "index": 48,
+   "text": "“얘야, 그래야 네 목소리를 잘 들을 수 있지.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 49,
+   "text": "“할머니, 눈은 왜 이렇게 커졌어요?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 50,
+   "text": "“그래야 너를 잘 볼 수 있지.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 51,
+   "text": "“그런데 할머니 입은 왜 이렇게 커졌어요?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 52,
+   "text": "“그래야 너를 잡아먹을 수 있으니까.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 53,
+   "text": "늑대는 벌떡 일어나 빨간 모자를 한 입에 꿀꺽 삼켰어요.",
+   "role": "narration"
+  },
+  {
+   "index": 54,
+   "text": "늑대는 배가 부르자 솔솔 잠이 왔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 55,
+   "text": "그래서 다시 침대로 들어가 드르렁드르렁 곯아떨어졌죠.",
+   "role": "narration"
+  },
+  {
+   "index": 56,
+   "text": "그때 할머니 집 앞을 지나가던 사냥꾼이 늑대의 코 고는 소리를 들었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 57,
+   "text": "사냥꾼은 걸음을 멈추고 고개를 갸웃거렸어요.",
+   "role": "narration"
+  },
+  {
+   "index": 58,
+   "text": "“할머니의 코 고는 소리가 이상한데? 어디가 편찮으신가? 한번 들어가 봐야겠군.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 59,
+   "text": "집 안으로 들어간 사냥꾼은 깜짝 놀랐어요.",
+   "role": "narration"
+  },
+  {
+   "index": 60,
+   "text": "“뭐라? 저 못된 늑대가 할머니를 잡아먹었구나.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 61,
+   "text": "사냥꾼은 칼로 조심조심 늑대의 배를 갈랐어요.",
+   "role": "narration"
+  },
+  {
+   "index": 62,
+   "text": "그러자 빨간 모자가 툭 튀어나왔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 63,
+   "text": "할머니도 부들부들 떨며 기어나왔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 64,
+   "text": "“늑대가 깨기 전에 배 속에 돌멩이를 채워 넣어야겠어요.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 65,
+   "text": "영차, 영차!",
+   "role": "narration"
+  },
+  {
+   "index": 66,
+   "text": "빨간 모자가 커다란 돌멩이들을 주워왔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 67,
+   "text": "사냥꾼은 그 돌멩이를 늑대의 배 속에 가득 집어넣었죠.",
+   "role": "narration"
+  },
+  {
+   "index": 68,
+   "text": "그리고 할머니는 늑대의 배를 한 땀 한 땀 꼼꼼하게 꿰맸어요.",
+   "role": "narration"
+  },
+  {
+   "index": 69,
+   "text": "사냥꾼과 할머니와 빨간 모자는 숨어서 늑대를 지켜보았어요.",
+   "role": "narration"
+  },
+  {
+   "index": 70,
+   "text": "얼마쯤 지나자 잠에서 깬 늑대가 침대에서 일어났어요.",
+   "role": "narration"
+  },
+  {
+   "index": 71,
+   "text": "늑대의 배 속에서 돌들이 덜커덕덜커덕 부딪혔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 72,
+   "text": "“아이고 배야, 내가 너무 많이 먹었나?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 73,
+   "text": "늑대가 걸음을 옮길 때마다 돌들이 덜커덕 덜커덕 소리를 냈어요.",
+   "role": "narration"
+  },
+  {
+   "index": 74,
+   "text": "“아이고 배야, 늑대 죽네!”",
+   "role": "dialogue"
+  },
+  {
+   "index": 75,
+   "text": "늑대는 배를 움켜쥐며 떼굴떼굴 굴렀어요.",
+   "role": "narration"
+  },
+  {
+   "index": 76,
+   "text": "그러다 푹 쓰러져서 다시는 일어나지 못했지요.",
+   "role": "narration"
+  },
+  {
+   "index": 77,
+   "text": "빨간 모자가 할머니에게 말했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 78,
+   "text": "“할머니, 다시는 한눈팔지 않을게요.”",
+   "role": "dialogue"
+  }
+ ]
+}

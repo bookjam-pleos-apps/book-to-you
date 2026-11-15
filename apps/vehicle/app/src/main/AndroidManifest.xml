@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 오프라인이던 차가 다시 인터넷에 붙는 순간을 알아 목록을 받는다(NetworkWatcher). -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="pleos.car.permission.CAR_SEATS" />
+    <uses-permission android:name="pleos.car.permission.CAR_DOORS" />
+    <!-- 내비 목적지 정보(도착까지 남은 시간)를 읽어 책장 순서를 정한다(ArrivalWatch). -->
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE" />
+
+    <uses-feature android:name="android.hardware.type.automotive" android:required="true" />
+
+    <!-- appCategory: Pleos Music/Audio 가이드(A9). 백업 제외: 부모 음성과 기기 토큰을 차 밖으로 내보내지 않는다(C5). -->
+    <application
+        android:name=".VehicleApp"
+        android:allowBackup="false"
+        android:appCategory="audio"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:theme="@style/Theme.Vehicle">
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- Gleo("빨간 모자 틀어줘")가 assets/schema.json의 PLAY_STORY를 보낸다. 문서의 액션 이름은 PLAY_STORY지만 -->
+            <!-- 에뮬레이터의 Gleo는 패키지명을 앞에 붙여 보낸다. 둘 다 받는다. 다른 앱도 이 요청을 보낼 수 있지만 -->
+            <!-- 할 수 있는 일은 받아 둔 이야기를 트는 것뿐이다(읽기·삭제 없음). Gleo 쪽 권한이 문서에 없어 막지 않는다. -->
+            <intent-filter>
+                <action android:name="PLAY_STORY" />
+                <action android:name="com.voicestorybook.vehicle.PLAY_STORY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- 주행 중에도 화면을 보여 준다. 기능별 제한(항목 수, 문자열 길이, 연결·신고 잠금)은 앱이 CarUxRestrictions로 적용한다. -->
+            <meta-data android:name="distractionOptimized" android:value="true" />
+        </activity>
+
+        <service
+            android:name=".playback.PlaybackService"
+            android:exported="true"
+            android:foregroundServiceType="mediaPlayback">
+            <intent-filter>
+                <action android:name="androidx.media3.session.MediaLibraryService" />
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+            <!-- 런처가 있는 앱의 MBS는 이 표시가 있어야 차 미디어 앱(카드·미디어 화면)이 소스로 넣는다(MediaSourceUtil). -->
+            <meta-data
+                android:name="androidx.car.app.launchable"
+                android:value="true" />
+        </service>
+
+        <!-- 앱이 꺼져 세션이 없을 때 핸들의 재생 키를 받아 서비스를 깨운다(onPlaybackResumption으로 가장 최근 이야기를 잇는다). -->
+        <receiver
+            android:name="androidx.media3.session.MediaButtonReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

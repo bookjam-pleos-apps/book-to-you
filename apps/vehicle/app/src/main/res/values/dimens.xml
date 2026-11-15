@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 크기 토큰. 레이아웃은 숫자 대신 이 이름만 쓴다.
+     이 파일은 좁은 창(분할, 가장 좁은 12.9" 세로 628 dp) 기준이고, 1200 dp 이상(앱 1개 창, 가장 좁은 12.9"도 1274 dp)은 values-w1200dp(Figma 17" 값)가 덮는다. 분할 창(840·672·628 dp)은 모두 이 파일을 쓴다.
+     좁은 창 값은 Pleos 키트의 connect-l 비율(connect-s의 약 0.875배, tokens.json formFactor)로 줄였다.
+     세로로 쌓는 화면에서 넘치는 곳(재생 화면 제목·표지)만 더 줄였다. -->
+<resources>
+    <!-- 간격 (두 창 공통 단계) -->
+    <dimen name="space2xs">8dp</dimen>
+    <dimen name="spaceXs">12dp</dimen>
+    <dimen name="spaceS">16dp</dimen>
+    <dimen name="spaceM">20dp</dimen>
+    <dimen name="spaceL">24dp</dimen>
+    <dimen name="spaceXl">32dp</dimen>
+    <dimen name="spaceXxl">40dp</dimen>
+    <dimen name="spaceScreen">40dp</dimen>
+    <dimen name="spaceScreenSide">32dp</dimen>
+    <dimen name="spaceColumns">40dp</dimen>
+
+    <!-- 글자: Pleos 키트 스타일 크기와 줄 높이(× 0.875). 재생 제목(Display)은 세로로 쌓을 때 넘쳐 더 줄인다.
+         재생 화면 크기는 가장 낮은 분할 창(628×855)에 맞춘 값이고, 높이 1000 dp 이상 분할 창은 values-h1000dp가 키운다. -->
+    <dimen name="textDisplay">56sp</dimen>
+    <dimen name="lineDisplay">68sp</dimen>
+    <!-- 화면 제목은 628 dp 창에서 연결 끊기 버튼 옆 두 줄에 들어가게 0.875배가 아니라 0.75배로 줄인다. -->
+    <dimen name="textHeadlineL">48sp</dimen>
+    <dimen name="lineHeadlineL">60sp</dimen>
+    <dimen name="textHeadlineS">42sp</dimen>
+    <dimen name="lineHeadlineS">56sp</dimen>
+    <dimen name="textSection">38sp</dimen>
+    <dimen name="lineSection">49sp</dimen>
+    <dimen name="textTitleL">35sp</dimen>
+    <dimen name="lineTitleL">46sp</dimen>
+    <dimen name="textTitleM">32sp</dimen>
+    <dimen name="lineTitleM">38sp</dimen>
+    <dimen name="textTitleS">28sp</dimen>
+    <dimen name="lineTitleS">35sp</dimen>
+    <dimen name="textBodyL">26sp</dimen>
+    <dimen name="lineBodyL">33sp</dimen>
+    <dimen name="textBodyS">23sp</dimen>
+    <dimen name="lineBodyS">30sp</dimen>
+    <dimen name="textLabelM">21sp</dimen>
+    <dimen name="lineLabelM">25sp</dimen>
+    <dimen name="textCode">56sp</dimen>
+    <dimen name="lineCode">70sp</dimen>
+
+    <!-- 모서리 -->
+    <dimen name="radiusCard">28dp</dimen>
+    <dimen name="radiusButtonL">28dp</dimen>
+    <dimen name="radiusButtonM">21dp</dimen>
+    <dimen name="radiusButtonS">14dp</dimen>
+    <dimen name="radiusIconTile">21dp</dimen>
+    <dimen name="radiusDialog">42dp</dimen>
+    <dimen name="radiusBanner">42dp</dimen>
+    <dimen name="radiusFull">999dp</dimen>
+
+    <!-- 버튼: Pleos Basic button Large·Medium·Small -->
+    <dimen name="buttonLargeHeight">88dp</dimen>
+    <dimen name="buttonLargePadH">35dp</dimen>
+    <dimen name="buttonLargeGap">14dp</dimen>
+    <dimen name="buttonMediumHeight">70dp</dimen>
+    <dimen name="buttonMediumPadH">28dp</dimen>
+    <dimen name="buttonMediumGap">12dp</dimen>
+    <dimen name="buttonPadV">14dp</dimen>
+    <dimen name="buttonSmallHeight">56dp</dimen>
+    <dimen name="buttonSmallPadH">21dp</dimen>
+    <dimen name="buttonSmallPadV">7dp</dimen>
+    <dimen name="tagPadH">21dp</dimen>
+    <dimen name="tagPadV">7dp</dimen>
+
+    <!-- 아이콘 -->
+    <dimen name="iconLarge">46dp</dimen>
+    <dimen name="iconMedium">35dp</dimen>
+    <dimen name="iconBack">38dp</dimen>
+    <dimen name="iconBanner">88dp</dimen>
+    <dimen name="iconTile">70dp</dimen>
+    <dimen name="iconPlaceholder">72dp</dimen>
+    <dimen name="iconControlMain">91dp</dimen>
+
+    <!-- 선 굵기 -->
+    <dimen name="strokeThumb">9dp</dimen>
+    <dimen name="strokeBanner">9dp</dimen>
+    <dimen name="strokeCodeBox">4dp</dimen>
+    <dimen name="strokePopup">2dp</dimen>
+    <dimen name="dividerHeight">2dp</dimen>
+
+    <!-- Pleos Level 2·3 그림자 높이. 색은 colors.xml shadowLevel*, 대응은 themes.xml 주석. -->
+    <dimen name="elevationLevel2">8dp</dimen>
+    <dimen name="elevationLevel3">16dp</dimen>
+
+    <!-- 조작 -->
+    <dimen name="backButton">56dp</dimen>
+    <dimen name="controlSide">112dp</dimen>
+    <dimen name="controlMain">152dp</dimen>
+    <dimen name="controlGap">24dp</dimen>
+    <dimen name="stepBadge">70dp</dimen>
+    <dimen name="progressWidth">520dp</dimen>
+    <!-- 장 구분 막대의 칸 사이 -->
+    <dimen name="chapterGap">5dp</dimen>
+    <dimen name="progressHeight">18dp</dimen>
+    <!-- 아이콘 크기 = 지름 - 안쪽 여백 x 2 -->
+    <dimen name="controlSidePadding">33dp</dimen>
+    <dimen name="controlMainPadding">40dp</dimen>
+    <dimen name="backButtonPadding">9dp</dimen>
+    <!-- 양옆 원을 내려 가운데 원과 중심 높이를 맞춘다: (controlMain - controlSide) / 2 -->
+    <dimen name="controlSideOffset">20dp</dimen>
+
+    <!-- 표지·책장·QR·팝업 -->
+    <dimen name="resumeWidth">508dp</dimen>
+    <dimen name="resumeHeight">796dp</dimen>
+    <!-- 이어 듣기 주 버튼 폭은 넓은 창 카드(layout-w1200dp)만 쓴다. 기본값은 lint(MissingDefaultResource)용 0.875배. -->
+    <dimen name="resumeCtaWidth">396dp</dimen>
+    <!-- 재생 화면 목소리 태그 글자. 키 큰 분할 창(values-h1000dp)만 줄인다. -->
+    <dimen name="textVoiceTag">35sp</dimen>
+    <!-- 좁은 창 이어서 듣기 표지(그림 모양은 bools resumeCoverLandscape)는 글자 묶음 높이로 잘라 쓴다. 높이는 레이아웃이 정한다.
+         가장 좁은 분할 창(628)은 옆 글자 칸에 "이어서 듣기" 버튼이 한 줄로 들어가도록 폭을 200으로 둔다. 840 창은 values-w800dp.
+         높이는 레이아웃이 정한다. -->
+    <dimen name="resumeCoverWidth">200dp</dimen>
+    <!-- 높이는 앱 하나 창(layout-w1200dp, values-w1200dp 값)만 쓴다. 자원마다 기본값이 있어야 해서(lint MissingDefaultResource)
+         좁은 창에서 잘못 쓰면 바로 드러나도록 0으로 둔다. -->
+    <dimen name="resumeCoverHeight">0dp</dimen>
+    <!-- 가장 낮은 창(628×855)은 시험 토글까지 들어가면 높이가 모자라 표지를 뺀다(0). 주행 중에도 쓰는 조작 버튼이 먼저다. -->
+    <dimen name="playerCoverWidth">0dp</dimen>
+    <dimen name="playerCoverHeight">0dp</dimen>
+    <!-- 카운트다운(Figma 73:1771, 1700 창 기준 값). 좁은 창은 숫자를 줄여 버튼까지 한 화면에 넣는다. -->
+    <dimen name="textCountdown">280sp</dimen>
+    <dimen name="countdownNumberTop">-24dp</dimen>
+    <dimen name="countdownNumberBottom">-6dp</dimen>
+    <dimen name="countdownPadV">32dp</dimen>
+    <dimen name="countdownButtonsTop">48dp</dimen>
+    <dimen name="textCountdownHint">28sp</dimen>
+    <dimen name="segmentItemWidth">220dp</dimen>
+    <dimen name="segmentItemHeight">72dp</dimen>
+    <dimen name="segmentPad">8dp</dimen>
+    <dimen name="thumbWidth">381dp</dimen>
+    <dimen name="thumbHeight">209dp</dimen>
+    <dimen name="bookGap">33dp</dimen>
+    <!-- 내 책장 칸이 이보다 좁아지면 열을 줄인다. 칸 폭은 창에 맞춰 thumbWidth까지 늘어난다(BookViews.fitBookColumns). -->
+    <dimen name="bookMinWidth">286dp</dimen>
+    <dimen name="qrCard">440dp</dimen>
+    <dimen name="qrCardPadding">53dp</dimen>
+    <dimen name="codeBoxWidth">548dp</dimen>
+    <dimen name="dialogWidth">614dp</dimen>
+    <dimen name="dialogPadding">42dp</dimen>
+    <dimen name="dialogGap">35dp</dimen>
+    <dimen name="bannerWidth">548dp</dimen>
+    <dimen name="codeBoxHeight">181dp</dimen>
+    <dimen name="iconTilePadding">12dp</dimen>
+    <dimen name="dialogShadowRoom">32dp</dimen>
+
+    <!-- 두 열 사이(넓은 창) 또는 위아래 사이(좁은 창). 한쪽만 값이 있다. -->
+    <dimen name="playerColumnGap">0dp</dimen>
+    <dimen name="playerStackGap">24dp</dimen>
+    <dimen name="pairingColumnGap">0dp</dimen>
+    <dimen name="pairingStackGap">32dp</dimen>
+
+    <!-- 좁은 창은 세로로 쌓는다. LinearLayout orientation 값: 0 가로, 1 세로. -->
+    <integer name="pairingOrientation">1</integer>
+    <integer name="homeOrientation">1</integer>
+    <integer name="playerOrientation">1</integer>
+
+    <!-- 스플래시: 넓은 창 값(Figma 스플래쉬 49:859)의 0.75배. 가장 낮은 분할 창(628×855)에 한 화면으로 들어간다. -->
+    <dimen name="splashMascotWidth">300dp</dimen>
+    <dimen name="splashMascotHeight">356dp</dimen>
+    <dimen name="splashWordmarkWidth">392dp</dimen>
+    <dimen name="splashWordmarkHeight">103dp</dimen>
+    <dimen name="splashWordmarkTop">9dp</dimen>
+    <dimen name="splashSloganTop">36dp</dimen>
+    <dimen name="splashDescriptionTop">8dp</dimen>
+</resources>

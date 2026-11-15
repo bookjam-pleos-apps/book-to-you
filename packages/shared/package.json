@@ -1,0 +1,21 @@
+{
+  "name": "@voice-storybook/shared",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./vocab": "./src/vocab.ts",
+    "./qc": "./src/qc.ts",
+    "./contracts/v1": "./src/contracts/v1/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.5"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Figma ic-play-filled. 색은 쓰는 쪽의 tint를 따른다(주 버튼은 onButtonBrand). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/iconLarge"
+    android:height="@dimen/iconLarge"
+    android:viewportWidth="53"
+    android:viewportHeight="53">
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M8.17084,9.68505C8.17084,4.49429 13.8694,1.31986 18.2829,4.05204L45.4464,20.8675C49.6302,23.4575 49.6302,29.5435 45.4464,32.1335L18.2829,48.949C13.8694,51.6811 8.17084,48.5067 8.17084,43.3159V9.68505Z" />
+</vector>

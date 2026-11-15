@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "sentences": [
+    { "id": "t01", "style": "calm", "tags": ["narration"], "ceiling": true, "text": "깊은 숲속 작은 굴에 토끼 토토가 엄마랑 함께 살고 있었어요." },
+    { "id": "t02", "style": "calm", "tags": ["onomatopoeia"], "ceiling": false, "text": "토토는 아침마다 이슬 맺힌 풀잎 사이를 깡충깡충 뛰어다니는 걸 좋아했지요." },
+    { "id": "t03", "style": "excited", "tags": ["exclamation"], "ceiling": true, "text": "와, 오늘은 드디어 소풍 가는 날이다!" },
+    { "id": "t04", "style": "excited", "tags": ["dialogue"], "ceiling": true, "text": "\"엄마, 엄마! 나 도시락에 당근 케이크 넣어 줘!\" 토토가 소리쳤어요." },
+    { "id": "t05", "style": "calm", "tags": ["question", "dialogue"], "ceiling": false, "text": "\"그런데 다람쥐 친구는 어디로 간 걸까?\"" },
+    { "id": "t06", "style": "calm", "tags": ["number-hangul"], "ceiling": true, "text": "토토는 도토리를 하나, 둘, 셋, 모두 일곱 개나 주웠어요." },
+    { "id": "t07", "style": "calm", "tags": ["number-arabic"], "ceiling": false, "text": "숲속 운동회는 3시 30분에 시작한대요." },
+    { "id": "t08", "style": "calm", "tags": ["long"], "ceiling": true, "text": "커다란 참나무 아래에서 부엉이 할아버지는 안경을 고쳐 쓰며, 아주 오래전 이 숲에 처음 눈이 내리던 날의 이야기를 천천히 들려주기 시작했어요." },
+    { "id": "t09", "style": "excited", "tags": ["onomatopoeia", "exclamation"], "ceiling": true, "text": "그때 갑자기 쿵쾅쿵쾅, 덜컹덜컹! 커다란 소리가 숲을 흔들었어요." },
+    { "id": "t10", "style": "soft", "tags": ["dialogue"], "ceiling": true, "text": "\"괜찮아, 무서워하지 않아도 돼.\" 엄마가 토토를 꼭 안아 주었어요." },
+    { "id": "t11", "style": "calm", "tags": ["narration"], "ceiling": false, "text": "알고 보니 그 소리는 곰 아저씨가 새집을 짓는 소리였답니다." },
+    { "id": "t12", "style": "excited", "tags": ["dialogue", "exclamation"], "ceiling": false, "text": "\"우리도 도와줄게요!\" 친구들이 한목소리로 외쳤어요." },
+    { "id": "t13", "style": "excited", "tags": ["question", "dialogue"], "ceiling": true, "text": "\"정말? 나도 망치질해 봐도 돼?\"" },
+    { "id": "t14", "style": "calm", "tags": ["long"], "ceiling": false, "text": "해가 뉘엿뉘엿 질 무렵, 곰 아저씨의 새집에는 동그란 창문과 빨간 지붕이 생겼어요." },
+    { "id": "t15", "style": "soft", "tags": ["narration"], "ceiling": true, "text": "하늘에는 하나둘 별이 떠오르고, 숲은 조용히 잠들 준비를 했어요." },
+    { "id": "t16", "style": "soft", "tags": ["question", "dialogue"], "ceiling": false, "text": "\"토토야, 오늘 하루는 어땠니?\"" },
+    { "id": "t17", "style": "soft", "tags": ["dialogue"], "ceiling": false, "text": "토토는 하품을 크게 하며 대답했어요. \"최고였어요.\"" },
+    { "id": "t18", "style": "excited", "tags": ["onomatopoeia"], "ceiling": false, "text": "개굴개굴, 맴맴, 부엉부엉! 숲속 친구들이 저마다 노래를 불렀어요." },
+    { "id": "t19", "style": "calm", "tags": ["short"], "ceiling": false, "text": "그렇게 숲속의 하루가 저물었어요." },
+    { "id": "t20", "style": "soft", "tags": ["ending"], "ceiling": true, "text": "잘 자, 토토. 내일도 신나는 하루가 기다리고 있을 거야." }
+  ]
+}

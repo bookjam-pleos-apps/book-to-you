@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "source": "outputs/eval_set/measure.py의 REFERENCES. 경로는 gpu/spike 기준이고 {style}은 단위 라벨(calm, excited, soft)로 바뀐다. 기준 참조는 s4다. 참조 기준 값은 같은 참조끼리만 비교한다.",
+  "references": {
+    "s4": {"path": "recordings/s4_phone/B_{style}.m4a", "note": "울리는 방, 합성에 쓴 참조"},
+    "s4calm": {"path": "recordings/s4_phone/B_calm.m4a", "note": "s4 calm 고정"},
+    "s3": {"path": "recordings/s3_phone/B_{style}.m4a", "note": "s4와 같은 자리, 히터 켬"},
+    "s2calm": {"path": "recordings/s2_phone/B_calm.m4a", "note": "폰, 다른 날"},
+    "s1calm": {"path": "recordings/s1/A_calm.wav", "note": "맥북 내장 마이크"}
+  }
+}

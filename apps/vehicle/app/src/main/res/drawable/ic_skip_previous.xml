@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 개선안 skip-prev(skip-next 좌우 반전). 색은 쓰는 쪽의 tint를 따른다. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/iconLarge"
+    android:height="@dimen/iconLarge"
+    android:viewportWidth="52"
+    android:viewportHeight="52">
+    <group
+        android:pivotX="26"
+        android:scaleX="-1">
+        <group android:translateY="4">
+            <path
+                android:fillColor="@android:color/white"
+                android:pathData="M8,9.7C8,4.5 13.7,1.3 18.1,4l21,13C43.3,19.6 43.3,25.7 39.1,28.3l-21,13C13.7,44 8,40.8 8,35.6Z" />
+        </group>
+        <path
+            android:fillColor="@android:color/white"
+            android:pathData="M44.5,6A4.5,4.5 0 0 1 49,10.5V41.5A4.5,4.5 0 0 1 40,41.5V10.5A4.5,4.5 0 0 1 44.5,6Z" />
+    </group>
+</vector>

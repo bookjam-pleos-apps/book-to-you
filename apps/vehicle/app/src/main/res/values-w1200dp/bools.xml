@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 앱 하나 창은 Figma대로 세로 표지. 너비 한정자가 values-h1000dp보다 먼저라 여기서 되돌린다. -->
+<resources>
+    <bool name="playerCoverLandscape">false</bool>
+    <!-- 앱 하나 창의 이어서 듣기 카드는 Figma대로 세로 표지. -->
+    <bool name="resumeCoverLandscape">false</bool>
+    <!-- 시험 토글 아래 감지 줄(CabinDebugPanel). 분할 창은 숨긴다. -->
+    <bool name="showCabinSupport">true</bool>
+</resources>

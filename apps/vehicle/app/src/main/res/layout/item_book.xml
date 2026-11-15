@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 내 책장의 책 한 권(같은 이야기의 목소리들을 묶음): 흰 테두리를 두른 16:9 썸네일 + 아래 제목. 표지는 CoverBinder(가로 그림 우선),
+     제목과 누를 수 있는지는 BookViews가 정한다. 누름 물결은 썸네일에만 보인다(눌림 상태가 자식으로 전해진다). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/thumbWidth"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:layout_marginEnd="@dimen/bookGap"
+    android:layout_marginBottom="@dimen/spaceXl"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/bookThumb"
+        style="@style/Elevated.Level2"
+        android:layout_width="@dimen/thumbWidth"
+        android:layout_height="@dimen/thumbHeight"
+        android:background="@drawable/bg_book"
+        android:foreground="@drawable/fg_book_pressed"
+        android:padding="@dimen/strokeThumb">
+
+        <include
+            android:id="@+id/bookCover"
+            layout="@layout/view_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/bookTitle"
+        style="@style/Text.TitleMNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spaceS"
+        android:gravity="center"
+        android:maxLines="2" />
+
+    <!-- 내비 안내 중 도착 전에 끝나는 책에만 보인다(fitsBeforeArrival). -->
+    <TextView
+        android:id="@+id/bookArrivalFit"
+        style="@style/Tag.Count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space2xs"
+        android:text="@string/book_arrival_fit"
+        android:visibility="gone" />
+</LinearLayout>

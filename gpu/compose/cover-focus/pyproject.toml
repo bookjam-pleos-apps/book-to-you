@@ -1,0 +1,25 @@
+[project]
+name = "cover-focus-service"
+version = "0.1.0"
+description = "model-compose 표지 초점 분석 서비스 환경(맥 전용, 표지 몇 장이라 GPU 없이 돈다)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "model-compose @ git+https://github.com/rn1njoo/model-compose@462e13006f64dbb6ed788341e57dec4bc522f49f",
+    # Qwen2.5-VL을 읽는 버전. voice-clone과 같은 값으로 둔다.
+    "transformers==4.57.3",
+    "torch==2.9.1",
+    "torchvision==0.24.1",
+    # 드라이버가 기동할 때 설치하는 패키지다. 미리 잠가 두어 lock 밖 버전이 들어오지 않게 한다.
+    "accelerate",
+    "peft>=0.5.0",
+    "sentencepiece",
+    "huggingface-hub<2.0",
+    "pillow",
+    "fastapi",
+    "uvicorn",
+    "python-multipart",
+]
+
+[tool.uv]
+package = false
+environments = ["sys_platform == 'darwin' and platform_machine == 'arm64'"]

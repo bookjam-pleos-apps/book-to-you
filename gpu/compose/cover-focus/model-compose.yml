@@ -1,0 +1,122 @@
+# 표지 초점 분석. 표지를 바꿀 때만 맥에서 띄워 `spike.run_cover_focus`로 부르고 끝나면 내린다(인증 없음).
+controller:
+  max_concurrent_count: 1
+  adapter:
+    type: http-server
+    host: 127.0.0.1
+    port: 18097
+    base_path: /api
+
+workflows:
+  # Qwen2.5-VL은 28px 격자로 맞춘 입력 크기의 픽셀 좌표로 박스를 답한다. 격자 크기로 먼저 맞춰 두면
+  # 답한 좌표를 그 크기로 나누는 것만으로 정규화된다(격자 크기는 호출하는 쪽이 계산해 넘긴다).
+  - id: locate-subjects
+    title: Box the main characters of a cover
+    jobs:
+      - id: fit
+        component: fit-grid
+        input:
+          image_path: ${input.image_path}
+          width: ${input.grid_width}
+          height: ${input.grid_height}
+
+      - id: locate
+        component: subject-locator
+        input:
+          image: ${jobs.fit.output}
+        depends_on: [ fit ]
+    output: ${jobs.locate.output as text}
+
+  # 앱이 그릴 영역(호출하는 쪽이 앱과 같은 순수 함수로 계산)을 잘라 화면 크기로 줄인다. 사람이 보는 미리보기다.
+  - id: preview-crop
+    title: Crop a cover to one screen slot
+    jobs:
+      - id: crop
+        component: crop-region
+        input: ${input}
+
+      - id: scale
+        component: fit-slot
+        input:
+          image: ${jobs.crop.output}
+          width: ${input.slot_width}
+          height: ${input.slot_height}
+        depends_on: [ crop ]
+    output: ${jobs.scale.output as image/png}
+
+  # 원본 위에 꼭 보여야 할 박스를 그려 분석 결과를 사람이 확인한다.
+  - id: mark-subjects
+    title: Draw the keep box on a cover
+    job:
+      component: keep-box
+      input: ${input}
+      output: ${output as image/png}
+
+components:
+  - id: subject-locator
+    type: model
+    task: image-text-to-text
+    driver: huggingface
+    architecture: qwen2.5-vl
+    model:
+      provider: huggingface
+      repository: Qwen/Qwen2.5-VL-3B-Instruct
+      revision: 66285546d2b821cf421d4f5eb2576359d3770cd3
+    # 기본(device_map auto)은 맥 통합 메모리를 다 못 보고 일부를 디스크로 내려 한 장에 10분을 넘겼다. 한 장치에 올린다.
+    device_mode: single
+    device: mps
+    precision: bfloat16
+    max_concurrent_count: 1
+    action:
+      image: ${input.image as image}
+      # Qwen2.5-VL 예제의 grounding 문구다. JSON 배열 모양을 글로 지시하면 박스 하나만 평문으로 답했다.
+      prompt: >-
+        Locate every main character (people and animals) in this picture book illustration,
+        not furniture, trees or background. Output their bbox coordinates in JSON format with "bbox_2d" and "label" (what it is, like "cat").
+      max_output_length: 512
+      params:
+        do_sample: false
+
+  - id: fit-grid
+    type: image-processor
+    driver: native
+    action:
+      method: resize
+      image: ${input.image_path as image;path}
+      width: ${input.width as integer}
+      height: ${input.height as integer}
+      scale_mode: stretch
+
+  - id: crop-region
+    type: image-processor
+    driver: native
+    action:
+      method: crop
+      image: ${input.image_path as image;path}
+      x: ${input.x as integer}
+      y: ${input.y as integer}
+      width: ${input.width as integer}
+      height: ${input.height as integer}
+
+  - id: fit-slot
+    type: image-processor
+    driver: native
+    action:
+      method: resize
+      image: ${input.image as image}
+      width: ${input.width as integer}
+      height: ${input.height as integer}
+      scale_mode: stretch
+
+  - id: keep-box
+    type: image-drawing
+    driver: native
+    action:
+      method: rectangle
+      image: ${input.image_path as image;path}
+      x: ${input.x as integer}
+      y: ${input.y as integer}
+      width: ${input.width as integer}
+      height: ${input.height as integer}
+      outline: "#FF00FF"
+      line_width: 6

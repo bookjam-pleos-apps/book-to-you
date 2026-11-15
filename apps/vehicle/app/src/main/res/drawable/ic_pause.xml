@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 개선안의 멈춤 막대(20×70 두 개, 사이 20)를 재생 아이콘과 같은 칸(104)에 가운데 둔다. 색은 쓰는 쪽의 tint를 따른다. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/iconControlMain"
+    android:height="@dimen/iconControlMain"
+    android:viewportWidth="104"
+    android:viewportHeight="104">
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M26,17H38A4,4 0 0 1 42,21V83A4,4 0 0 1 38,87H26A4,4 0 0 1 22,83V21A4,4 0 0 1 26,17Z" />
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M66,17H78A4,4 0 0 1 82,21V83A4,4 0 0 1 78,87H66A4,4 0 0 1 62,83V21A4,4 0 0 1 66,17Z" />
+</vector>

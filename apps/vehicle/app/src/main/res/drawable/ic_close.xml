@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 닫기. ic_arrow_back과 같은 45 좌표계라 RoundButton.Back 안에서 같은 크기로 보인다. 색은 tint를 따른다. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/iconBack"
+    android:height="@dimen/iconBack"
+    android:viewportWidth="45"
+    android:viewportHeight="45">
+    <path
+        android:pathData="M12,12L33,33M33,12L12,33"
+        android:strokeColor="@android:color/white"
+        android:strokeLineCap="round"
+        android:strokeWidth="3.75" />
+</vector>

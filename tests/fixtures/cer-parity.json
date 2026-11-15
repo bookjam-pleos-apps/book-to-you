@@ -1,0 +1,102 @@
+[
+  {
+    "reference": "토토가 소리쳤어요",
+    "hypothesis": "토터가 소리쳤어요",
+    "cer": 0.125
+  },
+  {
+    "reference": "abc 12",
+    "hypothesis": "ABC12!",
+    "cer": 0.4
+  },
+  {
+    "reference": "와, 오늘",
+    "hypothesis": "우와 오늘",
+    "cer": 0.333333
+  },
+  {
+    "reference": "",
+    "hypothesis": "",
+    "cer": 0.0
+  },
+  {
+    "reference": "!",
+    "hypothesis": "가",
+    "cer": 1.0
+  },
+  {
+    "reference": "가나",
+    "hypothesis": "",
+    "cer": 1.0
+  },
+  {
+    "reference": "토토는 도토리를 모두 일곱 개나 주웠어요",
+    "hypothesis": "토토는 도토리를 모두 7개나 주웠어요",
+    "cer": 0.0
+  },
+  {
+    "reference": "사과 한 개",
+    "hypothesis": "사과 1개",
+    "cer": 0.0
+  },
+  {
+    "reference": "나는 스무 살",
+    "hypothesis": "나는 20살",
+    "cer": 0.0
+  },
+  {
+    "reference": "스물한 명",
+    "hypothesis": "21명",
+    "cer": 0.0
+  },
+  {
+    "reference": "십 쪽",
+    "hypothesis": "10쪽",
+    "cer": 0.0
+  },
+  {
+    "reference": "이천이십사 년",
+    "hypothesis": "2024년",
+    "cer": 0.0
+  },
+  {
+    "reference": "삼만오천 원",
+    "hypothesis": "35,000원",
+    "cer": 0.0
+  },
+  {
+    "reference": "백오 번",
+    "hypothesis": "105번",
+    "cer": 0.0
+  },
+  {
+    "reference": "영 점",
+    "hypothesis": "0 점",
+    "cer": 0.0
+  },
+  {
+    "reference": "일 이 삼 사 오",
+    "hypothesis": "1 2 3 4 5",
+    "cer": 0.0
+  },
+  {
+    "reference": "하나 둘 셋",
+    "hypothesis": "1 2 3",
+    "cer": 0.0
+  },
+  {
+    "reference": "가나다라",
+    "hypothesis": "가나마라",
+    "cer": 0.25
+  },
+  {
+    "reference": "토토가 소리쳤어요",
+    "hypothesis": "토토가 소리쳤어요",
+    "cer": 0.0
+  },
+  {
+    "reference": "토토가 소리쳤어요",
+    "hypothesis": "토터가 소리쳤어요",
+    "cer": 0.125
+  }
+]

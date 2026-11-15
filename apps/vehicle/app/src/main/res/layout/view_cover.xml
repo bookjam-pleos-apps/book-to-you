@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 표지(이어서 듣기·재생은 3:4, 책장은 16:9). 그림이 있으면 coverArt(표지 초점에 맞춰 자름), 없으면 색 블록(CoverTone) 위에 자리 표시. CoverBinder가 채운다.
+     그림자는 쓰는 쪽이 감싼 뷰에 준다(책장 썸네일은 흰 테두리 안에 들어가 그림자가 없어야 한다).
+     clipToOutline(그림을 둥근 모서리로 자르기)은 API 31부터 동작한다. Pleos는 API 34라 문제없고, 그 아래에서는 모서리만 각진다. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cover"
+    android:clipToOutline="true">
+
+    <com.voicestorybook.vehicle.ui.FocusCropImageView
+        android:id="@+id/coverArt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/coverPlaceholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/iconPlaceholder"
+            android:layout_height="@dimen/iconPlaceholder"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_image"
+            app:tint="@color/coverHint" />
+
+        <TextView
+            android:id="@+id/coverHint"
+            style="@style/Text.CoverHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space2xs"
+            android:text="@string/cover_placeholder" />
+    </LinearLayout>
+</FrameLayout>

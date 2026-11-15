@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 이어서 듣기 카드(좁은 창): 세로로 쌓은 화면에서 책장 자리를 남기도록 표지 옆에 글자와 버튼을 둔다.
+     표지는 글자 묶음(제목~버튼)과 같은 높이로 잘라 위아래 선을 맞춘다(match_parent). 그림 모양은 bools resumeCoverLandscape.
+     버튼은 글자 칸 끝까지 채운다. 카드 어디를 눌러도 이어 듣는다(ResumeCard).
+     넓은 창은 layout-w1200dp/view_resume_card.xml. 두 파일의 id는 같다(ResumeCard). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Elevated.Level2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/spaceScreenSide"
+    android:layout_marginBottom="@dimen/spaceXl"
+    android:background="@drawable/bg_card"
+    android:foreground="@drawable/fg_card_pressed"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/spaceL"
+    android:visibility="gone">
+
+    <FrameLayout
+        style="@style/Elevated.Level2"
+        android:layout_width="@dimen/resumeCoverWidth"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_cover">
+
+        <include
+            android:id="@+id/resumeCover"
+            layout="@layout/view_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spaceL"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/resumeTitle"
+            style="@style/Text.HeadlineS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include
+            layout="@layout/view_resume_meta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space2xs" />
+
+        <Button
+            android:id="@+id/resumePlay"
+            style="@style/Button.Brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spaceL"
+            android:drawableStart="@drawable/ic_play"
+            android:text="@string/resume_play" />
+    </LinearLayout>
+</LinearLayout>

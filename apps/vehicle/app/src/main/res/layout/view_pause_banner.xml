@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 04 배너: 벨트·뒷문으로 멈췄을 때 화면 위 가운데에 띄운다(흰 바탕, 빨간 테두리, Pleos Level 3). 다시 재생하면 사라진다.
+     아이콘은 이유마다 PauseBanner가 바꾼다. 이유는 글자로도 보여 접근성 설명은 글자가 맡는다. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/playerBanner"
+    style="@style/Elevated.Level3"
+    android:layout_width="@dimen/bannerWidth"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|center_horizontal"
+    android:layout_marginTop="@dimen/spaceScreen"
+    android:accessibilityLiveRegion="polite"
+    android:background="@drawable/bg_banner"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/spaceL"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/playerBannerIcon"
+        android:layout_width="@dimen/iconBanner"
+        android:layout_height="@dimen/iconBanner"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_seatbelt" />
+
+    <TextView
+        android:id="@+id/playerBannerText"
+        style="@style/Text.HeadlineS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spaceL" />
+</LinearLayout>

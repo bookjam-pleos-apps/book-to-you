@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 넓은 창(1200 dp 이상, 앱 1개 창. 17" 1700×1184 기준). 값은 개선안에서
+     Figma 1px = 1dp로 옮겼다. 좁은 창 값은 values/dimens.xml에 같은 이름으로 있다. -->
+<resources>
+    <dimen name="spaceScreen">56dp</dimen>
+    <dimen name="spaceScreenSide">50dp</dimen>
+    <dimen name="spaceColumns">60dp</dimen>
+
+    <!-- 글자: Pleos 키트 스타일 크기와 줄 높이 -->
+    <dimen name="textDisplay">128sp</dimen>
+    <dimen name="lineDisplay">154sp</dimen>
+    <dimen name="textHeadlineL">64sp</dimen>
+    <dimen name="lineHeadlineL">80sp</dimen>
+    <dimen name="textHeadlineS">48sp</dimen>
+    <dimen name="lineHeadlineS">64sp</dimen>
+    <dimen name="textSection">44sp</dimen>
+    <dimen name="lineSection">56sp</dimen>
+    <dimen name="textTitleL">40sp</dimen>
+    <!-- values-h1000dp보다 너비 한정자가 먼저라, 거기서 바꾼 값은 앱 하나 창에서 여기 값으로 되돌린다. -->
+    <dimen name="textVoiceTag">40sp</dimen>
+    <dimen name="lineTitleL">52sp</dimen>
+    <dimen name="textTitleM">36sp</dimen>
+    <dimen name="lineTitleM">44sp</dimen>
+    <dimen name="textTitleS">32sp</dimen>
+    <dimen name="lineTitleS">40sp</dimen>
+    <dimen name="textBodyL">30sp</dimen>
+    <dimen name="lineBodyL">38sp</dimen>
+    <dimen name="textBodyS">26sp</dimen>
+    <dimen name="lineBodyS">34sp</dimen>
+    <dimen name="textLabelM">24sp</dimen>
+    <dimen name="lineLabelM">28sp</dimen>
+    <dimen name="textCode">64sp</dimen>
+    <dimen name="lineCode">80sp</dimen>
+
+    <!-- 모서리 -->
+    <dimen name="radiusCard">32dp</dimen>
+    <dimen name="radiusButtonL">32dp</dimen>
+    <dimen name="radiusButtonM">24dp</dimen>
+    <dimen name="radiusButtonS">16dp</dimen>
+    <dimen name="radiusIconTile">24dp</dimen>
+    <dimen name="radiusDialog">48dp</dimen>
+    <dimen name="radiusBanner">48dp</dimen>
+
+    <!-- 버튼: Pleos Basic button Large·Medium·Small -->
+    <dimen name="buttonLargeHeight">100dp</dimen>
+    <dimen name="buttonLargePadH">40dp</dimen>
+    <dimen name="buttonLargeGap">16dp</dimen>
+    <!-- 이어 듣기 카드의 주 버튼 폭(Figma 452). -->
+    <dimen name="resumeCtaWidth">452dp</dimen>
+    <dimen name="buttonMediumHeight">80dp</dimen>
+    <dimen name="buttonMediumPadH">32dp</dimen>
+    <dimen name="buttonMediumGap">14dp</dimen>
+    <dimen name="buttonPadV">16dp</dimen>
+    <dimen name="buttonSmallHeight">64dp</dimen>
+    <dimen name="buttonSmallPadH">24dp</dimen>
+    <dimen name="buttonSmallPadV">8dp</dimen>
+    <dimen name="tagPadH">24dp</dimen>
+    <dimen name="tagPadV">8dp</dimen>
+
+    <!-- 아이콘 -->
+    <dimen name="iconLarge">52dp</dimen>
+    <dimen name="iconMedium">40dp</dimen>
+    <dimen name="iconBack">44dp</dimen>
+    <dimen name="iconBanner">100dp</dimen>
+    <dimen name="iconTile">80dp</dimen>
+    <dimen name="iconPlaceholder">120dp</dimen>
+    <dimen name="iconControlMain">104dp</dimen>
+
+    <!-- 선 굵기 -->
+    <dimen name="strokeThumb">10dp</dimen>
+    <dimen name="strokeBanner">10dp</dimen>
+    <dimen name="strokeCodeBox">4dp</dimen>
+    <dimen name="strokePopup">2dp</dimen>
+    <dimen name="dividerHeight">2dp</dimen>
+
+    <!-- 조작 -->
+    <dimen name="backButton">64dp</dimen>
+    <dimen name="controlSide">160dp</dimen>
+    <dimen name="controlMain">220dp</dimen>
+    <dimen name="controlGap">68dp</dimen>
+    <dimen name="stepBadge">80dp</dimen>
+    <dimen name="progressWidth">689dp</dimen>
+    <!-- 장 구분 막대의 칸 사이 -->
+    <dimen name="chapterGap">6dp</dimen>
+    <dimen name="progressHeight">20dp</dimen>
+    <dimen name="controlSidePadding">54dp</dimen>
+    <dimen name="controlMainPadding">58dp</dimen>
+    <dimen name="backButtonPadding">10dp</dimen>
+    <dimen name="controlSideOffset">30dp</dimen>
+
+    <!-- 표지·책장·QR·팝업 -->
+    <dimen name="resumeWidth">580dp</dimen>
+    <dimen name="resumeHeight">910dp</dimen>
+    <dimen name="resumeCoverWidth">415dp</dimen>
+    <dimen name="resumeCoverHeight">556dp</dimen>
+    <dimen name="playerCoverWidth">609dp</dimen>
+    <dimen name="playerCoverHeight">816dp</dimen>
+    <dimen name="thumbWidth">435dp</dimen>
+    <dimen name="thumbHeight">239dp</dimen>
+    <dimen name="textCountdown">500sp</dimen>
+    <!-- Figma 간격: 문구 아래 → 숫자 위 약 90, 숫자 아래 → 안내 위 약 110. 글꼴 위아래 여백을 빼서 맞춘다. -->
+    <dimen name="countdownNumberTop">-43dp</dimen>
+    <dimen name="countdownNumberBottom">-10dp</dimen>
+    <dimen name="countdownPadV">58dp</dimen>
+    <dimen name="countdownButtonsTop">102dp</dimen>
+    <dimen name="textCountdownHint">32sp</dimen>
+    <dimen name="segmentItemWidth">286dp</dimen>
+    <dimen name="segmentItemHeight">84dp</dimen>
+    <dimen name="bookGap">38dp</dimen>
+    <dimen name="bookMinWidth">330dp</dimen>
+    <dimen name="qrCard">580dp</dimen>
+    <dimen name="qrCardPadding">70dp</dimen>
+    <dimen name="codeBoxWidth">695dp</dimen>
+    <dimen name="dialogWidth">808dp</dimen>
+    <dimen name="dialogPadding">48dp</dimen>
+    <dimen name="dialogGap">40dp</dimen>
+    <dimen name="bannerWidth">915dp</dimen>
+    <dimen name="codeBoxHeight">207dp</dimen>
+    <dimen name="iconTilePadding">14dp</dimen>
+    <dimen name="dialogShadowRoom">40dp</dimen>
+
+    <dimen name="playerColumnGap">95dp</dimen>
+    <dimen name="playerStackGap">0dp</dimen>
+    <dimen name="pairingColumnGap">104dp</dimen>
+    <dimen name="pairingStackGap">0dp</dimen>
+
+    <integer name="pairingOrientation">0</integer>
+    <integer name="homeOrientation">0</integer>
+    <integer name="playerOrientation">0</integer>
+
+    <!-- 스플래시(Figma 스플래쉬 49:859): 곰 400×475, 워드마크 523 폭, 그 사이 12. -->
+    <dimen name="splashMascotWidth">400dp</dimen>
+    <dimen name="splashMascotHeight">475dp</dimen>
+    <dimen name="splashWordmarkWidth">523dp</dimen>
+    <dimen name="splashWordmarkHeight">138dp</dimen>
+    <dimen name="splashWordmarkTop">12dp</dimen>
+    <dimen name="splashSloganTop">48dp</dimen>
+    <dimen name="splashDescriptionTop">10dp</dimen>
+</resources>

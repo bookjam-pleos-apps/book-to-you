@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 이어서 듣기 카드의 한 줄: 누구 목소리 + 몇 장째 태그. 두 창의 카드가 같이 쓴다. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/resumeVoice"
+        style="@style/Text.TitleM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="@color/textTertiary" />
+
+    <TextView
+        android:id="@+id/resumeCount"
+        style="@style/Tag.Count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spaceS" />
+</LinearLayout>

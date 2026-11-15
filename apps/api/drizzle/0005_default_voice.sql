@@ -1,0 +1,2 @@
+ALTER TABLE "voice_profiles" ADD COLUMN "is_default" boolean DEFAULT false NOT NULL;--> statement-breakpoint
+CREATE UNIQUE INDEX "voice_profiles_one_default" ON "voice_profiles" USING btree ("user_id") WHERE "voice_profiles"."is_default";

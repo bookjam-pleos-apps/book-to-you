@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 큰 버튼 3개(이전 장, 재생·멈춤, 다음 장). 아이콘마다 아래에 글자 라벨(Pleos 가이드). 주행 중에도 쓴다.
+     가운데 원이 더 커서 양옆 원은 controlSideOffset만큼 내려 원의 가운데 높이를 맞춘다. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="top"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:layout_marginTop="@dimen/controlSideOffset"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/playerPrevious"
+            style="@style/RoundButton"
+            android:layout_width="@dimen/controlSide"
+            android:layout_height="@dimen/controlSide"
+            android:contentDescription="@string/player_previous"
+            android:src="@drawable/ic_skip_previous" />
+
+        <TextView
+            style="@style/Text.TitleS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spaceM"
+            android:text="@string/player_previous" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:layout_marginHorizontal="@dimen/controlGap"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/playerToggle"
+            style="@style/RoundButton.Brand"
+            android:layout_width="@dimen/controlMain"
+            android:layout_height="@dimen/controlMain"
+            android:contentDescription="@string/player_play"
+            android:src="@drawable/ic_play" />
+
+        <TextView
+            android:id="@+id/playerToggleLabel"
+            style="@style/Text.TitleS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spaceXs" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:layout_marginTop="@dimen/controlSideOffset"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/playerNext"
+            style="@style/RoundButton"
+            android:layout_width="@dimen/controlSide"
+            android:layout_height="@dimen/controlSide"
+            android:contentDescription="@string/player_next"
+            android:src="@drawable/ic_skip_next" />
+
+        <TextView
+            style="@style/Text.TitleS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spaceM"
+            android:text="@string/player_next" />
+    </LinearLayout>
+</LinearLayout>

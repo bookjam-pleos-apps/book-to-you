@@ -1,0 +1,39 @@
+{
+  "name": "@voice-storybook/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "dev:http": "tsx --env-file=../../.env src/entrypoints/main-http.ts",
+    "dev:worker": "tsx --env-file=../../.env src/entrypoints/main-worker.ts",
+    "verify:pending": "tsx --env-file=../../.env src/entrypoints/commands/main-verify-pending.ts",
+    "render:batch": "tsx --env-file=../../.env src/entrypoints/commands/main-render-batch.ts",
+    "render:worker": "tsx --env-file=../../.env src/entrypoints/main-render-worker.ts",
+    "demo:export": "tsx --env-file=../../.env src/entrypoints/commands/main-demo-export.ts",
+    "demo:import": "tsx --env-file=../../.env src/entrypoints/commands/main-demo-import.ts",
+    "demo:clips": "tsx --env-file=../../.env src/entrypoints/commands/main-demo-clips-import.ts",
+    "demo:renders": "tsx --env-file=../../.env src/entrypoints/commands/main-demo-render-request.ts",
+    "demo:chapterize": "tsx --env-file=../../.env src/entrypoints/commands/main-chapterize.ts",
+    "reports:list": "tsx --env-file=../../.env src/entrypoints/commands/main-reports-list.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1161.0",
+    "@hono/node-server": "^2.1.6",
+    "@voice-storybook/shared": "workspace:*",
+    "drizzle-orm": "^0.45.4",
+    "hono": "^4.13.16",
+    "pg": "^8.23.1",
+    "pg-boss": "^12.38.0",
+    "tsx": "^4.23.15",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.14",
+    "@types/node": "^24.19.2",
+    "@types/pg": "^8.23.1",
+    "drizzle-kit": "^0.31.11",
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.5"
+  }
+}

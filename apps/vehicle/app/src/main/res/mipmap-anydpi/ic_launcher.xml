@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 런처 아이콘. minSdk 28이라 adaptive만 둔다. 바탕은 원본 바탕색과 같아 마스크 모양이 달라도 이음매가 없다. -->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/launcherBackground" />
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+</adaptive-icon>

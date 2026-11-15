@@ -1,0 +1,13 @@
+# 리서치 산출물(조사 노트·리포트)은 레포에 두지 않는다
+/reports/
+/research_notes/
+
+node_modules/
+dist/
+coverage/
+.env
+
+# 개인 설정과 Python 캐시
+.claude/settings.local.json
+__pycache__/
+.ruff_cache/

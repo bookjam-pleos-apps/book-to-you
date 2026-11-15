@@ -1,0 +1,18 @@
+{
+  "version": 4,
+  "note": "평가 문항을 본 뒤에 고치면 그 뒤의 test-sentences 수치는 일반화 성능으로 쓰지 않는다. 임계값은 측정 전 잠정값이다. 이전 버전의 수치와 직접 비교하지 않는다.",
+  "context": { "before": 3, "after": 1, "maxChars": 3000 },
+  "minConfidence": 0.6,
+  "schema": {
+    "style": {
+      "type": "enum",
+      "choices": ["calm", "excited", "soft"],
+      "description": "Which recorded voice a parent's clone should use for the TARGET sentence of this Korean children's story. Judge only the TARGET sentence; the surrounding sentences only show the situation. The text may have no quotation marks, so decide from the wording whether the sentence is spoken by a character.",
+      "choice_descriptions": {
+        "calm": "The default. Even, unhurried reading, including plain lines and angry moments that neither a bright nor a hushed voice would suit.",
+        "excited": "Bright, lively energy in a spoken line or in narration: delight, cheering, happy surprise, an eager suggestion, or playful action.",
+        "soft": "Quiet, low, unhurried voice that stays voiced, not whispered: sadness, fear, hushed or tender moments, falling asleep."
+      }
+    }
+  }
+}

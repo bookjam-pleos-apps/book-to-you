@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "source": "렌더 비교 문턱. 키마다 seed 잡음 근거가 달라 근거가 있는 키만 둔다. 없는 키는 판정이 '문턱 없음'이다.",
+  "thresholds": {
+    "simHead.s4": {
+      "minDifference": 0.03,
+      "seedNoiseMax": 0.018,
+      "source": "seed 쌍 측정(s4 머리 평균 차이 평균 0.012, 최대 0.018). 문턱은 최대의 약 2배"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+ "format": 2,
+ "renderId": "11111111-1111-4111-8111-111111111111",
+ "storyId": "masteraway",
+ "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+ "seed": 1234,
+ "limits": { "maxSyllables": 180, "minSyllables": 30 },
+ "references": [
+  { "style": "calm", "text": "옛날 옛적, 바닷가 작은 마을에 등대지기 할아버지가 살았어요.", "file": "reference-calm.wav" },
+  { "style": "excited", "text": "우와, 저것 좀 봐! 하늘에 무지개가 떴어!", "file": "reference-excited.wav" },
+  { "style": "soft", "text": "쉿, 이제 눈을 감고 코 자자.", "file": "reference-soft.wav" }
+ ],
+ "readAs": { "calm": "calm", "excited": "excited", "soft": "soft" },
+ "lines": [
+  { "text": "주인님이 집을 비운 사이", "style": "calm", "pauseAfterMs": 900 },
+  { "text": "“집 잘 지키고 있어.”", "style": "excited", "pauseAfterMs": 450 },
+  { "text": "조용히 속삭였어요.", "style": "soft", "pauseAfterMs": 450 }
+ ]
+}

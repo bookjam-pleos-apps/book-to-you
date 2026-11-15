@@ -1,0 +1,578 @@
+{
+ "id": "fisherman",
+ "draftHash": "f21e7be7340a2cfd",
+ "cast": [
+  {
+   "name": "어부",
+   "voiceType": "아빠",
+   "trait": "착하고 소심함",
+   "style": "deep"
+  },
+  {
+   "name": "아내",
+   "voiceType": "엄마",
+   "trait": "욕심 많고 거드름을 피움",
+   "style": "excited"
+  },
+  {
+   "name": "물고기 왕자",
+   "voiceType": "오빠",
+   "trait": "예의 바르고 침착함",
+   "style": "child"
+  }
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "to": 2,
+   "summary": "제목과 어부 소개"
+  },
+  {
+   "from": 3,
+   "to": 13,
+   "summary": "물고기를 놓아줌"
+  },
+  {
+   "from": 14,
+   "to": 26,
+   "summary": "첫 부탁, 좋은 집"
+  },
+  {
+   "from": 27,
+   "to": 35,
+   "summary": "새집과 아내의 불만"
+  },
+  {
+   "from": 36,
+   "to": 47,
+   "summary": "둘째 부탁, 큰 성"
+  },
+  {
+   "from": 48,
+   "to": 60,
+   "summary": "왕이 되고 황제를 원함"
+  },
+  {
+   "from": 61,
+   "to": 75,
+   "summary": "황제가 되고 교황을 원함"
+  },
+  {
+   "from": 76,
+   "to": 81,
+   "summary": "교황이 되어도 만족 못 함"
+  },
+  {
+   "from": 82,
+   "to": 94,
+   "summary": "하느님이 되겠다며 폭풍 속 마지막 부탁"
+  },
+  {
+   "from": 95,
+   "to": 99,
+   "summary": "오두막으로 돌아간 결말"
+  }
+ ],
+ "sentences": [
+  {
+   "index": 0,
+   "text": "어부와 욕심많은 아내",
+   "role": "narration"
+  },
+  {
+   "index": 1,
+   "text": "옛날 어느 마을에 한 어부가 살고 있었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 2,
+   "text": "어부는 날마다 바닷가에 앉아 평화롭게 낚시를 했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 3,
+   "text": "어느 날이었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 4,
+   "text": "어부가 낚싯대를 드리우고 있는데 낚싯줄이 팽팽히 당겨졌어요.",
+   "role": "narration"
+  },
+  {
+   "index": 5,
+   "text": "“걸려들었다! 영차, 영차!”",
+   "role": "dialogue"
+  },
+  {
+   "index": 6,
+   "text": "힘겹게 낚싯대를 잡아당기자 커다란 물고기가 올라왔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 7,
+   "text": "그런데 물고기가 말을 하는 게 아니겠어요?",
+   "role": "narration"
+  },
+  {
+   "index": 8,
+   "text": "“어부 아저씨, 저는 마법에 걸린 왕자랍니다. 은혜를 꼭 갚을 테니 제발 저를 살려주세요.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 9,
+   "text": "마음씨 착한 어부는 물고기를 바다에 첨벙 놓아주었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 10,
+   "text": "“고마워요, 이 은혜를 꼭 갚을게요.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 11,
+   "text": "물고기는 인사를 하며 유유히 헤엄쳐갔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 12,
+   "text": "하는 수 없이 어부는 빈손으로 집에 돌아왔죠.",
+   "role": "narration"
+  },
+  {
+   "index": 13,
+   "text": "어부의 아내가 물었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 14,
+   "text": "“뭐야? 빈손이잖아?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 15,
+   "text": "“사실은 커다란 물고기를 잡았는데 마법에 걸린 왕자라길래 그냥 놓아주었지. 살려주면 은혜를 갚는다잖아.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 16,
+   "text": "그러자 어부의 아내가 소리쳤죠.",
+   "role": "narration"
+  },
+  {
+   "index": 17,
+   "text": "“그럼 당장 바닷가로 가서 그 왕자한테 전해. 쓰러져가는 이 집 대신 좋은 집을 달라고 말이야.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 18,
+   "text": "어부는 바닷가로 갔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 19,
+   "text": "파도가 찰싹찰싹 치는 바닷물이 초록빛으로 변해 있었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 20,
+   "text": "어부는 바다를 향해 외쳤어요.",
+   "role": "narration"
+  },
+  {
+   "index": 21,
+   "text": "“왕자야! 마법에 걸린 왕자야! 이리 나와서 내 말 좀 들어줘! 내 아내가 참 염치없는 부탁을 하는구나!”",
+   "role": "dialogue"
+  },
+  {
+   "index": 22,
+   "text": "잠시 후 물고기가 바다 위로 고개를 내밀었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 23,
+   "text": "“어부 아저씨, 아주머니가 원하는 게 뭐죠?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 24,
+   "text": "“지금 살고 있는 오두막집 대신 깔끔한 집이 있었으면 좋겠다는구나!”",
+   "role": "dialogue"
+  },
+  {
+   "index": 25,
+   "text": "그러자 물고기가 대답했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 26,
+   "text": "“집으로 가보세요. 멋진 집이 생겼을 거예요.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 27,
+   "text": "어부가 집에 돌아와 보니 작고 허름한 오두막집은 온데간데 없고 깨끗한 새집이 한 채 서 있었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 28,
+   "text": "어부와 아내는 집 안으로 들어갔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 29,
+   "text": "거실도 반짝반짝.",
+   "role": "narration"
+  },
+  {
+   "index": 30,
+   "text": "침실도 반짝반짝.",
+   "role": "narration"
+  },
+  {
+   "index": 31,
+   "text": "부엌까지 반짝반짝 잘 꾸며져 있었죠.",
+   "role": "narration"
+  },
+  {
+   "index": 32,
+   "text": "어부가 감탄하며 말했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 33,
+   "text": "“이제 행복하게 살 수 있겠어.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 34,
+   "text": "그러자 어부의 아내는 퉁명스럽게 말하는 것이었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 35,
+   "text": "“흥! 이것만으론 행복할 수 없어. 어디 생각 좀 해봅시다.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 36,
+   "text": "며칠이 지나자 어부의 아내가 말했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 37,
+   "text": "“흥! 여보, 아무래도 이 집은 너무 좁아. 물고기 왕자한테 가서 큰 성을 달라고 전해.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 38,
+   "text": "어부는 마음이 무거웠지만 바닷가로 갔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 39,
+   "text": "철썩철썩 파도치는 바닷물은 자주색으로 변해 있었죠.",
+   "role": "narration"
+  },
+  {
+   "index": 40,
+   "text": "“왕자야! 마법에 걸린 왕자야! 내 아내가 참 염치없는 부탁을 하는구나.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 41,
+   "text": "물고기가 바다 위로 고개를 내밀고 물었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 42,
+   "text": "“어부 아저씨, 아주머니가 원하는 게 뭐죠?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 43,
+   "text": "어부는 풀죽은 목소리로 말했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 44,
+   "text": "“글쎄, 이제는 큰 성에서 살고 싶대.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 45,
+   "text": "“아저씨, 집으로 가보세요. 아주머니가 성문 앞에 서 있을 거예요.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 46,
+   "text": "어부의 집은 정말 큰 성으로 변해 있었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 47,
+   "text": "어부의 아내는 성문 앞에 서서 싱글벙글 웃고 있었지요.",
+   "role": "narration"
+  },
+  {
+   "index": 48,
+   "text": "어부가 돌아와 보니 성은 궁전으로 변해 있었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 49,
+   "text": "문 앞에는 보초병들이 줄지어 서 있었지요.",
+   "role": "narration"
+  },
+  {
+   "index": 50,
+   "text": "아내는 대리석으로 만든 의자에 앉아 소리쳤어요.",
+   "role": "narration"
+  },
+  {
+   "index": 51,
+   "text": "“나는 이제 왕이다! 하지만 이걸로는 충분하지 않아. 당장 그 못생긴 물고기한테 가서 황제가 되고 싶다고 말해.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 52,
+   "text": "어부는 할 수 없이 또 바다로 갔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 53,
+   "text": "시커먼 바닷물은 부글부글 끓어올랐어요.",
+   "role": "narration"
+  },
+  {
+   "index": 54,
+   "text": "그 위로 먹구름이 새까맣게 부풀어올랐지요.",
+   "role": "narration"
+  },
+  {
+   "index": 55,
+   "text": "세찬 바람까지 휘잉휘잉 불었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 56,
+   "text": "“왕자야! 마법에 걸린 왕자야! 이리 나와서 내 말 좀 들어줘! 내 아내가 참 염치없는 부탁을 하는구나.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 57,
+   "text": "“아주머니가 또 원하는 게 뭐죠?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 58,
+   "text": "어부가 슬픈 표정으로 대답했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 59,
+   "text": "“욕심도 많아. 이제는 황제가 되고 싶대.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 60,
+   "text": "“궁전으로 가보세요. 아주머니는 이제 황제예요.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 61,
+   "text": "어부가 돌아와 보니 궁전은 황금으로 번쩍번쩍 뒤덮여 있었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 62,
+   "text": "군인들은 넓은 정원에서 척척 행진을 했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 63,
+   "text": "귀족들은 궁전 안을 느긋하게 걸어 다녔지요.",
+   "role": "narration"
+  },
+  {
+   "index": 64,
+   "text": "어부는 다급히 아내에게 달려갔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 65,
+   "text": "“여보! 정말 황제가 된 거요?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 66,
+   "text": "어부의 아내가 거드름을 피우며 대답했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 67,
+   "text": "“암! 황제가 되었어! 흥, 하지만 난 이제 교황이 되고 싶어. 그 생선한테 가서 그렇게 전해!”",
+   "role": "dialogue"
+  },
+  {
+   "index": 68,
+   "text": "어부는 무거운 마음으로 다시 바다로 갔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 69,
+   "text": "바다는 칠흑 같은 어둠에 휩싸여 있었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 70,
+   "text": "금방이라도 폭풍이 몰아닥칠 것 같았지요.",
+   "role": "narration"
+  },
+  {
+   "index": 71,
+   "text": "어부는 두려움에 떨며 물고기를 불렀어요.",
+   "role": "narration"
+  },
+  {
+   "index": 72,
+   "text": "“왕자야! 마법에 걸린 왕자야! 무서우니까! 무서우니까 빨리 나와 내 얘기를 들어줘! 내 아내가 참 염치 없는 부탁을 하는구나.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 73,
+   "text": "“또 아주머니가 원하는 게 뭐죠?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 74,
+   "text": "“이제는 교황이 되고 싶다지 뭐니?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 75,
+   "text": "“궁전으로 가보세요. 아주머니는 이제 교황이 되었어요.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 76,
+   "text": "어부가 돌아와 보니 궁전 옆에 커다란 성당이 생겼어요.",
+   "role": "narration"
+  },
+  {
+   "index": 77,
+   "text": "어부는 헐레벌떡 아내가 있는 곳으로 달려갔지요.",
+   "role": "narration"
+  },
+  {
+   "index": 78,
+   "text": "세상의 모든 황제들이 무릎을 꿇고 아내의 신발에 입을 맞추고 있었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 79,
+   "text": "“여보, 이제는 만족하오?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 80,
+   "text": "“글쎄, 생각 좀 해보고.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 81,
+   "text": "어부의 아내는 아직도 만족할 줄 몰랐어요.",
+   "role": "narration"
+  },
+  {
+   "index": 82,
+   "text": "다음 날, 해가 떠오르는 것을 본 어부의 아내가 소리쳤어요.",
+   "role": "narration"
+  },
+  {
+   "index": 83,
+   "text": "“바로 저거야! 여보, 어서 그 멍청한 생선한테 가서 전해! 해와 달을 뜨고 지게 하는 하느님이 되고 싶다고 말이야!”",
+   "role": "dialogue"
+  },
+  {
+   "index": 84,
+   "text": "“뭐, 뭐라고 했어 방금?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 85,
+   "text": "“내가 하느님이 되고 싶다니까!”",
+   "role": "dialogue"
+  },
+  {
+   "index": 86,
+   "text": "어부는 이번에도 쫓겨나듯이 밖으로 나갔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 87,
+   "text": "걸음을 옮기기 힘들 정도로 거센 바람이 불었지요.",
+   "role": "narration"
+  },
+  {
+   "index": 88,
+   "text": "먹구름이 잔뜩 낀 하늘에서 천둥과 번개가 우르릉 쾅쾅 몰아쳤어요.",
+   "role": "narration"
+  },
+  {
+   "index": 89,
+   "text": "성당의 뾰족한 탑보다도 높은 파도가 바닷가로 밀려오고 있었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 90,
+   "text": "어부는 폭풍 속에서 있는 힘껏 큰 소리로 외쳤어요.",
+   "role": "narration"
+  },
+  {
+   "index": 91,
+   "text": "“왕자야! 마법에 걸린 왕자야! 내가 바다에 빠져 죽기 전에 얼른 나와보렴! 글쎄, 내 아내가 참 염치 없는 부탁을 하는구나.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 92,
+   "text": "“아주머니가 원하는 게 대체 뭐죠?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 93,
+   "text": "“세상에, 하느님이 되고 싶다는구나!”",
+   "role": "dialogue"
+  },
+  {
+   "index": 94,
+   "text": "“어서 가보세요. 낡은 오두막집에 아주머니가 있을 거예요.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 95,
+   "text": "물고기는 바다 밑으로 사라졌지요.",
+   "role": "narration"
+  },
+  {
+   "index": 96,
+   "text": "어부가 서둘러 돌아가 보니 우뚝 솟은 성당과 궁전은 온데간데 없었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 97,
+   "text": "다 쓰러져 가는 오두막집만 쓸쓸히 남아있었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 98,
+   "text": "어부의 아내는 바닥에 주저앉아 멍하니 바다만 바라보았지요.",
+   "role": "narration"
+  },
+  {
+   "index": 99,
+   "text": "어부와 욕심많은 아내는 다시는 물고기 왕자를 만날 수 없었답니다.",
+   "role": "narration"
+  }
+ ]
+}

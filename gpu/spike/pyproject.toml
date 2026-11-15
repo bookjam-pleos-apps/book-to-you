@@ -1,0 +1,56 @@
+[project]
+name = "voice-spike"
+version = "0.1.0"
+description = "Qwen3-TTS 한국어 voice clone go/no-go 스파이크"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[project.optional-dependencies]
+# compose 엔진으로 렌더할 때만 쓴다. 클론과 받아쓰기는 서비스가 맡아 torch가 필요 없다.
+audio = [
+    "numpy",
+    "soundfile",
+    # 반복 생성한 단위를 자를 때 MFCC DTW를 쓴다(repeat_cut).
+    "librosa>=1.0",
+]
+gpu = [
+    "qwen-tts",
+    "soundfile",
+    "numpy",
+    "speechbrain>=1.0",
+    "torch",
+    "torchaudio",
+    "librosa>=1.0",
+]
+
+[dependency-groups]
+agent = ["mcp>=2.3"]
+dev = [
+    { include-group = "agent" },
+    "pytest>=8",
+    "numpy",
+    "soundfile",
+    "librosa>=1.0",
+    "model-compose @ git+https://github.com/rn1njoo/model-compose@462e13006f64dbb6ed788341e57dec4bc522f49f",
+]
+
+# RTX 4090 장비의 드라이버(575)는 CUDA 12.9까지만 지원한다. PyPI의 Linux x86_64 휠은 CUDA 13 런타임을 쓴다.
+[tool.uv.sources]
+torch = { index = "pytorch-cu126", marker = "sys_platform == 'linux' and platform_machine == 'x86_64'" }
+torchaudio = { index = "pytorch-cu126", marker = "sys_platform == 'linux' and platform_machine == 'x86_64'" }
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/spike"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]

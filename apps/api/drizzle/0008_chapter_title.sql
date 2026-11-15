@@ -1,0 +1,1 @@
+ALTER TABLE "render_chapters" ADD COLUMN "title" text;

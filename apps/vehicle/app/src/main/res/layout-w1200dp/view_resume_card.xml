@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 이어서 듣기 카드(넓은 창, 580×910): 3:4 표지, 제목, 목소리 + 몇 장째 태그, 주 버튼. 이어 들을 이야기가 없으면 숨긴다.
+     좁은 창은 layout/view_resume_card.xml(가로로 납작한 카드). 두 파일의 id는 같다(ResumeCard). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Elevated.Level2"
+    android:layout_width="@dimen/resumeWidth"
+    android:layout_height="@dimen/resumeHeight"
+    android:layout_marginEnd="@dimen/spaceColumns"
+    android:background="@drawable/bg_card"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/spaceXl"
+    android:paddingTop="@dimen/spaceXxl"
+    android:visibility="gone">
+
+    <FrameLayout
+        style="@style/Elevated.Level2"
+        android:layout_width="@dimen/resumeCoverWidth"
+        android:layout_height="@dimen/resumeCoverHeight"
+        android:background="@drawable/bg_cover">
+
+        <include
+            android:id="@+id/resumeCover"
+            layout="@layout/view_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/resumeTitle"
+        style="@style/Text.HeadlineS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spaceS"
+        android:gravity="center"
+        android:maxLines="1" />
+
+    <include
+        layout="@layout/view_resume_meta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space2xs" />
+
+    <!-- Figma 폭(452)의 넓은 주 버튼. Button은 아이콘을 버튼 가장자리에 붙이므로, 틀(FrameLayout)이 폭과 누름을 맡고
+         아이콘과 글자는 가운데 묶어 둔다. id는 ResumeCard가 누름·사용 가능 여부를 다는 그대로다. -->
+    <FrameLayout
+        android:id="@+id/resumePlay"
+        android:layout_width="@dimen/resumeCtaWidth"
+        android:layout_height="@dimen/buttonLargeHeight"
+        android:layout_marginTop="@dimen/spaceXxl"
+        android:background="@drawable/btn_brand"
+        android:clickable="true"
+        android:contentDescription="@string/resume_play"
+        android:focusable="true">
+
+        <TextView
+            style="@style/Button.Brand.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_play"
+            android:duplicateParentState="true"
+            android:importantForAccessibility="no"
+            android:text="@string/resume_play" />
+    </FrameLayout>
+</LinearLayout>

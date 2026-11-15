@@ -1,0 +1,132 @@
+# 시연 서버 (DGX Spark 공용 계정). 실행: deploy/demo에서 docker compose up -d --build
+# 공용 docker라 프로젝트 이름을 고정해 다른 사람의 컨테이너·볼륨과 섞이지 않게 한다.
+name: voice-storybook-demo
+
+# 이미지는 멀티 아키텍처 인덱스 digest로 고정한다. 공용 장비에서 남이 같은 태그를 새로 받아도 바뀌지 않는다.
+# 포트를 밖으로 열지 않는다. 바깥 요청은 ngrok 컨테이너만 받아 web으로 넘기고, web이 /v1을 api로 넘긴다.
+# 통합 메모리라 다른 작업이 메모리를 다 쓰면 컨테이너가 죽을 수 있어 모두 자동 재시작한다.
+services:
+  postgres:
+    image: postgres:17-alpine@sha256:979c4379dd698aba0b890599a6104e082035f98ef31d9b9291ec22f2b13059ca
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:?deploy/demo/.env를 만드세요}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?deploy/demo/.env를 만드세요}
+      POSTGRES_DB: ${POSTGRES_DB:?deploy/demo/.env를 만드세요}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  minio:
+    image: cgr.dev/chainguard/minio@sha256:0a01100085e30fb08d2f39e39c9f5c9d83a95707f220b007d813b690cd41622d
+    restart: unless-stopped
+    command: server /data
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:?deploy/demo/.env를 만드세요}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?deploy/demo/.env를 만드세요}
+    volumes:
+      - minio-data:/data
+
+  api:
+    build:
+      context: ../..
+      dockerfile: apps/api/Dockerfile
+    image: voice-storybook-demo-api
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      minio:
+        condition: service_started
+    # worker가 같은 값을 쓴다(*api-env).
+    environment: &api-env
+      DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      PUBLIC_ORIGIN: https://${NGROK_DOMAIN:?deploy/demo/.env를 만드세요}
+      AUTH_SECRET: ${AUTH_SECRET:?deploy/demo/.env를 만드세요}
+      S3_ENDPOINT: http://minio:9000
+      S3_BUCKET: voice-storybook
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+      # 메일 어댑터가 없어 부모 로그인을 끈다. 심사자 기기는 데모 코드로만 붙는다.
+      LOGIN_MODE: disabled
+      TRUST_PROXY: "true"
+      DEMO_PAIRING_CODE: ${DEMO_PAIRING_CODE:?deploy/demo/.env를 만드세요}
+      DEMO_USER_ID: ${DEMO_USER_ID:?deploy/demo/.env를 만드세요}
+      DEMO_PAIRING_UNTIL: ${DEMO_PAIRING_UNTIL:?deploy/demo/.env를 만드세요}
+      # 심사자 공개 시험(차 QR로 이메일 없이 계정 만들기). 열 때 .env에 QUICK_START=enabled를 적고 api만 다시 올린다.
+      QUICK_START: ${QUICK_START:-disabled}
+      # 다른 계정(바로 시작하기)의 차량 책장에 데모 계정의 게시된 동화를 함께 싣는다. 켤 때 .env에 DEMO_SHARED_SHELF=enabled.
+      DEMO_SHARED_SHELF: ${DEMO_SHARED_SHELF:-disabled}
+      # Spark의 voice-clone 서비스(deploy/demo/gpu-service.sh). 비우면 녹음 확인과 렌더가 멈춘다.
+      COMPOSE_URL: ${COMPOSE_URL:-}
+    # voice-clone 서비스는 docker0 주소(172.17.0.1)에만 열려 있다. 컨테이너에서 그 주소로 닿게 한다.
+    extra_hosts: &gpu-host
+      - host.docker.internal:host-gateway
+    # 기동 때 마이그레이션이 끝나야 응답한다. web이 이걸 기다려 재시작 직후 502를 줄인다.
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:3000/healthz').then((r) => process.exit(r.ok ? 0 : 1), () => process.exit(1))"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+
+  # 계정·목소리 삭제 뒤 저장소 객체를 지우고, 매일 고아 객체와 만료된 로그인 기록을 정리한다. GPU를 쓰지 않는다.
+  # 마이그레이션은 api가 하므로 api가 healthy가 된 뒤 뜬다.
+  worker:
+    image: voice-storybook-demo-api
+    # api가 만든 로컬 이미지만 쓴다. 없을 때 같은 이름을 레지스트리에서 받아 오지 않게 막는다.
+    pull_policy: never
+    restart: unless-stopped
+    command: ["./node_modules/.bin/tsx", "src/entrypoints/main-worker.ts"]
+    depends_on:
+      api:
+        condition: service_healthy
+    environment: *api-env
+    extra_hosts: *gpu-host
+
+  # 부모가 요청한 렌더를 한 편씩 voice-clone 서비스에 맡기고 결과를 서재에 올린다. COMPOSE_URL이 있어야 뜬다.
+  # GPU 서비스를 붙일 때만 켠다: docker compose --profile tunnel --profile gpu up -d
+  render-worker:
+    image: voice-storybook-demo-api
+    pull_policy: never
+    restart: unless-stopped
+    # COMPOSE_URL 없이 켜면 워커가 기동하자마자 죽고 재시작을 반복한다. 비어 있으면 이유를 남기고 쉬게 둔다.
+    # 필수 변수 표시(:?)는 프로필이 꺼져 있어도 compose 전체를 막아 쓰지 않는다.
+    command:
+      - sh
+      - -c
+      - '[ -n "$$COMPOSE_URL" ] || { echo "COMPOSE_URL이 비어 렌더 워커를 쉬게 둔다(deploy/demo/README.md GPU 서비스)"; exec sleep infinity; }; exec ./node_modules/.bin/tsx src/entrypoints/main-render-worker.ts'
+    depends_on:
+      api:
+        condition: service_healthy
+    environment: *api-env
+    extra_hosts: *gpu-host
+    profiles: ["gpu"]
+
+  # 부모 웹 정적 파일과 /v1 프록시. 웹과 API를 한 출처로 묶어 쿠키와 csrf가 맞게 한다.
+  web:
+    build:
+      context: ../..
+      dockerfile: deploy/demo/web.Dockerfile
+    image: voice-storybook-demo-web
+    restart: unless-stopped
+    depends_on:
+      api:
+        condition: service_healthy
+
+  ngrok:
+    image: ngrok/ngrok:3@sha256:ff3b5c3674432d14a786349908b7bdf28ee56c25662637afcbe7180d471993ef
+    restart: unless-stopped
+    depends_on:
+      - web
+    command: ["http", "web:8080", "--url", "https://${NGROK_DOMAIN}"]
+    environment:
+      NGROK_AUTHTOKEN: ${NGROK_AUTHTOKEN:?deploy/demo/.env를 만드세요}
+    profiles: ["tunnel"]
+
+volumes:
+  postgres-data:
+  minio-data:

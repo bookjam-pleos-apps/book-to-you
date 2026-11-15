@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pleos button/filled: 진한 바탕은 물결이 안 보여 누름을 바탕색으로 보인다. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/buttonStrongPressed" android:state_pressed="true" />
+    <item android:color="@color/buttonStrong" />
+</selector>

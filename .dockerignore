@@ -1,0 +1,14 @@
+**/node_modules
+**/.venv*
+.git
+.env
+.env.*
+!.env.example
+deploy/demo/.env
+gpu
+spikes
+docs
+tests
+**/*.test.ts
+**/*.int.ts
+**/testing

@@ -1,0 +1,5 @@
+{
+  "note": "제목과 child 단위 뒤에 붙여 읽히고 잘라 버리는 꼬리. mode는 repeat(마지막 문장 반복), word(낱말 하나), none 중 하나다.",
+  "mode": "word",
+  "word": "그래"
+}

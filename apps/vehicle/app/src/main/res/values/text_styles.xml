@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 글자 스타일. 이름은 Pleos 키트 스타일(Headline/Title/Body/Label + 굵기)을 따른다. 크기와 줄 높이는 dimens 토큰,
+     굵기는 Asta Sans 400·700·800(font/asta_sans.xml)을 textFontWeight로 고른다(API 28). -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Text">
+        <item name="android:fontFamily">@font/asta_sans</item>
+        <item name="android:textColor">@color/text</item>
+        <!-- API 33부터 읽는다. 그 아래에서는 무시되고 글자 단위로 줄을 바꾼다. -->
+        <item name="android:lineBreakWordStyle" tools:targetApi="33">phrase</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- 재생 화면 이야기 제목. 키트 최대(112)를 넘지만 아이에게 보이는 큰 제목이라 예외로 둔다(revision.md). -->
+    <style name="Text.Display">
+        <item name="android:textSize">@dimen/textDisplay</item>
+        <item name="android:lineHeight">@dimen/lineDisplay</item>
+        <item name="android:textFontWeight">800</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="Text.HeadlineL">
+        <item name="android:textSize">@dimen/textHeadlineL</item>
+        <item name="android:lineHeight">@dimen/lineHeadlineL</item>
+        <item name="android:textFontWeight">800</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="Text.HeadlineS">
+        <item name="android:textSize">@dimen/textHeadlineS</item>
+        <item name="android:lineHeight">@dimen/lineHeadlineS</item>
+        <item name="android:textFontWeight">800</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="Text.HeadlineSStrong" parent="Text.HeadlineS">
+        <item name="android:textFontWeight">700</item>
+    </style>
+
+    <!-- 책장 제목. 크기 44는 키트 단계에 있으나 이름 붙은 스타일이 없다. -->
+    <style name="Text.Section">
+        <item name="android:textSize">@dimen/textSection</item>
+        <item name="android:lineHeight">@dimen/lineSection</item>
+        <item name="android:textFontWeight">800</item>
+    </style>
+
+    <style name="Text.TitleL">
+        <item name="android:textSize">@dimen/textTitleL</item>
+        <item name="android:lineHeight">@dimen/lineTitleL</item>
+        <item name="android:textFontWeight">800</item>
+    </style>
+
+    <style name="Text.TitleLStrong" parent="Text.TitleL">
+        <item name="android:textFontWeight">700</item>
+    </style>
+
+    <style name="Text.TitleM">
+        <item name="android:textSize">@dimen/textTitleM</item>
+        <item name="android:lineHeight">@dimen/lineTitleM</item>
+        <item name="android:textFontWeight">800</item>
+    </style>
+
+    <!-- 스플래시 한 줄 소개(시안 굵기 600에 가장 가까운 700). -->
+    <style name="Text.TitleMStrong" parent="Text.TitleM">
+        <item name="android:textFontWeight">700</item>
+    </style>
+
+    <style name="Text.TitleMNormal" parent="Text.TitleM">
+        <item name="android:textFontWeight">400</item>
+    </style>
+
+    <style name="Text.TitleS">
+        <item name="android:textSize">@dimen/textTitleS</item>
+        <item name="android:lineHeight">@dimen/lineTitleS</item>
+        <item name="android:textFontWeight">700</item>
+    </style>
+
+    <style name="Text.BodyL">
+        <item name="android:textSize">@dimen/textBodyL</item>
+        <item name="android:lineHeight">@dimen/lineBodyL</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+
+    <style name="Text.BodyLStrong" parent="Text.BodyL">
+        <item name="android:textFontWeight">700</item>
+    </style>
+
+    <style name="Text.BodyS">
+        <item name="android:textSize">@dimen/textBodyS</item>
+        <item name="android:lineHeight">@dimen/lineBodyS</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+
+    <style name="Text.BodySStrong" parent="Text.BodyS">
+        <item name="android:textFontWeight">700</item>
+    </style>
+
+    <style name="Text.LabelM">
+        <item name="android:textSize">@dimen/textLabelM</item>
+        <item name="android:lineHeight">@dimen/lineLabelM</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+
+    <!-- 연결 코드. 글자 사이를 넓혀 한 자씩 읽히게 한다. -->
+    <style name="Text.Code">
+        <item name="android:textSize">@dimen/textCode</item>
+        <item name="android:lineHeight">@dimen/lineCode</item>
+        <item name="android:textFontWeight">800</item>
+        <item name="android:letterSpacing">0.35</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- 팝업 설명 -->
+    <!-- 카운트다운 덮개 위 글자(Figma 73:1771). 글꼴에 600이 없어 문구·안내는 700으로 그린다. 숫자는 Figma 그대로 300(숫자만 든 글꼴). -->
+    <style name="Text.CountdownHeadline">
+        <item name="android:textSize">@dimen/textHeadlineL</item>
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textColor">@color/onScrim</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="Text.CountdownNumber">
+        <item name="android:fontFamily">@font/asta_sans_light_digits</item>
+        <item name="android:textSize">@dimen/textCountdown</item>
+        <item name="android:textColor">@color/onScrim</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Text.CountdownHint">
+        <item name="android:textSize">@dimen/textCountdownHint</item>
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textColor">@color/countdownHint</item>
+    </style>
+
+    <style name="Text.Message" parent="Text.BodyS">
+        <item name="android:textColor">@color/textTertiary</item>
+        <item name="android:maxLines">4</item>
+    </style>
+
+    <!-- 표지 그림이 없을 때 자리 표시 글자. -->
+    <style name="Text.CoverHint" parent="Text.BodySStrong">
+        <item name="android:textColor">@color/coverHint</item>
+    </style>
+
+    <!-- 홈의 상태 한 줄(오프라인·받는 중 등). 버튼이 아니라 표시라 태그 모양을 쓴다. -->
+    <style name="Text.Status" parent="Tag">
+        <item name="android:textSize">@dimen/textTitleS</item>
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:maxLines">3</item>
+    </style>
+
+    <!-- 연결 단계 번호(노란 원, 지름 80). -->
+    <style name="StepBadge" parent="Text.TitleM">
+        <item name="android:layout_width">@dimen/stepBadge</item>
+        <item name="android:layout_height">@dimen/stepBadge</item>
+        <item name="android:background">@drawable/bg_step_badge</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/onStepBadge</item>
+    </style>
+</resources>

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "maxOfflineSeconds": 604800,
+  "defaultVoiceId": "voice-1",
+  "stories": [
+    {
+      "renderId": "render-1",
+      "storyId": "toto-picnic",
+      "title": "토토의 소풍",
+      "voiceId": "voice-1",
+      "voiceLabel": "엄마",
+      "chapters": [
+        {
+          "index": 0,
+          "role": "intro",
+          "title": "빨간 모자의 심부름",
+          "durationMs": 180000,
+          "bytes": 2160000,
+          "sha256": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+          "audioUrl": "/v1/audio/chapter-1"
+        }
+      ]
+    }
+  ],
+  "prompts": []
+}

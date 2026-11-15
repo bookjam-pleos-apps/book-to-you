@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 02 목록(개선안 revised/home.html). 왼쪽 이어서 듣기 카드, 오른쪽 내 책장(HomeScreen이 채운다).
+     좁은 창은 위아래(homeOrientation). 책 사이 간격은 책의 오른쪽 여백이 맡아 목록에는 오른쪽 여백을 두지 않는다. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/spaceScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/spaceScreenSide">
+
+        <TextView
+            style="@style/Text.HeadlineL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/home_title" />
+
+        <Button
+            android:id="@+id/homeDisconnect"
+            style="@style/Button.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spaceL"
+            android:drawableEnd="@drawable/ic_arrow_exit"
+            android:text="@string/home_disconnect"
+            android:visibility="gone" />
+
+        <!-- 시연 계정일 때 연결 끊기 대신 보인다(homeAccountActionOf). 누르면 QR 연결 화면. 정차 중에만. -->
+        <Button
+            android:id="@+id/homeStartMyVoice"
+            style="@style/Button.BrandMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spaceL"
+            android:drawableEnd="@drawable/ic_qr"
+            android:text="@string/home_start_my_voice"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- 정상일 때는 숨기고, 오프라인·받는 중·만료 같은 이상일 때만 한 줄 보인다. -->
+    <TextView
+        android:id="@+id/homeStatus"
+        style="@style/Text.Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spaceScreenSide"
+        android:layout_marginTop="@dimen/spaceS"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/spaceXxl"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:orientation="@integer/homeOrientation"
+        android:paddingStart="@dimen/spaceScreenSide">
+
+        <!-- 크기와 바깥 여백은 카드 레이아웃(view_resume_card, 넓은 창은 layout-w1200dp)이 정한다. -->
+        <include
+            android:id="@+id/homeResume"
+            layout="@layout/view_resume_card" />
+
+        <!-- 가로·세로 배치 모두에서 남은 칸을 차지하도록 match_parent + weight를 쓴다(0dp는 한 방향에서만 맞다). -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/spaceScreen">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- v2 내 책장(Figma 18:1792): 제목 + 밑줄 하나, 그 아래 책이 줄바꿈되며 세로로만 늘어난다.
+                     열 수는 창 폭에 맞춰 BookViews.fitBookColumns가 정한다. 책 그림자가 잘리지 않게 clip을 끈다. -->
+                <TextView
+                    style="@style/Text.Section"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/my_shelf" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dividerHeight"
+                    android:layout_marginTop="@dimen/space2xs"
+                    android:layout_marginEnd="@dimen/spaceScreenSide"
+                    android:background="@color/divider" />
+
+                <GridLayout
+                    android:id="@+id/homeBooks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:columnCount="2"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/spaceXl"
+                    android:useDefaultMargins="false" />
+
+                <!-- 주행 중 항목 수 제한(LIMIT_CONTENT)으로 목록이 잘렸을 때만 보인다. 화면안 revised/after/home-driving.png. -->
+                <LinearLayout
+                    android:id="@+id/homeTruncated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spaceScreenSide"
+                    android:background="@drawable/bg_tag"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/spaceM"
+                    android:paddingVertical="@dimen/spaceXs"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/Text.TitleS"
+                        android:layout_width="@dimen/iconMedium"
+                        android:layout_height="@dimen/iconMedium"
+                        android:background="@drawable/bg_parked_badge"
+                        android:gravity="center"
+                        android:importantForAccessibility="no"
+                        android:text="@string/parked_badge"
+                        android:textColor="@color/onButtonStrong" />
+
+                    <TextView
+                        android:id="@+id/homeTruncatedText"
+                        style="@style/Text.TitleS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spaceXs"
+                        android:text="@string/home_truncated"
+                        android:textColor="@color/textSecondary" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Asta Sans(42dot, OFL 1.1). Pleos 키트 굵기 400·700·800만 넣는다. 카운트다운 숫자의 300은 숫자만 든 asta_sans_light_digits를 따로 쓴다. 출처는 apps/vehicle/THIRD_PARTY_FONTS.md. -->
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:font="@font/asta_sans_regular"
+        android:fontStyle="normal"
+        android:fontWeight="400" />
+    <font
+        android:font="@font/asta_sans_bold"
+        android:fontStyle="normal"
+        android:fontWeight="700" />
+    <font
+        android:font="@font/asta_sans_extrabold"
+        android:fontStyle="normal"
+        android:fontWeight="800" />
+</font-family>

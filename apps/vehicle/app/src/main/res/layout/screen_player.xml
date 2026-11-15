@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 03 재생 + 04 배너(개선안 revised/player.html). 주행 중에도 보이는 화면이라 1~2초에 읽을 정보(제목, 몇 장째)와 큰 버튼만 둔다.
+     좁은 창은 표지 아래로 쌓는다(playerOrientation). 배너는 화면 위 가운데에 겹쳐 띄운다. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/spaceScreenSide"
+        android:paddingTop="@dimen/spaceScreen"
+        android:paddingBottom="@dimen/spaceL">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/playerBack"
+                style="@style/RoundButton.Back"
+                android:layout_width="@dimen/backButton"
+                android:layout_height="@dimen/backButton"
+                android:contentDescription="@string/player_back"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                style="@style/Text.HeadlineL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spaceL"
+                android:layout_weight="1"
+                android:importantForAccessibility="no"
+                android:text="@string/player_back" />
+
+            <Button
+                android:id="@+id/playerReport"
+                style="@style/Button.Primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/player_report"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="@integer/playerOrientation">
+
+            <FrameLayout
+                style="@style/Elevated.Level2"
+                android:layout_width="@dimen/playerCoverWidth"
+                android:layout_height="@dimen/playerCoverHeight"
+                android:background="@drawable/bg_cover">
+
+                <include
+                    android:id="@+id/playerCover"
+                    layout="@layout/view_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+            <include
+                layout="@layout/view_player_info"
+                android:layout_width="@dimen/progressWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/playerColumnGap"
+                android:layout_marginTop="@dimen/playerStackGap" />
+        </LinearLayout>
+
+        <!-- AI 음성 고지는 잘리면 안 된다(좁으면 최대 4줄로 감싼다). 시험 토글은 심사 시연용 부가 기능이라
+             자리를 따로 잡지 않고 고지 오른쪽(조수석 쪽) 끝에 붙인다. -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Text.BodyS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="4"
+                android:text="@string/ai_notice"
+                android:textColor="@color/textSecondary" />
+
+            <LinearLayout
+                android:id="@+id/playerDebug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spaceS"
+                android:gravity="center_vertical|end"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/playerDebugBelt"
+                    style="@style/Button.Debug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/debug_belt_unfasten" />
+
+                <TextView
+                    android:id="@+id/playerCabinSupport"
+                    style="@style/Text.LabelM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textDisabled" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_pause_banner" />
+</FrameLayout>

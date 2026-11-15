@@ -1,0 +1,26 @@
+{
+  "packageName": "com.voicestorybook.vehicle",
+  "appDescription": "A storybook player that plays children's fairy tales read aloud in a parent's own voice.",
+  "invokeWord": "북투유",
+  "version": "0.1.0",
+  "actionCalls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "PLAY_STORY",
+        "description": "Play a children's story or fairy tale from the storybook, read aloud in the parent's voice.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "Title of the story to play. Leave empty to continue the most recent story."
+            }
+          },
+          "required": []
+        },
+        "component": "activity"
+      }
+    }
+  ]
+}

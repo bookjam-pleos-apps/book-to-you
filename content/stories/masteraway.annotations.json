@@ -1,0 +1,254 @@
+{
+ "id": "masteraway",
+ "draftHash": "8754cbc1de5584d1",
+ "cast": [
+  {
+   "name": "주인님",
+   "voiceType": "아빠",
+   "trait": "잠깐 나오는 집주인",
+   "style": "calm"
+  },
+  {
+   "name": "찍찍이",
+   "voiceType": "아기",
+   "trait": "작지만 당차고 영리함",
+   "style": "child"
+  },
+  {
+   "name": "야옹이",
+   "voiceType": "언니",
+   "trait": "불평 많고 약이 잘 오름",
+   "style": "calm"
+  },
+  {
+   "name": "멍멍이",
+   "voiceType": "오빠",
+   "trait": "덩치 크고 너그러움",
+   "style": "deep"
+  }
+ ],
+ "scenes": [
+  {
+   "from": 0,
+   "to": 9,
+   "summary": "주인이 나가고 야옹이가 찍찍이를 노림"
+  },
+  {
+   "from": 10,
+   "to": 16,
+   "summary": "우당탕 소동과 멍멍이 등장"
+  },
+  {
+   "from": 17,
+   "to": 28,
+   "summary": "배고픈 셋이 힘을 합쳐 음식을 구함"
+  },
+  {
+   "from": 29,
+   "to": 36,
+   "summary": "잔디밭의 식사와 친구"
+  },
+  {
+   "from": 37,
+   "to": 38,
+   "summary": "잠드는 결말"
+  }
+ ],
+ "sentences": [
+  {
+   "index": 0,
+   "text": "주인님이 집을 비운 사이",
+   "role": "narration"
+  },
+  {
+   "index": 1,
+   "text": "“집 잘 지키고 있어.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 2,
+   "text": "문 닫히는 소리가 나자 야옹이가 입맛을 쩝쩝 다시면서 말했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 3,
+   "text": "“주인님이 나가셨으니 맛있는 식사를 해야겠군. 너 이리 나와.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 4,
+   "text": "야옹이가 찍찍이를 잡아먹으려고 하나 봐요.",
+   "role": "narration"
+  },
+  {
+   "index": 5,
+   "text": "“어머나, 이게 무슨 소리야?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 6,
+   "text": "찍찍이는 잠을 자다 말고 벌떡 일어나야 했지요.",
+   "role": "narration"
+  },
+  {
+   "index": 7,
+   "text": "“이 덩치만 큰 녀석아, 네가 날 잡아먹을 수 있을 거 같아?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 8,
+   "text": "조그만 찍찍이가 당당하게 말했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 9,
+   "text": "야옹이는 잔뜩 약이 올랐어요.",
+   "role": "narration"
+  },
+  {
+   "index": 10,
+   "text": "찍찍이와 야옹이는 우당탕탕 온 집안을 뛰어다녔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 11,
+   "text": "낮잠을 자던 멍멍이가 슬그머니 눈을 떴어요.",
+   "role": "narration"
+  },
+  {
+   "index": 12,
+   "text": "“시끄러워서 잠을 잘 수가 없네.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 13,
+   "text": "“도대체 왜 이렇게 시끄러운 거야?”",
+   "role": "dialogue"
+  },
+  {
+   "index": 14,
+   "text": "찍찍이와 야옹이는 겁에 질려 도망을 갔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 15,
+   "text": "빙글빙글, 셋은 한참 동안 제자리를 맴돌았지요.",
+   "role": "narration"
+  },
+  {
+   "index": 16,
+   "text": "가장 커다란 멍멍이, 멍멍이보다 작은 야옹이, 가장 작은 찍찍이가 한자리에 모였어요.",
+   "role": "narration"
+  },
+  {
+   "index": 17,
+   "text": "멍멍이와 야옹이가 헐떡거리며 말했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 18,
+   "text": "“헉헉, 배가 고파서 더는 못 뛰겠어, 멍멍.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 19,
+   "text": "“나도, 나도.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 20,
+   "text": "그러자 찍찍이가 눈을 반짝 빛냈어요.",
+   "role": "narration"
+  },
+  {
+   "index": 21,
+   "text": "“내가 먹을 것이 있는 곳을 알아. 대신 너희들이 날 도와줘야 해, 찍찍.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 22,
+   "text": "“저기 봐, 식탁 위에 맛있는 음식이 있어.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 23,
+   "text": "하지만 식탁은 너무 높았어요.",
+   "role": "narration"
+  },
+  {
+   "index": 24,
+   "text": "셋은 꾀를 냈답니다.",
+   "role": "narration"
+  },
+  {
+   "index": 25,
+   "text": "“내가 가장 무거우니까 맨 아래에 있을게, 멍멍.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 26,
+   "text": "“그럼 내가 멍멍이 위로 올라갈게, 야옹.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 27,
+   "text": "영차, 영차!",
+   "role": "narration"
+  },
+  {
+   "index": 28,
+   "text": "가장 가벼운 찍찍이는 야옹이 머리 위로 올라가 조심조심 식탁 위에 있는 접시를 가져왔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 29,
+   "text": "셋은 먹을 것을 들고 잔디밭으로 나갔어요.",
+   "role": "narration"
+  },
+  {
+   "index": 30,
+   "text": "멍멍이는 가장 큰 뼈다귀를 냠냠.",
+   "role": "narration"
+  },
+  {
+   "index": 31,
+   "text": "야옹이는 뼈다귀보다 작은 생선을 냠냠.",
+   "role": "narration"
+  },
+  {
+   "index": 32,
+   "text": "찍찍이는 가장 작은 치즈 조각을 냠냠 먹었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 33,
+   "text": "“멍멍아, 너는 내 친구들 중에서 가장 커.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 34,
+   "text": "찍찍이가 말하자 멍멍이가 웃으며 말했어요.",
+   "role": "narration"
+  },
+  {
+   "index": 35,
+   "text": "“찍찍아, 내 친구들 중에서 네가 가장 작아. 이렇게 작은 친구가 생겨서 정말 기뻐.”",
+   "role": "dialogue"
+  },
+  {
+   "index": 36,
+   "text": "‘맛있는 찍찍이와 무서운 멍멍이가 내 친구가 되다니.’ 야옹이는 뭔가 이상했지만 그래도 기분이 좋았답니다.",
+   "role": "mixed"
+  },
+  {
+   "index": 37,
+   "text": "세 친구는 어느새 새근새근 잠이 들었어요.",
+   "role": "narration"
+  },
+  {
+   "index": 38,
+   "text": "아마도 사이좋게 꿈나라를 여행하고 있을 거예요.",
+   "role": "narration"
+  }
+ ]
+}

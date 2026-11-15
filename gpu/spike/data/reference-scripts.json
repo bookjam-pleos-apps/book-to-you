@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "targetSeconds": [10, 20],
+  "scripts": [
+    {
+      "style": "calm",
+      "direction": "잠자리 동화를 읽어 주듯 차분하고 또박또박",
+      "instruct": "Read like a gentle storyteller for young children: calm, warm, clear, at a steady pace.",
+      "text": "옛날 옛적, 바닷가 작은 마을에 등대지기 할아버지가 살았어요. 할아버지는 매일 저녁 등대에 불을 켜고, 먼 바다로 나간 배들이 무사히 돌아오기를 기다렸답니다."
+    },
+    {
+      "style": "excited",
+      "direction": "아이와 함께 신나게 놀 때처럼 밝고 크게",
+      "instruct": "Speak brightly and excitedly, full of joy, like playing with a young child.",
+      "identityThreshold": 0.45,
+      "text": "우와, 저것 좀 봐! 하늘에서 반짝반짝 별똥별이 떨어지고 있어! 빨리 소원을 빌자! 하나, 둘, 셋! 우리 내일은 꼭 바닷가에 가서 신나게 모래성을 쌓자!"
+    },
+    {
+      "style": "soft",
+      "direction": "아이를 재울 때처럼 작고 느리게. 속삭이지 말고 목소리는 울리게",
+      "instruct": "Speak quietly and slowly, like lulling a child to sleep. Soft but voiced, not whispering.",
+      "phonation": "voiced",
+      "text": "이제 눈을 살며시 감아 보자. 창밖에서는 바람이 나뭇잎을 살랑살랑 흔들고, 달님이 조용히 우리 집 지붕을 비춰 주고 있어. 오늘도 정말 수고 많았어. 잘 자, 우리 아가."
+    },
+    {
+      "style": "deep",
+      "direction": "늑대나 어부처럼 평소보다 조금 낮고 굵게, 천천히. 목을 긁거나 으르렁거리지 말고 높이만 낮추기",
+      "instruct": "Read slowly in a low, thick, warm voice like a big wolf or an old fisherman. Lower the pitch without growling or rasping.",
+      "identityThreshold": 0.45,
+      "phonation": "voiced",
+      "text": "허허, 오늘도 바다가 참 잔잔하구나. 나는 이 바닷가에서 평생 그물을 던지며 살았단다. 얘야, 무서워하지 말고 이리 가까이 오너라."
+    },
+    {
+      "style": "child",
+      "direction": "동화 속 어린아이를 연기하듯 평소보다 높고 천천히. 혀 짧은 소리나 아기 말투 없이 높이만 올리기",
+      "instruct": "Read slowly in a higher, bright voice like a young child in a fairy tale. Raise the pitch without squeaking or baby talk.",
+      "identityThreshold": 0.45,
+      "phonation": "voiced",
+      "text": "엄마, 나 오늘 숲속에서 예쁜 꽃을 잔뜩 봤어. 노란 꽃도 있고 빨간 꽃도 있었어. 할머니께 갖다 드리면 정말 좋아하시겠지? 우리 내일 또 같이 가자."
+    },
+    {
+      "style": "whisper",
+      "direction": "soft와 같은 문장을 진짜 속삭임으로 (성대를 울리지 않고)",
+      "instruct": "Whisper the whole text: breathy and unvoiced, like telling a secret at bedtime.",
+      "identityThreshold": 0.3,
+      "phonation": "unvoiced",
+      "text": "이제 눈을 살며시 감아 보자. 창밖에서는 바람이 나뭇잎을 살랑살랑 흔들고, 달님이 조용히 우리 집 지붕을 비춰 주고 있어. 오늘도 정말 수고 많았어. 잘 자, 우리 아가."
+    }
+  ]
+}

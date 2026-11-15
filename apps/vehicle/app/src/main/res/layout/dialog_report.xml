@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 신고 팝업(Pleos System Popup): 아이콘 타일 + 제목·(설명) + 닫기(✕), 아래에 사유 버튼 둘 또는 확인 한 개.
+     폭은 ConfirmDialog의 popupWindowWidth가 정한다. 그림자 자리는 dialog_confirm과 같다. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dialogShadowRoom">
+
+    <LinearLayout
+        style="@style/Elevated.Level3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog"
+        android:orientation="vertical"
+        android:padding="@dimen/dialogPadding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/iconTile"
+                android:layout_height="@dimen/iconTile"
+                android:background="@drawable/bg_icon_tile"
+                android:importantForAccessibility="no"
+                android:padding="@dimen/iconTilePadding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_flag"
+                app:tint="@color/text" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spaceL"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dialogTitle"
+                    style="@style/Text.TitleM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/dialogMessage"
+                    style="@style/Text.Message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spaceXs" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/dialogDismiss"
+                style="@style/RoundButton.Back"
+                android:layout_width="@dimen/backButton"
+                android:layout_height="@dimen/backButton"
+                android:layout_marginStart="@dimen/spaceL"
+                android:contentDescription="@string/dialog_cancel"
+                android:src="@drawable/ic_close" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dialogOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialogGap"
+            android:orientation="horizontal" />
+
+        <Button
+            android:id="@+id/dialogClose"
+            style="@style/Button.Secondary.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialogGap"
+            android:text="@string/dialog_ok" />
+    </LinearLayout>
+</FrameLayout>

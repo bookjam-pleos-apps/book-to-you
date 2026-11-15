@@ -1,0 +1,10 @@
+{
+  "note": "인물 녹음 단위의 목소리 자동 보정(spike.render.voice.voice_rule). 문턱은 경보 대조(exp_repeat_product child 28단위)에서 출발한 보정 전 값이다. 변경 시 보정 전후의 음성을 비교한다.",
+  "styles": ["child"],
+  "bottomShare": 0.1,
+  "minGroup": 4,
+  "maxRerolls": 2,
+  "fallbackStyle": "calm",
+  "groupFloor": 0.70,
+  "referenceFloor": 0.50
+}

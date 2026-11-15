@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- QR 아이콘(내 목소리로 시작하기). ic-arrow-exit와 같은 52 격자·선 굵기 4. 색은 쓰는 쪽의 tint를 따른다. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/iconMedium"
+    android:height="@dimen/iconMedium"
+    android:viewportWidth="52"
+    android:viewportHeight="52">
+    <path
+        android:pathData="M10,10H22V22H10Z M30,10H42V22H30Z M10,30H22V42H10Z"
+        android:strokeWidth="4"
+        android:strokeColor="@android:color/white"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M30,30H35V35H30Z M37,37H42V42H37Z M37,30H42V33H37Z M30,37H33V42H30Z"
+        android:fillColor="@android:color/white" />
+</vector>

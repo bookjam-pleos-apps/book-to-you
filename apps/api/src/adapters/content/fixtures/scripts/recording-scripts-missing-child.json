@@ -1,0 +1,6 @@
+{
+  "clips": [
+    { "id": "calm", "version": "1", "style": "calm", "direction": "읽기", "text": "대본" }
+  ],
+  "prompts": []
+}

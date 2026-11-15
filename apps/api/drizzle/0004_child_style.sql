@@ -1,0 +1,1 @@
+ALTER TYPE "public"."style" ADD VALUE 'child';

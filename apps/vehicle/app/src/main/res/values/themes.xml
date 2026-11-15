@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 테마, 버튼, 태그, 그림자 스타일. 값은 colors·dimens 토큰만 참조한다. 글자 스타일은 text_styles.xml.
+     라이트 모드만이라 Light 테마로 고정한다.
+
+     그림자: Pleos Level 1~3(tokens.json elevation)을 android:elevation과 그림자 색(API 28)으로 흉내 낸다.
+     테마의 spot·ambient 알파를 1로 두면 그림자 색의 알파가 그대로 진하기가 된다.
+       Level 1 (y6 blur24 8%)은 앱 창 그림자라 시스템이 그린다. 앱에서는 쓰지 않는다.
+       Level 2 (y8 blur32 16% + y2 blur2 8%) → elevationLevel2 8dp, spot 16% + ambient 8%
+       Level 3 (y20 blur40 24% + y2 blur4 20%) → elevationLevel3 16dp, spot 24% + ambient 20%
+     blur와 y는 Android 광원 모델로 정확히 옮길 수 없어 높이로 근사한다. 그림자를 쓰는 뷰는 반드시 Elevated.* 스타일로 색을 정한다
+     (기본 검정에 알파 1이면 그림자가 새까매진다). -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Vehicle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <!-- 시스템 시작 화면(API 31부터)의 바탕을 스플래시와 같은 주황으로 맞춰 색이 튀지 않게 한다. -->
+        <item name="android:windowSplashScreenBackground" tools:targetApi="31">@color/brand</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:fontFamily">@font/asta_sans</item>
+        <item name="fontFamily">@font/asta_sans</item>
+        <item name="colorAccent">@color/text</item>
+        <item name="android:spotShadowAlpha">1</item>
+        <item name="android:ambientShadowAlpha">1</item>
+        <item name="alertDialogTheme">@style/Theme.Vehicle.Dialog</item>
+    </style>
+
+    <!-- 신고 사유 목록처럼 시스템 AlertDialog를 쓰는 팝업. 연결 끊기는 dialog_confirm 레이아웃을 쓴다. -->
+    <style name="Theme.Vehicle.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+        <item name="android:fontFamily">@font/asta_sans</item>
+        <item name="fontFamily">@font/asta_sans</item>
+        <item name="colorAccent">@color/text</item>
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="android:textColorSecondary">@color/textTertiary</item>
+        <item name="android:backgroundDimAmount">0.2</item>
+    </style>
+
+    <!-- 연결 끊기 확인(dialog_confirm, Pleos System Popup). 뒤 덮개는 Pleos overlay/default처럼 20%.
+         Android 덮개 색은 검정 고정이라 #131417 대신 검정 20%다. 그림자(Level 3)가 보이게 알파를 1로 둔다. -->
+    <style name="Theme.Vehicle.Popup" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:backgroundDimAmount">0.2</item>
+        <item name="android:fontFamily">@font/asta_sans</item>
+        <item name="fontFamily">@font/asta_sans</item>
+        <item name="android:spotShadowAlpha">1</item>
+        <item name="android:ambientShadowAlpha">1</item>
+    </style>
+
+    <!-- 그림자 -->
+    <style name="Elevated.Level2" parent="">
+        <item name="android:elevation">@dimen/elevationLevel2</item>
+        <item name="android:outlineSpotShadowColor">@color/shadowLevel2Spot</item>
+        <item name="android:outlineAmbientShadowColor">@color/shadowLevel2Ambient</item>
+    </style>
+
+    <style name="Elevated.Level3" parent="">
+        <item name="android:elevation">@dimen/elevationLevel3</item>
+        <item name="android:outlineSpotShadowColor">@color/shadowLevel3Spot</item>
+        <item name="android:outlineAmbientShadowColor">@color/shadowLevel3Ambient</item>
+    </style>
+
+    <!-- 버튼: Pleos Basic button. 시스템 그림자(stateListAnimator)는 끄고 모양은 drawable 토큰으로 그린다.
+         Button 자체가 Medium 치수(높이 80, 안쪽 16/32, 아이콘 간격 14)다. -->
+    <style name="Button" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/asta_sans</item>
+        <item name="android:textSize">@dimen/textTitleS</item>
+        <item name="android:textFontWeight">700</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">@dimen/buttonMediumHeight</item>
+        <item name="android:paddingStart">@dimen/buttonMediumPadH</item>
+        <item name="android:paddingEnd">@dimen/buttonMediumPadH</item>
+        <item name="android:paddingTop">@dimen/buttonPadV</item>
+        <item name="android:paddingBottom">@dimen/buttonPadV</item>
+        <item name="android:drawablePadding">@dimen/buttonMediumGap</item>
+    </style>
+
+    <!-- Large 치수(높이 100, 안쪽 16/40, 아이콘 간격 16). 팝업 버튼 글자는 Body/Large/Strong. -->
+    <style name="Button.Large">
+        <item name="android:textSize">@dimen/textBodyL</item>
+        <item name="android:minHeight">@dimen/buttonLargeHeight</item>
+        <item name="android:paddingStart">@dimen/buttonLargePadH</item>
+        <item name="android:paddingEnd">@dimen/buttonLargePadH</item>
+        <item name="android:drawablePadding">@dimen/buttonLargeGap</item>
+    </style>
+
+    <!-- 주 버튼(이어서 듣기). 바탕과 글자·아이콘은 buttonBrand·onButtonBrand만 쓴다. -->
+    <style name="Button.Brand" parent="Button.Large">
+        <item name="android:background">@drawable/btn_brand</item>
+        <item name="android:textColor">@color/onButtonBrand</item>
+        <item name="drawableTint">@color/onButtonBrand</item>
+        <item name="android:textSize">@dimen/textTitleL</item>
+        <item name="android:textFontWeight">800</item>
+    </style>
+
+    <!-- 폭을 정한 주 버튼(layout-w1200dp/view_resume_card) 안의 아이콘+글자 묶음. 바탕과 누름은 바깥 틀이 맡는다. -->
+    <style name="Button.Brand.Label" parent="">
+        <item name="android:textColor">@color/onButtonBrand</item>
+        <item name="drawableTint">@color/onButtonBrand</item>
+        <item name="android:drawableTint">@color/onButtonBrand</item>
+        <item name="android:textSize">@dimen/textTitleL</item>
+        <item name="android:textFontWeight">800</item>
+        <item name="android:fontFamily">@font/asta_sans</item>
+        <item name="android:drawablePadding">@dimen/buttonLargeGap</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- Pleos Primary: 옅은 바탕(fillSubtle). 연결 끊기, 취소 같은 보조 조작. -->
+    <style name="Button.Primary">
+        <item name="android:background">@drawable/btn_primary</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="drawableTint">@color/text</item>
+    </style>
+
+    <!-- 머리줄 크기의 주 버튼(시연 계정의 내 목소리로 시작하기). 바탕·글자는 Button.Brand와 같고 크기는 Button.Primary와 같다. 대비 7.8:1. -->
+    <style name="Button.BrandMedium">
+        <item name="android:background">@drawable/btn_brand</item>
+        <item name="android:textColor">@color/onButtonBrand</item>
+        <item name="drawableTint">@color/onButtonBrand</item>
+    </style>
+
+    <style name="Button.Primary.Large" parent="Button.Large">
+        <item name="android:background">@drawable/btn_primary_large</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="drawableTint">@color/text</item>
+    </style>
+
+    <!-- Pleos Secondary: 진한 바탕(buttonStrong) 흰 글자. 팝업의 확인. -->
+    <style name="Button.Secondary">
+        <item name="android:background">@drawable/btn_secondary</item>
+        <item name="android:textColor">@color/onButtonStrong</item>
+        <item name="drawableTint">@color/onButtonStrong</item>
+    </style>
+
+    <style name="Button.Secondary.Large" parent="Button.Large">
+        <item name="android:background">@drawable/btn_secondary_large</item>
+        <item name="android:textColor">@color/onButtonStrong</item>
+        <item name="drawableTint">@color/onButtonStrong</item>
+    </style>
+
+    <!-- 덮개 위 보조 버튼(카운트다운 취소, v2-decisions): 흰 10% 바탕, 흰 글자. 대비 11.3:1. -->
+    <style name="Button.OnScrim.Large" parent="Button.Large">
+        <item name="android:background">@drawable/btn_on_scrim</item>
+        <item name="android:textColor">@color/onScrim</item>
+    </style>
+
+    <!-- 카운트다운 목소리 고르기 한 칸. 고른 칸만 흰 바탕(CountdownVoices가 바꾼다). -->
+    <style name="Segment" parent="Button">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:minWidth">@dimen/segmentItemWidth</item>
+        <item name="android:minHeight">@dimen/segmentItemHeight</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- Pleos Primary Small(높이 64, 안쪽 8/24). -->
+    <style name="Button.Small">
+        <item name="android:background">@drawable/btn_small</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">@dimen/textLabelM</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:minHeight">@dimen/buttonSmallHeight</item>
+        <item name="android:paddingStart">@dimen/buttonSmallPadH</item>
+        <item name="android:paddingEnd">@dimen/buttonSmallPadH</item>
+        <item name="android:paddingTop">@dimen/buttonSmallPadV</item>
+        <item name="android:paddingBottom">@dimen/buttonSmallPadV</item>
+    </style>
+
+    <!-- release에도 남기는 벨트 시험 토글(심사자가 에뮬레이터에서 벨트 해제를 시연). 구석에 흐린 글자로. -->
+    <style name="Button.Debug" parent="Button.Small">
+        <item name="android:textColor">@color/textDisabled</item>
+    </style>
+
+    <!-- 재생 화면의 둥근 조작 버튼(아이콘 + 아래 글자 라벨). 아이콘 크기 = 지름 - 안쪽 여백 x 2(fitCenter로 맞춘다). -->
+    <style name="RoundButton" parent="Elevated.Level2">
+        <item name="android:background">@drawable/btn_round_control</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">@dimen/controlSidePadding</item>
+        <item name="tint">@color/text</item>
+    </style>
+
+    <style name="RoundButton.Brand">
+        <item name="android:background">@drawable/btn_round_brand</item>
+        <item name="android:padding">@dimen/controlMainPadding</item>
+        <item name="tint">@color/onButtonBrand</item>
+    </style>
+
+    <!-- 뒤로 가기: Pleos Icon button Small Circle(지름 64, 아이콘 44). -->
+    <style name="RoundButton.Back">
+        <item name="android:background">@drawable/btn_round_strong</item>
+        <item name="android:padding">@dimen/backButtonPadding</item>
+        <item name="android:elevation">0dp</item>
+        <item name="tint">@color/onButtonStrong</item>
+    </style>
+
+    <!-- 태그: 누르는 것이 아니라 보여 주기만 하는 알약(목소리, 몇 장째). 버튼 역할을 주지 않는다. -->
+    <style name="Tag">
+        <item name="android:background">@drawable/bg_tag</item>
+        <item name="android:fontFamily">@font/asta_sans</item>
+        <item name="android:textColor">@color/textSecondary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingStart">@dimen/tagPadH</item>
+        <item name="android:paddingEnd">@dimen/tagPadH</item>
+        <item name="android:paddingTop">@dimen/tagPadV</item>
+        <item name="android:paddingBottom">@dimen/tagPadV</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <!-- 글자 크기·굵기는 키트 글자 스타일을 textAppearance로 가져온다. 색은 위 Tag 값(textSecondary)이 이긴다. -->
+    <style name="Tag.Count">
+        <item name="android:textAppearance">@style/Text.BodySStrong</item>
+    </style>
+
+    <style name="Tag.CountLarge">
+        <item name="android:textAppearance">@style/Text.HeadlineSStrong</item>
+    </style>
+
+    <style name="Tag.Voice">
+        <item name="android:background">@drawable/bg_tag_strong</item>
+        <item name="android:textAppearance">@style/Text.TitleLStrong</item>
+        <item name="android:textSize">@dimen/textVoiceTag</item>
+    </style>
+</resources>

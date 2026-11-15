@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 누르면 모양(bg_round_brand) 안에서 물결이 번진다. 입력에 바로 반응한다(Pleos UI 가이드 0.25초). -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/fillPressed">
+    <item android:drawable="@drawable/bg_round_brand" />
+</ripple>

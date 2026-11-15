@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Figma ic-arrow-exit(연결 끊기). 선 아이콘이다. 색은 쓰는 쪽의 tint를 따른다. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/iconMedium"
+    android:height="@dimen/iconMedium"
+    android:viewportWidth="52"
+    android:viewportHeight="52">
+    <path
+        android:pathData="M26.5,11H10.5V40H26.5"
+        android:strokeWidth="4"
+        android:strokeColor="@android:color/white"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M21.5,25.5H39.5M31.5,33.5L39.5,25.5L31.5,17.5"
+        android:strokeWidth="4"
+        android:strokeColor="@android:color/white"
+        android:strokeLineCap="round" />
+</vector>

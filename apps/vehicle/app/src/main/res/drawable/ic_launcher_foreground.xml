@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 앱 아이콘 전경(사용자 제공 144px, 책 읽는 곰). adaptive 층 108dp 중 보이는 가운데 72dp에 원본을 그대로 둔다.
+     곰과 책은 원본의 반지름 65% 안이라 72dp 안 반지름 23dp로, 마스크 안전 지대(지름 66dp) 안에 든다. -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/app_icon_art"
+    android:inset="18dp" />

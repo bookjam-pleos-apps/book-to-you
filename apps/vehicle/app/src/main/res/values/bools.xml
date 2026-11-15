@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 재생 화면 표지 모양. 키 큰 분할 창(values-h1000dp)만 홈 책장과 같은 가로 그림을 쓴다. -->
+<resources>
+    <bool name="playerCoverLandscape">false</bool>
+    <!-- 이어서 듣기 카드 표지 모양. 가장 좁은 분할 창(628)은 칸이 정사각형에 가까워 세로 그림이 덜 잘린다(없으면 가로 그림).
+         840 창은 values-w800dp에서 책장과 같은 가로 그림으로 바꾼다. -->
+    <bool name="resumeCoverLandscape">false</bool>
+    <!-- 시험 토글 아래 감지 줄(CabinDebugPanel). 분할 창은 숨긴다. -->
+    <bool name="showCabinSupport">false</bool>
+</resources>

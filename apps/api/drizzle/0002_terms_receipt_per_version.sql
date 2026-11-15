@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX "consent_one_terms_receipt_per_version" ON "consent_records" USING btree ("user_id","terms_version","ai_notice_version") WHERE "consent_records"."kind" = 'account_terms';

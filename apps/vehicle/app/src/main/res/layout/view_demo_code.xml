@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 심사자용 데모 코드 페어링(POST /v1/devices/pair/demo). BuildConfig.DEMO_CODE_PAIRING으로 켠다.
+     Pleos 키보드는 기본이 한글·전체 화면이다. 화면을 가리지 않는 키보드로 띄우고, 이동 키가 연결이다. 코드는 숫자 16자리. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/demoCodeInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/buttonMediumHeight"
+            android:layout_weight="1"
+            android:hint="@string/demo_code_hint"
+            android:imeOptions="actionGo|flagNoExtractUi"
+            android:importantForAutofill="no"
+            android:inputType="textVisiblePassword|textCapCharacters|textNoSuggestions"
+            android:textSize="@dimen/textBodyL"
+            android:maxLength="128" />
+
+        <Button
+            android:id="@+id/demoCodeSubmit"
+            style="@style/Button.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spaceS"
+            android:text="@string/demo_code_submit" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/demoCodeStatus"
+        style="@style/Text.LabelM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space2xs" />
+</LinearLayout>

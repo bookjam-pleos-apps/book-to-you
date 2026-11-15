@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BOOK TO YOU</string>
+
+    <string name="pairing_title">휴대폰과 연결해요</string>
+    <string name="pairing_instruction">휴대폰으로 QR을 찍거나, 부모 계정에서 아래 코드를 입력해 주세요.</string>
+    <string name="pairing_starting">연결 코드를 받는 중</string>
+    <string name="pairing_waiting">확인을 기다리는 중 · %1$s 남음</string>
+    <string name="pairing_expired">코드 시간이 지났어요.</string>
+    <string name="pairing_denied">연결이 거절됐어요.</string>
+    <string name="pairing_failed">서버에 연결하지 못했어요.</string>
+    <string name="pairing_auto">시연 계정에 연결하는 중</string>
+    <string name="pairing_back">돌아가기</string>
+    <string name="book_arrival_fit">도착 전에 끝나요</string>
+    <string name="home_start_my_voice">내 목소리로 시작하기</string>
+    <string name="pairing_retry">새 코드 받기</string>
+    <string name="pairing_parked_only">차를 세우면 연결할 수 있어요.</string>
+    <string name="pairing_storage_notice">연결하면 이 차에 목소리 동화가 저장되고, 7일간 연결이 없으면 지워져요.</string>
+    <string name="demo_code_hint">심사용 데모 코드(숫자 16자리)</string>
+    <string name="demo_code_submit">데모 코드로 연결</string>
+    <string name="demo_code_checking">데모 코드를 확인하는 중</string>
+    <string name="demo_code_invalid">데모 코드가 맞지 않아요. 안내문의 코드를 다시 확인해 주세요.</string>
+    <string name="demo_code_not_ready">시연 서버가 아직 준비되지 않았어요. 잠시 뒤 다시 시도해 주세요.</string>
+    <string name="demo_code_unsupported">이 서버는 데모 코드를 받지 않아요.</string>
+    <string name="demo_code_too_many">시도가 너무 많아요. 잠시 뒤 다시 시도해 주세요.</string>
+    <string name="demo_code_failed">서버에 연결하지 못했어요.</string>
+    <string name="device_name">Pleos 차량</string>
+    <string name="parked_badge" translatable="false">P</string>
+    <string name="home_truncated">차를 세우면 모든 이야기를 볼 수 있어요</string>
+    <string name="home_disconnect">연결 끊기</string>
+    <string name="disconnect_title">연결을 끊을까요?</string>
+    <string name="disconnect_message">받아 둔 이야기가 이 차에서 지워져요. 다시 들으려면 휴대폰으로 다시 연결해야 해요.</string>
+    <string name="disconnect_confirm">연결 끊기</string>
+    <string name="dialog_cancel">취소</string>
+    <string name="dialog_ok">확인</string>
+    <string name="player_report">신고</string>
+    <string name="report_title">어떤 문제가 있나요?</string>
+    <string name="report_reason_voice">목소리가 이상해요</string>
+    <string name="report_reason_content">내용이 부적절해요</string>
+    <string name="report_sent_title">신고했어요</string>
+    <string name="report_sent_message">알려 주셔서 고마워요. 확인해 볼게요.</string>
+    <string name="report_gone_title">신고할 수 없는 이야기예요</string>
+    <string name="report_gone_message">이 이야기는 서재에서 빠졌어요. 목록을 다시 받으면 사라져요.</string>
+    <string name="report_failed_title">지금은 보낼 수 없어요</string>
+    <string name="report_failed_message">연결을 확인하고 다시 눌러 주세요.</string>
+    <string name="player_back">목록</string>
+    <string name="player_play">이어 듣기</string>
+    <string name="player_pause">잠깐 멈춤</string>
+    <string name="player_previous">이전 장</string>
+    <string name="player_next">다음 장</string>
+    <string name="ai_notice">이 음성은 보호자의 동의를 받아 AI로 생성한 합성 음성입니다.</string>
+    <string name="debug_belt_unfasten">벨트 해제 (에뮬레이터 시험용)</string>
+    <string name="cabin_support">감지: 벨트 %1$s · 뒷문 %2$s</string>
+    <string name="cabin_rear_doors">2열 %1$d개</string>
+    <string name="cabin_none">지원 안 함</string>
+    <string name="seat_left">2열 왼쪽</string>
+    <string name="seat_center">2열 가운데</string>
+    <string name="seat_right">2열 오른쪽</string>
+    <string name="library_syncing">이야기를 받는 중</string>
+    <string name="library_offline">오프라인 · 받아 둔 이야기만 들을 수 있어요</string>
+    <string name="library_expired">오래 연결되지 않아 받아 둔 이야기를 지웠어요. 인터넷에 연결해 주세요.</string>
+    <string name="library_first_offline">인터넷에 연결되면 이야기를 받아요.</string>
+    <string name="library_rejected">이야기 목록을 읽지 못했어요.</string>
+    <string name="library_empty">아직 들을 이야기가 없어요. 휴대폰에서 이야기를 만들어 주세요.</string>
+    <string name="pairing_sub">처음 한 번만 하면 돼요</string>
+    <string name="pairing_step_scan_number" translatable="false">1</string>
+    <string name="pairing_step_confirm_number" translatable="false">2</string>
+    <string name="pairing_step_scan">휴대폰 카메라로 QR을 찍어요</string>
+    <string name="pairing_step_confirm">휴대폰에서 \'연결\'을 눌러요</string>
+    <string name="pairing_code_label">QR이 안 되면 휴대폰에 이 코드를 입력해요</string>
+    <!-- 분할 창(1200dp 미만)은 두 줄로 끊는 자리를 정해 둔다. 앱 하나 창은 values-w1200dp에서 한 줄. -->
+    <string name="home_title">오늘은 어떤\n이야기를 들을까?</string>
+    <string name="resume_play">이어서 듣기</string>
+    <string name="my_shelf">내 책장</string>
+    <!-- 카운트다운 문구는 디자이너 Figma(73:1771) 그대로다. 앱의 해요체와 다른 점은 디자이너 확인 필요. -->
+    <string name="countdown_headline">동화가 자동으로 시작됩니다</string>
+    <string name="countdown_voice_hint">목소리를 바꾸고 싶으시면 선택하세요</string>
+    <string name="countdown_start_now">빠르게 시작하기</string>
+    <string name="cover_placeholder">표지 그림</string>
+    <string name="book_downloading">받는 중</string>
+    <string name="library_partial">받지 못한 이야기가 있어요. 인터넷에 연결되면 다시 받아요.</string>
+    <string name="player_voice">%1$s 목소리</string>
+    <string name="player_progress">%2$d / %1$d</string>
+    <string name="player_chapter">제%1$d장</string>
+    <string name="player_chapter_titled">제%1$d장. %2$s</string>
+    <string name="banner_belt">벨트가 풀려서 잠깐 멈췄어요</string>
+    <string name="banner_door">뒷문이 열려서 잠깐 멈췄어요</string>
+
+    <!-- 스플래시(Figma 스플래쉬 49:859) -->
+    <string name="splash_slogan">가장 사랑하는 목소리로, 너에게</string>
+    <string name="splash_description">엄마 아빠 목소리로 만든 동화를 차에서 아이에게 들려줘요.</string>
+</resources>

@@ -1,0 +1,25 @@
+{
+  "name": "voice-storybook",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json && pnpm -r typecheck",
+    "lint": "eslint apps packages tests",
+    "depcruise": "depcruise apps packages --config .dependency-cruiser.cjs",
+    "test": "vitest run",
+    "test:spike": "UV_PROJECT_ENVIRONMENT=.venv-check uv run --directory gpu/spike --locked --exact --group dev pytest -q -rs",
+    "test:guyeon": "uv run --no-project --python 3.12 python -B -m unittest discover -s content/tools/tests",
+    "check": "pnpm typecheck && pnpm lint && pnpm depcruise && pnpm test && pnpm test:spike && pnpm test:guyeon",
+    "test:int": "docker compose up -d --wait postgres minio && node --env-file=.env node_modules/vitest/vitest.mjs run --config vitest.int.config.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "dependency-cruiser": "^18.7.1",
+    "eslint": "^10.14.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^5.0.5"
+  }
+}

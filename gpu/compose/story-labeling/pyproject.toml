@@ -1,0 +1,48 @@
+[project]
+name = "story-labeling-service"
+version = "0.1.0"
+description = "model-compose style-tagging 서비스 환경"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "model-compose @ git+https://github.com/rn1njoo/model-compose@462e13006f64dbb6ed788341e57dec4bc522f49f",
+    # Nimble 드라이버가 고정한 버전이다. voice-clone의 4.57.3과 함께 쓸 수 없어 환경을 나눈다.
+    "transformers==5.17.0",
+    "peft==0.21.0",
+    "accelerate==1.15.0",
+    "sentencepiece==0.2.2",
+    # model-compose는 +cu 태그가 없거나 드라이버와 맞지 않는 torch를 재설치한다. 장비의 CUDA에 맞는 휠로 잠근다.
+    # GB10(CUDA 13.0)은 cu130, RTX 4090(드라이버 CUDA 12.9)은 cu126이다.
+    "torch==2.14.1; platform_machine == 'aarch64'",
+    "torch==2.13.0; platform_machine == 'x86_64'",
+    # Nimble의 requirements/cuda-eval.txt(f136b3f75721)에 있는 나머지 핀이다.
+    "pillow==12.3.0",
+    "python-dotenv==1.2.3",
+    # 드라이버가 기동할 때 설치하는 패키지다. 미리 잠가 두어 lock 밖 버전이 들어오지 않게 한다.
+    "fastapi",
+    "uvicorn",
+    "python-multipart",
+    "huggingface-hub",
+]
+
+[tool.uv]
+package = false
+environments = [
+    "sys_platform == 'linux' and platform_machine == 'aarch64'",
+    "sys_platform == 'linux' and platform_machine == 'x86_64'",
+]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu130", marker = "platform_machine == 'aarch64'" },
+    { index = "pytorch-cu126", marker = "platform_machine == 'x86_64'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true

@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+/* 디자인 토큰. 디자인 시스템 개선안의 color.semantic, type.phone, radius.phone, elevation.figma 값이다. */
+@theme {
+  --font-sans: "Asta Sans", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+
+  --color-background: #faf4ec;
+  --color-surface: #ffffff;
+  --color-brand: #ff8a00;
+  /* 주 버튼(알약 버튼, 녹음 버튼과 마이크)은 이 두 토큰만 쓴다.
+     주황 위 흰 글자는 대비 2.36:1로 Pleos 기준(4.5:1) 미달이라, 2026-11-11 디자이너와 ink(7.80:1)로 정했다. */
+  --color-button-brand: #ff8a00;
+  --color-on-button-brand: #131417;
+  --color-ink: #131417;
+  --color-ink-2: rgb(19 20 23 / 0.84);
+  --color-ink-3: rgb(19 20 23 / 0.64);
+  --color-ink-4: rgb(19 20 23 / 0.32);
+  --color-fill: rgb(19 20 23 / 0.05);
+  --color-fill-strong: rgb(19 20 23 / 0.1);
+  --color-line: rgb(19 20 23 / 0.1);
+  --color-danger: #f62e24;
+  --color-danger-text: #c8221a;
+  --color-danger-soft: rgb(246 46 36 / 0.1);
+  --color-step: #ffc72c;
+  /* 그림 없는 표지의 색 블록이다. 차량 앱 values/colors.xml의 coverRed, coverSea, coverMint와 같다. */
+  --color-cover-red: #ffd6cc;
+  --color-cover-sea: #cdeaf7;
+  --color-cover-mint: #d4f0dc;
+  /* 마스코트 곰 귀 안쪽 색이다(마이크 거리 안내 그림). 곰 몸은 brand와 같은 주황이다. */
+  --color-mascot-ear: #ffd9a8;
+
+  --radius-card: 10px;
+  --radius-alert: 20px;
+  --radius-chip: 32px;
+
+  --text-title: 26px;
+  --text-title--line-height: 36px;
+  --text-timer: 36px;
+  --text-timer--line-height: 40px;
+  --text-slogan: 20px;
+  --text-slogan--line-height: 30px;
+  --text-cta: 20px;
+  --text-cta--line-height: 28px;
+  --text-script: 18px;
+  --text-script--line-height: 30px;
+  --text-app-bar: 18px;
+  --text-app-bar--line-height: 22px;
+  --text-label: 16px;
+  --text-label--line-height: 22px;
+  --text-button: 15px;
+  --text-button--line-height: 24px;
+  --text-caption: 14px;
+  --text-caption--line-height: 20px;
+  --text-caption-sm: 13px;
+  --text-caption-sm--line-height: 18px;
+  /* 디자이너 토큰(type.phone)이다. 12px는 폰에서 작아 지금은 쓰는 곳이 없다. */
+  --text-chip: 12px;
+  --text-chip--line-height: 16px;
+
+  /* 시안에만 있는 치수. w-mascot, w-wordmark, w-retake, size-stop, max-w-cta, max-w-screen-phone으로 쓴다. */
+  --spacing-mascot: 173px;
+  --spacing-wordmark: 226px;
+  --spacing-retake: 120px;
+  --spacing-stop: 15px;
+  --radius-stop: 3px;
+  --container-cta: 268px;
+  --container-screen-phone: 480px;
+
+  --shadow-button: 0 4px 14px rgb(0 0 0 / 0.25);
+  --shadow-cta: 0 8px 24px rgb(0 0 0 / 0.25);
+}
+
+/* shadcn 컴포넌트가 읽는 이름을 위 토큰에 잇는다. shadcn add로 새 컴포넌트를 받아도 같은 색을 쓴다. */
+:root {
+  --radius: 10px;
+  --background: var(--color-background);
+  --foreground: var(--color-ink);
+  --card: var(--color-surface);
+  --card-foreground: var(--color-ink);
+  --popover: var(--color-surface);
+  --popover-foreground: var(--color-ink);
+  --primary: var(--color-button-brand);
+  --primary-foreground: var(--color-on-button-brand);
+  --secondary: var(--color-fill);
+  --secondary-foreground: var(--color-ink-2);
+  --muted: var(--color-fill-strong);
+  --muted-foreground: var(--color-ink-3);
+  --accent: var(--color-fill);
+  --accent-foreground: var(--color-ink);
+  --destructive: var(--color-danger-text);
+  --border: var(--color-line);
+  --input: var(--color-line);
+  --ring: var(--color-ink);
+}
+
+@theme inline {
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  body {
+    @apply bg-background font-sans text-ink antialiased;
+    word-break: keep-all;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ink;
+  }
+}

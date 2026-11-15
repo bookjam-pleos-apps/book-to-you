@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 키가 큰 분할 창(17" 840×1184, 14.6" 672×948 제외). 재생 화면을 세로로 쌓아도 남는 높이가 있어 표지와 조작 버튼을 키운다.
+     제목·표지·목소리 태그는 840×1184 창(에뮬레이터)에서 조작 버튼이 안내 문구와 겹치지 않게 정했다.
+     앱 1개 창(values-w1200dp)은 너비 한정자가 먼저라 이 값을 덮는다. -->
+<resources>
+    <!-- 분할 창에서 1~2초에 읽을 것은 몇 장째·재생 상태라 제목은 좁은 창 크기(56)로 둔다. -->
+    <dimen name="textDisplay">56sp</dimen>
+    <dimen name="lineDisplay">68sp</dimen>
+    <!-- 목소리 태그는 키트 본문 크기까지만 줄인다(버튼이 아닌 표시라는 위계, 차 안 가독성 하한). -->
+    <dimen name="textVoiceTag">28sp</dimen>
+    <dimen name="controlSide">140dp</dimen>
+    <dimen name="controlMain">192dp</dimen>
+    <dimen name="controlSidePadding">47dp</dimen>
+    <dimen name="controlMainPadding">50dp</dimen>
+    <dimen name="controlSideOffset">26dp</dimen>
+    <!-- 표지는 홈 책장과 같은 가로 그림(bools playerCoverLandscape, 16:9 원본을 2:1로 표지 초점에 맞춰 자름(core cropRegion)). 폭은 진행 막대·조작 줄과 같게(끝선 맞춤), 높이는 2:1로 둬 조작 버튼을 밀어내지 않는다. -->
+    <dimen name="playerCoverWidth">@dimen/progressWidth</dimen>
+    <dimen name="playerCoverHeight">260dp</dimen>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 색 토큰. 값은 디자인 시스템 개선안의 color.semantic을 따른다. 이름은 쓰임(역할)으로 짓는다.
+     라이트 모드만 있다. 글자색 #131417 100·84·64·32%는 Pleos text/dark 단계와 같다. -->
+<resources>
+    <color name="background">#FAF4EC</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="brand">#FF8A00</color>
+
+    <!-- 주 버튼(이어서 듣기, 재생·멈춤 원) 바탕과 글자·아이콘. 주 버튼은 이 두 색만 쓴다.
+         주황 위 흰 글자는 대비 2.36:1로 Pleos 기준(4.5:1) 미달이라, 2026-11-11 디자이너와 #131417(7.80:1)로 정했다. -->
+    <color name="buttonBrand">#FF8A00</color>
+    <color name="onButtonBrand">#131417</color>
+
+    <color name="text">#131417</color>
+    <color name="textSecondary">#D6131417</color>
+    <color name="textTertiary">#A3131417</color>
+    <color name="textDisabled">#52131417</color>
+
+    <color name="fillSubtle">#0D131417</color>
+    <color name="fillPressed">#1A131417</color>
+    <color name="fillTag">#1A131417</color>
+    <color name="divider">#33131417</color>
+    <color name="progressTrack">#33131417</color>
+    <color name="popupBorder">#0D131417</color>
+
+    <color name="buttonStrong">#44464E</color>
+    <color name="buttonStrongPressed">#313236</color>
+    <color name="onButtonStrong">#FFFFFF</color>
+
+    <!-- 카운트다운 덮개(v2-decisions: 검정 85%)와 그 위 조작. 취소 버튼은 Pleos 다크 button/basic pressed 값. -->
+    <color name="scrim">#D9000000</color>
+    <color name="onScrim">#FFFFFF</color>
+    <color name="fillOnScrim">#1AFFFFFF</color>
+    <color name="fillOnScrimPressed">#33FFFFFF</color>
+    <color name="segmentTrack">#E8E8E8</color>
+    <color name="countdownHint">#C3C3C3</color>
+
+    <color name="danger">#F62E24</color>
+    <color name="stepBadge">#FFC72C</color>
+    <color name="onStepBadge">#131417</color>
+
+    <!-- Pleos Level 2·3 그림자 색. 테마에서 spot·ambient 알파를 1로 두어 이 알파가 그대로 쓰인다(themes.xml). -->
+    <color name="shadowLevel2Spot">#29000000</color>
+    <color name="shadowLevel2Ambient">#14000000</color>
+    <color name="shadowLevel3Spot">#3D000000</color>
+    <color name="shadowLevel3Ambient">#33000000</color>
+
+    <!-- 표지 그림이 없을 때의 색 블록(CoverTone). -->
+    <color name="coverRed">#FFD6CC</color>
+    <color name="coverSea">#CDEAF7</color>
+    <color name="coverMint">#D4F0DC</color>
+    <color name="coverHint">#662B2118</color>
+
+    <!-- QR은 흰 여백이 있어야 읽힌다. 다크 모드에서도 흰색으로 둔다. -->
+    <color name="qrBackground">#FFFFFF</color>
+    <!-- 앱 아이콘 원본(app_icon_art)의 바탕색. 화면 토큰과 따로 둔다. -->
+    <color name="launcherBackground">#FF8A00</color>
+</resources>

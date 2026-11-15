@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "source": "outputs/eval_set/renders.py의 EXTRA_RENDERS. 청취 기록에는 없지만 렌더 수준 판정(파일 총평)이 있는 렌더다. 값은 골라 쓴 렌더의 picks 파일(gpu/spike/outputs 기준)이고, 아니면 null이다.",
+  "renders": {
+    "exp_character/r0": null,
+    "exp_character/r0b": null,
+    "exp_character/r1a": null,
+    "exp_v4/picked/masteraway": "exp_v4/picked/masteraway.json"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "defaults": {
+    "engine": "qwen3-base",
+    "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "nonStreaming": true,
+    "xVectorOnly": false,
+    "styleMap": {},
+    "sentenceStyles": null,
+    "conditions": ["A", "B", "C"],
+    "seed": 1234
+  },
+  "experiments": [
+    { "id": "baseline", "note": "제품 기본안: 감정별 참조, ICL, non_streaming" },
+    { "id": "small_model", "model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base", "conditions": ["B"], "note": "0.6B로 충분한가" },
+    {
+      "id": "calm_only",
+      "styleMap": { "excited": "calm", "soft": "calm" },
+      "sentenceStyles": ["excited", "soft"],
+      "conditions": ["B"],
+      "note": "감정별 클립이 필요한가 — calm 문장은 baseline과 같아서 제외"
+    },
+    {
+      "id": "whisper_for_soft",
+      "styleMap": { "soft": "whisper" },
+      "sentenceStyles": ["soft"],
+      "conditions": ["B"],
+      "note": "soft와 whisper 중 무엇이 나은가 — soft 문장만 비교"
+    },
+    { "id": "streaming_default", "nonStreaming": false, "conditions": ["B"], "note": "기본값의 말속도 가속 재현" },
+    { "id": "xvector_only", "xVectorOnly": true, "conditions": ["B"], "note": "참조 대본 없이 임베딩만" },
+    { "id": "real_quiet", "explicitOnly": true, "conditions": ["A"], "note": "실제 화자 축소 녹음: 조용한 방 감정별 참조" },
+    { "id": "real_quiet_compose", "engine": "qwen3-base-compose", "explicitOnly": true, "conditions": ["A"], "note": "real_quiet와 같은 설정을 model-compose 서비스로 생성" },
+    {
+      "id": "real_quiet_excited",
+      "explicitOnly": true,
+      "sentenceStyles": ["excited"],
+      "conditions": ["A"],
+      "note": "신남 참조 재녹음 비교 — 신남 문장만 생성"
+    },
+    {
+      "id": "real_quiet_calm_only",
+      "explicitOnly": true,
+      "styleMap": { "excited": "calm", "soft": "calm" },
+      "sentenceStyles": ["excited", "soft"],
+      "conditions": ["A"],
+      "note": "실제 화자의 감정별 참조가 calm 참조 대비 실제로 다르게 들리는가"
+    },
+    {
+      "id": "real_phone_calm",
+      "explicitOnly": true,
+      "styleMap": { "excited": "calm", "soft": "calm" },
+      "conditions": ["B"],
+      "note": "실제 화자 축소 녹음: 폰 calm 참조 하나로 전 문장"
+    }
+  ]
+}

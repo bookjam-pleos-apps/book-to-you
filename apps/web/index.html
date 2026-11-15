@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#faf4ec" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Asta+Sans:wght@400..800&display=swap" />
+    <title>BOOK TO YOU</title>
+    <!-- 로딩 스플래시. 앱 CSS는 스크립트와 함께 오므로 여기서 따로 그린다.
+         자리와 크기는 첫 화면(StartScreen: pt-20, w-mascot 173, mt-2, w-wordmark 226)과 같아 앱이 뜰 때 그림이 움직이지 않는다. -->
+    <style>
+      .splash {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding-top: 80px;
+        background: #ff8a00;
+      }
+      .splash-mascot {
+        width: 173px;
+        height: auto;
+      }
+      .splash-wordmark {
+        width: 226px;
+        height: auto;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- React가 처음 그릴 때 #root 안을 통째로 바꾸므로 스플래시는 저절로 사라진다. -->
+    <div id="root">
+      <div class="splash">
+        <img class="splash-mascot" src="/src/assets/brand/mascot.svg" alt="" width="400" height="475" />
+        <img class="splash-wordmark" src="/src/assets/brand/logo-wordmark.svg" alt="BOOK TO YOU" width="524" height="138" />
+      </div>
+    </div>
+    <script type="module" src="/src/app/main.tsx"></script>
+  </body>
+</html>
